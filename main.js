@@ -1,5 +1,35 @@
-let secret = stratagems[Math.floor(Math.random() * stratagems.length)];
+function getDailyStratagem() {
+    const startDateUTC = new Date(Date.UTC(2025, 9, 13));
+    const now = new Date();
+    const nowUTC = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+    const diffDays = Math.floor((nowUTC - startDateUTC) / (1000*60*60*24));
+    const index = diffDays % stratagems.length;
+    return stratagems[index];
+}
+
+function timeUntilNextStratagem() {
+    const now = new Date();
+    const nextUTC = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + 1));
+    const diffMs = nextUTC - now;
+
+    const hours = Math.floor(diffMs / (1000 * 60 * 60));
+    const minutes = Math.floor((diffMs / (1000 * 60)) % 60);
+    const seconds = Math.floor((diffMs / 1000) % 60);
+
+    return `${hours}h ${minutes}m ${seconds}s until next stratagem`;
+}
+
+const timerElement = document.getElementById('timer');
+timerElement.textContent = timeUntilNextStratagem();
+setInterval(() => {
+    document.getElementById('timer').textContent = timeUntilNextStratagem();
+}, 1000);
+
+let secret = getDailyStratagem();
+// let secret = stratagems[Math.floor(Math.random() * stratagems.length)];
+
 console.log(secret.name)
+
 function submitGuess() {
     const val = document.getElementById('guess').value.trim();
     const found = stratagems.find(s => s.name.toLowerCase() === val.toLowerCase());
@@ -17,11 +47,11 @@ function submitGuess() {
     row.querySelector('.dept .cat-value').textContent = found.department;
     row.querySelector('.dept .cat-hint').textContent = check(found.department, secret.department);
 
-    row.querySelector('.arrows .cat-value').textContent = found.arrows;
-    row.querySelector('.arrows .cat-hint').textContent = check(found.arrows, secret.arrows);
-
     row.querySelector('.type .cat-value').textContent = found.type;
     row.querySelector('.type .cat-hint').textContent = check(found.type, secret.type);
+
+    row.querySelector('.arrows .cat-value').textContent = found.arrows;
+    row.querySelector('.arrows .cat-hint').textContent = check(found.arrows, secret.arrows);
 
     row.querySelector('.cost .cat-value').textContent = found.cost;
     row.querySelector('.cost .cat-hint').textContent = check(found.cost, secret.cost);
@@ -29,23 +59,25 @@ function submitGuess() {
     row.querySelector('.cooldown .cat-value').textContent = found.cooldown;
     row.querySelector('.cooldown .cat-hint').textContent = check(found.cooldown, secret.cooldown);
 
-
-    document.getElementById('feedback').appendChild(row);
+    const feedback = document.getElementById('feedback');
+    feedback.insertBefore(row, feedback.firstChild);
 
     if (found.name === secret.name) alert('Correct!');
     document.getElementById('suggestions').innerHTML = '';
-
-    val.reset()
 }
 
 function check(a, b) {
     const numA = Number(a.replace(/\D/g, ''));
     const numB = Number(b.replace(/\D/g, ''));
-    if (!isNaN(numA) && !isNaN(numB)) {
+    const isNumericA = !isNaN(numA) && a.match(/\d/);
+    const isNumericB = !isNaN(numB) && b.match(/\d/);
+
+    if (isNumericA && isNumericB) {
         if (numA === numB) return '✅';
         return numA < numB ? '⬆' : '⬇';
     }
-    return a === b ? '✅' : '❌';
+
+    return a.toLowerCase() === b.toLowerCase() ? '✅' : '❌';
 }
 
 function showSuggestions(input) {

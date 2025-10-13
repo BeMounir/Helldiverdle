@@ -1,5 +1,14 @@
 const stratagems = [
     {
+        name: "MG-43 Machine Gun",
+        department: "Patriotic Administration Center",
+        type: "Support",
+        arrows: "5",
+        cost: "0",
+        cooldown: "480",
+        img: "images/support/Machine_Gun_Stratagem_Icon.webp"
+    },
+    {
         name: "Reinforce",
         department: "Mission Stratagems",
         type: "Common",
