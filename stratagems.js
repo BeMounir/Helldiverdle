@@ -4,8 +4,9 @@ const stratagems = [
         department: "Patriotic Administration Center",
         type: "Support",
         arrows: "5",
-        cost: "0",
+        level: "1",
         cooldown: "480",
+        calltime: "7.75",
         img: "images/support/Machine_Gun_Stratagem_Icon.webp"
     },
     {
@@ -13,8 +14,9 @@ const stratagems = [
         department: "Mission Stratagems",
         type: "Common",
         arrows: "5",
-        cost: "0",
+        level: "0",
         cooldown: "120",
+        calltime: "3",
         img: "images/common/Reinforce_Stratagem_Icon.webp"
     },
     {
@@ -22,8 +24,9 @@ const stratagems = [
         department: "Hangar",
         type: "Offense",
         arrows: "4",
-        cost: "4000",
+        level: "1",
         cooldown: "8",
+        calltime: "4.1",
         img: "images/offense/Eagle_Airstrike_Stratagem_Icon.webp"
     },
     {
@@ -31,8 +34,9 @@ const stratagems = [
         department: "Orbital Cannons",
         type: "Offense",
         arrows: "5",
-        cost: "10000",
+        level: "15",
         cooldown: "300",
+        calltime: "2",
         img: "images/offense/Orbital_Laser_Stratagem_Icon.webp"
     }
 ];

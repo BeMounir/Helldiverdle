@@ -30,6 +30,7 @@ let secret = getDailyStratagem();
 
 console.log(secret.name)
 
+
 function submitGuess() {
     const val = document.getElementById('guess').value.trim();
     const found = stratagems.find(s => s.name.toLowerCase() === val.toLowerCase());
@@ -44,20 +45,32 @@ function submitGuess() {
     row.querySelector('img').src = found.img;
     row.querySelector('img').alt = found.name;
 
-    row.querySelector('.dept .cat-value').textContent = found.department;
-    row.querySelector('.dept .cat-hint').textContent = check(found.department, secret.department);
+    const deptBox = row.querySelector('.dept .result-box');
+    deptBox.textContent = found.department;
+    deptBox.className = 'result-box ' + (found.department.toLowerCase() === secret.department.toLowerCase() ? 'correct' : 'incorrect');
 
-    row.querySelector('.type .cat-value').textContent = found.type;
-    row.querySelector('.type .cat-hint').textContent = check(found.type, secret.type);
+    const typeBox = row.querySelector('.type .result-box');
+    typeBox.textContent = found.type;
+    typeBox.className = 'result-box ' + (found.type.toLowerCase() === secret.type.toLowerCase() ? 'correct' : 'incorrect');
 
-    row.querySelector('.arrows .cat-value').textContent = found.arrows;
-    row.querySelector('.arrows .cat-hint').textContent = check(found.arrows, secret.arrows);
+    const arrowsBox = row.querySelector('.arrows .result-box');
+    arrowsBox.textContent = found.arrows;
+    arrowsBox.className = 'result-box ' + (found.arrows === secret.arrows ? 'correct' : 'incorrect');
 
-    row.querySelector('.cost .cat-value').textContent = found.cost;
-    row.querySelector('.cost .cat-hint').textContent = check(found.cost, secret.cost);
+    const levelBox = row.querySelector('.level .result-box');
+    const levelHint = check(found.level, secret.level);
+    levelBox.textContent = levelHint === '✅' ? found.level : `${found.level} ${levelHint}`;
+    levelBox.className = 'result-box ' + (levelHint === '✅' ? 'correct' : 'incorrect');
 
-    row.querySelector('.cooldown .cat-value').textContent = found.cooldown;
-    row.querySelector('.cooldown .cat-hint').textContent = check(found.cooldown, secret.cooldown);
+    const cdBox = row.querySelector('.cooldown .result-box');
+    const cdHint = check(found.cooldown, secret.cooldown);
+    cdBox.textContent = cdHint === '✅' ? found.cooldown : `${found.cooldown} ${cdHint}`;
+    cdBox.className = 'result-box ' + (cdHint === '✅' ? 'correct' : 'incorrect');
+
+    const ctBox = row.querySelector('.calltime .result-box');
+    const ctHint = check(found.calltime, secret.calltime);
+    ctBox.textContent = ctHint === '✅' ? found.calltime : `${found.calltime} ${ctHint}`;
+    ctBox.className = 'result-box ' + (ctHint === '✅' ? 'correct' : 'incorrect');
 
     const feedback = document.getElementById('feedback');
     feedback.insertBefore(row, feedback.firstChild);
@@ -69,14 +82,12 @@ function submitGuess() {
 function check(a, b) {
     const numA = Number(a.replace(/\D/g, ''));
     const numB = Number(b.replace(/\D/g, ''));
-    const isNumericA = !isNaN(numA) && a.match(/\d/);
-    const isNumericB = !isNaN(numB) && b.match(/\d/);
+    const isNumeric = !isNaN(numA) && !isNaN(numB) && a.match(/\d/) && b.match(/\d/);
 
-    if (isNumericA && isNumericB) {
+    if (isNumeric) {
         if (numA === numB) return '✅';
-        return numA < numB ? '⬆' : '⬇';
+        return numA < numB ? '⬆️' : '⬇️';
     }
-
     return a.toLowerCase() === b.toLowerCase() ? '✅' : '❌';
 }
 
@@ -89,7 +100,10 @@ function showSuggestions(input) {
         const div = document.createElement('div');
         div.className = 'suggestion';
         div.textContent = m.name;
-        div.onclick = () => { document.getElementById('guess').value = m.name; suggestions.innerHTML = ''; };
+        div.onclick = () => {
+            document.getElementById('guess').value = m.name;
+            suggestions.innerHTML = '';
+        };
         suggestions.appendChild(div);
     });
 }
