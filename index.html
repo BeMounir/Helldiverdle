@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Helldiverdle</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link id="favicon" rel="icon" type="image/png" href="images/icons/favicon.jpg">
+</head>
+<body>
+<h1>Helldiverdle</h1>
+<p>Guess todays stratagem!</p>
+<input id="guess" placeholder="Enter stratagem name" onfocus="this.value=''" oninput="showSuggestions(this.value)">
+<button onclick="submitGuess()">Guess</button>
+<div id="suggestions"></div>
+<div class="feedback" id="feedback"></div>
+
+<div class="row template-row" id="template-row">
+    <div class="name-image">
+        <span class="name"></span>
+        <img src="" alt="">
+    </div>
+    <div class="categories">
+        <div class="category dept">
+            <span class="cat-name">Department</span>
+            <span class="cat-value"></span>
+            <span class="cat-hint"></span>
+        </div>
+        <div class="category arrows">
+            <span class="cat-name">Arrows</span>
+            <span class="cat-value"></span>
+            <span class="cat-hint"></span>
+        </div>
+        <div class="category type">
+            <span class="cat-name">Type</span>
+            <span class="cat-value"></span>
+            <span class="cat-hint"></span>
+        </div>
+        <div class="category cost">
+            <span class="cat-name">Cost</span>
+            <span class="cat-value"></span>
+            <span class="cat-hint"></span>
+        </div>
+        <div class="category cooldown">
+            <span class="cat-name">Cooldown</span>
+            <span class="cat-value"></span>
+            <span class="cat-hint"></span>
+        </div>
+    </div>
+</div>
+
+<script src="stratagems.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
