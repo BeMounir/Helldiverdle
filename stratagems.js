@@ -7,6 +7,7 @@ const stratagems = [
         level: "1",
         cooldown: "480",
         calltime: "7.75",
+        uses: false,
         img: "images/support/Machine_Gun_Stratagem_Icon.webp"
     },
     {
@@ -17,6 +18,7 @@ const stratagems = [
         level: "0",
         cooldown: "120",
         calltime: "3",
+        uses: true,
         img: "images/common/Reinforce_Stratagem_Icon.webp"
     },
     {
@@ -27,6 +29,7 @@ const stratagems = [
         level: "1",
         cooldown: "8",
         calltime: "4.1",
+        uses: true,
         img: "images/offense/Eagle_Airstrike_Stratagem_Icon.webp"
     },
     {
@@ -37,6 +40,7 @@ const stratagems = [
         level: "15",
         cooldown: "300",
         calltime: "2",
+        uses: true,
         img: "images/offense/Orbital_Laser_Stratagem_Icon.webp"
     }
 ];

@@ -72,6 +72,10 @@ function submitGuess() {
     ctBox.textContent = ctHint === '✅' ? found.calltime : `${found.calltime} ${ctHint}`;
     ctBox.className = 'result-box ' + (ctHint === '✅' ? 'correct' : 'incorrect');
 
+    const usesBox = row.querySelector('.uses .result-box');
+    usesBox.textContent = found.uses;
+    usesBox.className = 'result-box ' + (found.uses === secret.uses ? 'correct' : 'incorrect');
+
     const feedback = document.getElementById('feedback');
     feedback.insertBefore(row, feedback.firstChild);
 
