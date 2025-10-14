@@ -2,7 +2,7 @@ function getDailyStratagem() {
     const startDateUTC = new Date(Date.UTC(2025, 9, 13));
     const now = new Date();
     const nowUTC = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
-    const diffDays = Math.floor((nowUTC - startDateUTC) / (1000*60*60*24));
+    const diffDays = Math.floor((nowUTC - startDateUTC) / (1000 * 60 * 60 * 24));
     const index = diffDays % stratagems.length;
     return stratagems[index];
 }
@@ -35,7 +35,10 @@ console.log(secret.name)
 function submitGuess() {
     const val = document.getElementById('guess').value.trim();
     const found = stratagems.find(s => s.name.toLowerCase() === val.toLowerCase());
-    if (!found) { alert('Not a known stratagem'); return; }
+    if (!found) {
+        alert('Not a known stratagem');
+        return;
+    }
 
     guessCount++;
 
@@ -82,7 +85,10 @@ function submitGuess() {
     const feedback = document.getElementById('feedback');
     feedback.insertBefore(row, feedback.firstChild);
 
-    if (found.name === secret.name) alert('Correct! It took you ' + guessCount + ' tries.');
+    if (found.name === secret.name) {
+        alert('Correct! It took you ' + guessCount + ' tries.');
+        document.getElementById('guess').readOnly = true;
+    }
     document.getElementById('suggestions').innerHTML = '';
 }
 
@@ -114,3 +120,10 @@ function showSuggestions(input) {
         suggestions.appendChild(div);
     });
 }
+
+document.getElementById("guess").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        submitGuess();
+    }
+});

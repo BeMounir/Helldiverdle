@@ -98,4 +98,26 @@ const stratagems = [
         uses: false,
         img: "images/support/Flamethrower_Stratagem_Icon.webp"
     },
+    {
+        name: "AC-8 Autocannon",
+        department: "Patriotic Administration Center",
+        type: "Support",
+        arrows: "6",
+        level: "10",
+        cooldown: "480",
+        calltime: "7.75",
+        uses: false,
+        img: "images/support/Autocannon_Stratagem_Icon.webp"
+    },
+    {
+        name: "MG-206 Heavy Machine Gun",
+        department: "Patriotic Administration Center",
+        type: "Support",
+        arrows: "5",
+        level: "12",
+        cooldown: "480",
+        calltime: "7.75",
+        uses: false,
+        img: "images/support/Heavy_Machine_Gun_Stratagem_Icon.webp"
+    },
 ];
