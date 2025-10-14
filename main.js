@@ -21,6 +21,7 @@ function timeUntilNextStratagem() {
 
 const timerElement = document.getElementById('timer');
 timerElement.textContent = timeUntilNextStratagem();
+let guessCount = 0;
 setInterval(() => {
     document.getElementById('timer').textContent = timeUntilNextStratagem();
 }, 1000);
@@ -35,6 +36,8 @@ function submitGuess() {
     const val = document.getElementById('guess').value.trim();
     const found = stratagems.find(s => s.name.toLowerCase() === val.toLowerCase());
     if (!found) { alert('Not a known stratagem'); return; }
+
+    guessCount++;
 
     const template = document.getElementById('template-row');
     const row = template.cloneNode(true);
@@ -79,7 +82,7 @@ function submitGuess() {
     const feedback = document.getElementById('feedback');
     feedback.insertBefore(row, feedback.firstChild);
 
-    if (found.name === secret.name) alert('Correct!');
+    if (found.name === secret.name) alert('Correct! It took you ' + guessCount + ' tries.');
     document.getElementById('suggestions').innerHTML = '';
 }
 
