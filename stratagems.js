@@ -27,7 +27,7 @@ const stratagems = [
         type: "Offense",
         arrows: "4",
         level: "1",
-        cooldown: "8",
+        cooldown: "150",
         calltime: "4.1",
         uses: true,
         img: "images/offense/Eagle_Airstrike_Stratagem_Icon.webp"

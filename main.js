@@ -86,7 +86,11 @@ function submitGuess() {
     feedback.insertBefore(row, feedback.firstChild);
 
     if (found.name === secret.name) {
-        alert('Correct! It took you ' + guessCount + ' tries.');
+        if (guessCount <= 1) {
+            alert('Correct! You got it first try!.');
+        } else {
+            alert('Correct! It took you ' + guessCount + ' tries.');
+        }
         document.getElementById('guess').readOnly = true;
     }
     document.getElementById('suggestions').innerHTML = '';

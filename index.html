@@ -8,13 +8,21 @@
 </head>
 <body>
 <h1>Helldiverdle</h1>
-<p>Guess today's stratagem!</p>
-<div class="tooltip">?
-    <span class="tooltiptext"> Call-in Time is pre-upgrade.<br>limited uses include eagle strikes.<br>cooldown is re-arm time for eagle strikes</span>
+
+<div class="intro">
+    <p>Guess today's stratagem!</p>
+    <div class="tooltip">?
+        <span class="tooltiptext">
+            Call-in Time is pre-upgrade.<br>
+            Limited uses include eagle strikes.<br>
+            Cooldown is re-arm time for eagle strikes.
+        </span>
+    </div>
 </div>
 
+
 <input id="guess"  placeholder="Enter stratagem name" onfocus="this.value=''" oninput="showSuggestions(this.value)">
-<button onclick="submitGuess()">Guess</button>
+<button id="guessButton" onclick="submitGuess()">Guess</button>
 
 <div id="suggestions"></div>
 <div class="feedback" id="feedback"></div>

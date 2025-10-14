@@ -15,14 +15,12 @@ h1 {
     text-transform: uppercase;
 }
 
-/* Tooltip container */
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+    border-bottom: 1px dotted black;
 }
 
-/* Tooltip text */
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
@@ -32,19 +30,16 @@ h1 {
     padding: 5px 0;
     border-radius: 6px;
 
-    /* Position the tooltip text */
     position: absolute;
     z-index: 1;
     bottom: 125%;
     left: 50%;
     margin-left: -60px;
 
-    /* Fade in tooltip */
     opacity: 0;
     transition: opacity 0.3s;
 }
 
-/* Tooltip arrow */
 .tooltip .tooltiptext::after {
     content: "";
     position: absolute;
@@ -56,7 +51,6 @@ h1 {
     border-color: #555 transparent transparent transparent;
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
@@ -67,7 +61,7 @@ input {
     font-size: 16px;
 }
 
-button {
+#guessButton {
     padding: 10px 20px;
     background: #f5d742;
     border: none;
@@ -173,6 +167,50 @@ button {
 .template-row {
     display: none;
 }
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    background: #f5d742;
+    color: #0b0b0b;
+    width: 22px;
+    height: 22px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 400px;
+    height: 200px;
+    background: #111;
+    color: #f5d742;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #f5d742;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    transform: translateX(-50%);
+    white-space: normal;
+    box-shadow: 0 0 10px #000;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
 
 footer {
     margin-top: 500px;
