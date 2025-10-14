@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Arial;
+    src: url("fonts/Athabasca Bd.otf") format('truetype');
+}
+
 body {
     background: #0b0b0b;
     color: #f5d742;
