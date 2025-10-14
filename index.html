@@ -8,7 +8,10 @@
 </head>
 <body>
 <h1>Helldiverdle</h1>
-<p>Guess today's stratagem! Call-in Time is pre-upgrade.</p>
+<p>Guess today's stratagem!</p>
+<div class="tooltip">?
+    <span class="tooltiptext"> Call-in Time is pre-upgrade.<br>limited uses include eagle strikes.<br>cooldown is re-arm time for eagle strikes</span>
+</div>
 <input id="guess" placeholder="Enter stratagem name" onfocus="this.value=''" oninput="showSuggestions(this.value)">
 <button onclick="submitGuess()">Guess</button>
 <div id="suggestions"></div>
@@ -21,7 +24,7 @@
             <img src="" alt="">
         </div>
         <div class="category dept">
-            <div class="cat-name">Dept</div>
+            <div class="cat-name">Department</div>
             <div class="result-box"></div>
         </div>
         <div class="category type">
