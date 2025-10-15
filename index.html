@@ -11,17 +11,49 @@
 
 <div class="intro">
     <p>Guess today's stratagem!</p>
-    <div class="tooltip">?
+    <a class="tooltip" href="#popup">?
         <span class="tooltiptext">
             Call-in Time is pre-upgrade.<br>
             Limited uses include eagle strikes.<br>
             Cooldown is re-arm time for eagle strikes.
         </span>
+    </a>
+</div>
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <a href="#" class="closeButton">✖</a>
+        <h2>How to Play</h2>
+        <p class="information">
+            Each guess reveals how close your stratagem is to today's secret one.<br><br>
+            <span class="legend-box correct"></span> <strong>Green</strong> = Exact match<br>
+            <span class="legend-box wrong"></span> <strong>Red</strong> = Incorrect category<br>
+            <strong>⬆️ / ⬇️</strong> = Higher or lower (for numbers like Cost or Cooldown)<br>
+        </p>
+
+        <h2>Categories</h2>
+        <ul class="info-list">
+            <li><strong>Department:</strong> Where the stratagem comes from (e.g. Hangar, Patriotic Administration Center, Warbond).</li>
+            <li><strong>Type:</strong> <span class="blue">Support</span>, <span class="red">Offensive</span>, <span class="green">Defensive</span>, <span class="white">Common</span> or <span class="white">Objectives</span></li>
+            <li><strong>Arrows:</strong> Number of arrow inputs in its code.</li>
+            <li><strong>Level:</strong> Unlock level (0 if always available).</li>
+            <li><strong>Cooldown:</strong> Time before it can be used again. <em>For Eagle Strikes, this refers to the re-arm time.</em></li>
+            <li><strong>Call-in Time:</strong> Time it takes to land after calling. <em>Measured pre-upgrade.</em></li>
+            <li><strong>Limited Uses:</strong> If the stratagem works on a charges system like eagle strikes or reinforcements. True or False</li>
+            <em>This includes Eagle Strikes and similar expendable abilities.</em>
+        </ul>
+
+        <h2>Credits</h2>
+        <p class="information">
+            Created by <strong>Moukie</strong><br>
+            Inspired by Loldle<br>
+            Assets © Arrowhead Game Studios
+        </p>
     </div>
 </div>
 
 
-<input id="guess"  placeholder="Enter stratagem name" onfocus="this.value=''" oninput="showSuggestions(this.value)">
+<input id="guess" placeholder="Enter stratagem name" onfocus="this.value=''" oninput="showSuggestions(this.value)">
 <button id="guessButton" onclick="submitGuess()">Guess</button>
 
 <div id="suggestions"></div>
