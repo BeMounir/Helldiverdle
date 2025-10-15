@@ -40,6 +40,7 @@ function submitGuess() {
         return;
     }
 
+
     guessCount++;
 
     const template = document.getElementById('template-row');
@@ -60,8 +61,9 @@ function submitGuess() {
     typeBox.className = 'result-box ' + (found.type.toLowerCase() === secret.type.toLowerCase() ? 'correct' : 'incorrect');
 
     const arrowsBox = row.querySelector('.arrows .result-box');
-    arrowsBox.textContent = found.arrows;
-    arrowsBox.className = 'result-box ' + (found.arrows === secret.arrows ? 'correct' : 'incorrect');
+    const arrowsHint = check(found.arrows, secret.arrows);
+    arrowsBox.textContent = arrowsHint === '✅' ? found.arrows : `${found.arrows} ${arrowsHint}`;
+    arrowsBox.className = 'result-box ' + (arrowsHint === '✅' ? 'correct' : 'incorrect');
 
     const levelBox = row.querySelector('.level .result-box');
     const levelHint = check(found.level, secret.level);
@@ -78,9 +80,19 @@ function submitGuess() {
     ctBox.textContent = ctHint === '✅' ? found.calltime : `${found.calltime} ${ctHint}`;
     ctBox.className = 'result-box ' + (ctHint === '✅' ? 'correct' : 'incorrect');
 
-    const usesBox = row.querySelector('.uses .result-box');
-    usesBox.textContent = found.uses;
-    usesBox.className = 'result-box ' + (found.uses === secret.uses ? 'correct' : 'incorrect');
+    const traitsBox = row.querySelector('.traits .result-box');
+    if (traitsBox) {
+        if (Array.isArray(found.traits)) {
+            traitsBox.textContent = found.traits.join(', ');
+        } else {
+            traitsBox.textContent = String(found.traits || '');
+        }
+        const traitStatus = checkTraits(found.traits, secret.traits);
+        traitsBox.className = 'result-box';
+        if (traitStatus === 'perfect') traitsBox.classList.add('correct');
+        else if (traitStatus === 'partial') traitsBox.classList.add('partial');
+        else traitsBox.classList.add('incorrect');
+    }
 
     const feedback = document.getElementById('feedback');
     feedback.insertBefore(row, feedback.firstChild);
@@ -106,6 +118,23 @@ function check(a, b) {
         return numA < numB ? '⬆️' : '⬇️';
     }
     return a.toLowerCase() === b.toLowerCase() ? '✅' : '❌';
+}
+
+function checkTraits(guessTraits = [], secretTraits = []) {
+    if (!Array.isArray(guessTraits)) guessTraits = [];
+    if (!Array.isArray(secretTraits)) secretTraits = [];
+
+    const sSet = secretTraits.map(t => String(t).trim()).filter(Boolean);
+    const gArr = guessTraits.map(t => String(t).trim()).filter(Boolean);
+
+    let matches = 0;
+    for (const trait of gArr) {
+        if (sSet.includes(trait)) matches++;
+    }
+
+    if (matches > 0 && matches === sSet.length && gArr.length === sSet.length) return 'perfect';
+    if (matches > 0) return 'partial';
+    return 'none';
 }
 
 function showSuggestions(input) {

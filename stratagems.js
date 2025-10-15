@@ -7,7 +7,7 @@ const stratagems = [
         level: "1",
         cooldown: "480",
         calltime: "7.75",
-        uses: false,
+        traits: ["Support Weapon", "Hellpod", "Medium Armor Penetrating", "Stationary Reload"],
         img: "images/support/Machine_Gun_Stratagem_Icon.webp"
     },
     {
@@ -18,7 +18,7 @@ const stratagems = [
         level: "0",
         cooldown: "120",
         calltime: "3",
-        uses: true,
+        traits: ["Hellpod"],
         img: "images/common/Reinforce_Stratagem_Icon.webp"
     },
     {
@@ -29,7 +29,7 @@ const stratagems = [
         level: "1",
         cooldown: "150",
         calltime: "4.1",
-        uses: true,
+        traits: ["Explosive", "Eagle", "Anti-Tank"],
         img: "images/offense/Eagle_Airstrike_Stratagem_Icon.webp"
     },
     {
@@ -40,7 +40,7 @@ const stratagems = [
         level: "15",
         cooldown: "300",
         calltime: "2",
-        uses: true,
+        traits: [" Orbital", "Anti-Tank", "Beam"],
         img: "images/offense/Orbital_Laser_Stratagem_Icon.webp"
     },
     {
@@ -51,7 +51,7 @@ const stratagems = [
         level: "1",
         cooldown: "480",
         calltime: "7.75",
-        uses: false,
+        traits: [" Support Weapon", "Hellpod", "Heavy Armor Penetrating"],
         img: "images/support/Anti-Materiel_Rifle_Stratagem_Icon.webp"
     },
     {
@@ -62,7 +62,7 @@ const stratagems = [
         level: "1",
         cooldown: "480",
         calltime: "7.75",
-        uses: false,
+        traits: ["Support Weapon", "Hellpod", "Light Armor Penetrating"],
         img: "images/support/Machine_Gun_Stratagem_Icon.webp"
     },
     {
@@ -73,7 +73,7 @@ const stratagems = [
         level: "3",
         cooldown: "70",
         calltime: "7.75",
-        uses: false,
+        traits: ["Support Weapon", "Hellpod", "Anti-Tank", "Expendable"],
         img: "images/support/Expendable_Anti-Tank_Stratagem_Icon.webp"
     },
     {
@@ -84,7 +84,7 @@ const stratagems = [
         level: "5",
         cooldown: "480",
         calltime: "7.75",
-        uses: false,
+        traits: ["Support Weapon", "Hellpod", "Backpack", "Anti-Tank", "Stationary Reload"],
         img: "images/support/Recoilless_Rifle_Stratagem_Icon.webp"
     },
     {
@@ -95,7 +95,7 @@ const stratagems = [
         level: "10",
         cooldown: "480",
         calltime: "7.75",
-        uses: false,
+        traits: ["Support Weapon", "Hellpod", "Incendiary"],
         img: "images/support/Flamethrower_Stratagem_Icon.webp"
     },
     {
@@ -106,7 +106,7 @@ const stratagems = [
         level: "10",
         cooldown: "480",
         calltime: "7.75",
-        uses: false,
+        traits: ["Support Weapon", "Hellpod", "Backpack", "Heavy Armor Penetrating", "Stationary Reload"],
         img: "images/support/Autocannon_Stratagem_Icon.webp"
     },
     {
@@ -117,7 +117,7 @@ const stratagems = [
         level: "12",
         cooldown: "480",
         calltime: "7.75",
-        uses: false,
+        traits: ["Support Weapon", "Hellpod", "Heavy Armor Penetrating", "Stationary Reload"],
         img: "images/support/Heavy_Machine_Gun_Stratagem_Icon.webp"
     },
 ];

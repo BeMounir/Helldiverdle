@@ -7,103 +7,112 @@
     <link id="favicon" rel="icon" type="image/png" href="images/icons/favicon.jpg">
 </head>
 <body>
-<h1>Helldiverdle</h1>
+<div class="container">
+    <h1>Helldiverdle</h1>
 
-<div class="intro">
-    <p>Guess today's stratagem!</p>
-    <a class="tooltip" href="#popup">?
-        <span class="tooltiptext">
-            Call-in Time is pre-upgrade.<br>
-            Limited uses include eagle strikes.<br>
-            Cooldown is re-arm time for eagle strikes.
+    <div class="intro">
+        <p>Guess today's stratagem!</p>
+        <a class="tooltip" href="#popup">?
+            <span class="tooltiptext">
+            How to Play.
         </span>
-    </a>
-</div>
-
-<div id="popup" class="popup">
-    <div class="popup-content">
-        <a href="#" class="closeButton">✖</a>
-        <h2>How to Play</h2>
-        <p class="information">
-            Each guess reveals how close your stratagem is to today's secret one.<br><br>
-            <span class="legend-box correct"></span> <strong>Green</strong> = Exact match<br>
-            <span class="legend-box wrong"></span> <strong>Red</strong> = Incorrect category<br>
-            <strong>⬆️ / ⬇️</strong> = Higher or lower (for numbers like Cost or Cooldown)<br>
-        </p>
-
-        <h2>Categories</h2>
-        <ul class="info-list">
-            <li><strong>Department:</strong> Where the stratagem comes from (e.g. Hangar, Patriotic Administration Center, Warbond).</li>
-            <li><strong>Type:</strong> <span class="blue">Support</span>, <span class="red">Offensive</span>, <span class="green">Defensive</span>, <span class="white">Common</span> or <span class="white">Objectives</span></li>
-            <li><strong>Arrows:</strong> Number of arrow inputs in its code.</li>
-            <li><strong>Level:</strong> Unlock level (0 if always available).</li>
-            <li><strong>Cooldown:</strong> Time before it can be used again. <em>For Eagle Strikes, this refers to the re-arm time.</em></li>
-            <li><strong>Call-in Time:</strong> Time it takes to land after calling. <em>Measured pre-upgrade.</em></li>
-            <li><strong>Limited Uses:</strong> If the stratagem works on a charges system like eagle strikes or reinforcements. True or False</li>
-            <em>This includes Eagle Strikes and similar expendable abilities.</em>
-        </ul>
-
-        <h2>Credits</h2>
-        <p class="information">
-            Created by <strong>Moukie</strong><br>
-            Inspired by Loldle<br>
-            Assets © Arrowhead Game Studios
-        </p>
+        </a>
     </div>
-</div>
 
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <a href="#" class="closeButton">✖</a>
+            <h2>How to Play</h2>
+            <p class="information">
+                Each guess reveals how close your stratagem is to today's secret one.<br><br>
+                <span class="legend-box correct"></span> <strong>Green</strong> = Exact match<br>
+                <span class="legend-box partial"></span> <strong>Orange</strong> = Partial match<br>
+                <span class="legend-box wrong"></span> <strong>Red</strong> = Incorrect category<br>
+                <strong>⬆️ / ⬇️</strong> = Higher or lower (for numbers like Level or Cooldown)<br>
+            </p>
 
-<input id="guess" placeholder="Enter stratagem name" onfocus="this.value=''" oninput="showSuggestions(this.value)">
-<button id="guessButton" onclick="submitGuess()">Guess</button>
+            <h2>Categories</h2>
+            <ul class="info-list">
+                <li><strong>Department:</strong> Where the stratagem comes from (e.g. Hangar, Patriotic Administration
+                    Center, Warbond).
+                </li>
+                <li><strong>Type:</strong> <span class="blue">Support</span>, <span class="red">Offensive</span>, <span
+                        class="green">Defensive</span>, <span class="white">Common</span> or <span class="white">Objectives</span>
+                </li>
+                <li><strong>Arrows:</strong> Number of arrow inputs in its code.</li>
+                <li><strong>Level:</strong> Unlock level (0 if always available).</li>
+                <li><strong>Cooldown:</strong> Time before it can be used again. <em>For Eagle Strikes, this refers to
+                    the re-arm time.</em></li>
+                <li><strong>Call-in Time:</strong> Time it takes to land after calling. <em>Measured pre-upgrade.</em>
+                </li>
+                <li><strong>Limited Uses:</strong> If the stratagem works on a charges system like eagle strikes or
+                    reinforcements. True or False
+                </li>
+                <em>This includes Eagle Strikes and similar expendable abilities.</em>
+            </ul>
 
-<div id="suggestions"></div>
-<div class="feedback" id="feedback"></div>
-
-<div class="row template-row" id="template-row">
-    <div class="categories">
-        <div class="name-image">
-            <span class="name"></span>
-            <img src="" alt="">
-        </div>
-        <div class="category dept">
-            <div class="cat-name">Department</div>
-            <div class="result-box"></div>
-        </div>
-        <div class="category type">
-            <div class="cat-name">Type</div>
-            <div class="result-box"></div>
-        </div>
-        <div class="category arrows">
-            <div class="cat-name">Arrows</div>
-            <div class="result-box"></div>
-        </div>
-        <div class="category level">
-            <div class="cat-name">level</div>
-            <div class="result-box"></div>
-        </div>
-        <div class="category cooldown">
-            <div class="cat-name">Cooldown</div>
-            <div class="result-box"></div>
-        </div>
-        <div class="category calltime">
-            <div class="cat-name">Call-in Time</div>
-            <div class="result-box"></div>
-        </div>
-        <div class="category uses">
-            <div class="cat-name">Limited uses?</div>
-            <div class="result-box"></div>
+            <h2>Credits</h2>
+            <p class="information">
+                Created by <strong>Moukie</strong><br>
+                Inspired by Loldle<br>
+                Assets © Arrowhead Game Studios
+            </p>
         </div>
     </div>
-</div>
 
-<p id="timer"></p>
+    <input id="guess" placeholder="Enter stratagem name" onfocus="this.value=''" oninput="showSuggestions(this.value)">
+    <button id="guessButton" onclick="submitGuess()">Guess</button>
+
+    <div id="suggestions"></div>
+    <div class="feedback" id="feedback"></div>
+
+    <div class="row template-row" id="template-row">
+        <div class="categories">
+            <div class="name-image">
+                <span class="name"></span>
+                <img src="" alt="">
+            </div>
+            <div class="category dept">
+                <div class="cat-name">Department</div>
+                <div class="result-box"></div>
+            </div>
+            <div class="category type">
+                <div class="cat-name">Type</div>
+                <div class="result-box"></div>
+            </div>
+            <div class="category arrows">
+                <div class="cat-name">Arrows</div>
+                <div class="result-box"></div>
+            </div>
+            <div class="category level">
+                <div class="cat-name">level</div>
+                <div class="result-box"></div>
+            </div>
+            <div class="category cooldown">
+                <div class="cat-name">Cooldown</div>
+                <div class="result-box"></div>
+            </div>
+            <div class="category calltime">
+                <div class="cat-name">Call-in Time</div>
+                <div class="result-box"></div>
+            </div>
+            <div class="category traits">
+                <div class="cat-name">Traits</div>
+                <div class="result-box"></div>
+            </div>
+        </div>
+    </div>
+    <p id="timer"></p>
+
+    <footer>
+        Made by <span class="creator">Moukie</span>
+        <br>Assets belong to Arrowhead game studio.
+    </footer>
+</div>
 
 <script src="stratagems.js"></script>
 <script src="main.js"></script>
 
 </body>
-<footer>
-    Made by <span class="creator">Moukie</span>
-    <br>Assets belong to Arrowhead game studio.
-</footer>
+
 </html>
