@@ -317,6 +317,10 @@ input {
     color: white;
 }
 
+.liberty1 { color: #D7394D; }
+.liberty2 { color: #FFFFFF; }
+.liberty3 { color: #083D7B; }
+
 footer {
     margin-top: 500px;
     font-size: 1rem;
