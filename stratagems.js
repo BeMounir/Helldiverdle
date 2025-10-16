@@ -283,6 +283,6 @@ const stratagems = [
         cooldown: "150",
         calltime: "4.1",
         traits: ["Explosive", "Eagle", "Incendiary"],
-        img: "images/offense/Eagle_Cluster_Bomb_Stratagem_Icon.webp"
+        img: "images/offense/Eagle_Napalm_Airstrike_Stratagem_Icon.webp"
     },
 ];
