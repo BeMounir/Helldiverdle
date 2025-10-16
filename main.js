@@ -104,6 +104,7 @@ function submitGuess() {
             alert('Correct! It took you ' + guessCount + ' tries.');
         }
         document.getElementById('guess').readOnly = true;
+        console.log('Correct! It took you ' + guessCount + ' tries.')
     }
     document.getElementById('suggestions').innerHTML = '';
 }

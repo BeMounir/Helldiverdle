@@ -40,7 +40,7 @@ const stratagems = [
         level: "15",
         cooldown: "300",
         calltime: "2",
-        traits: [" Orbital", "Anti-Tank", "Beam"],
+        traits: ["Orbital", "Anti-Tank", "Beam"],
         img: "images/offense/Orbital_Laser_Stratagem_Icon.webp"
     },
     {
@@ -51,7 +51,7 @@ const stratagems = [
         level: "1",
         cooldown: "480",
         calltime: "7.75",
-        traits: [" Support Weapon", "Hellpod", "Heavy Armor Penetrating"],
+        traits: ["Support Weapon", "Hellpod", "Heavy Armor Penetrating"],
         img: "images/support/Anti-Materiel_Rifle_Stratagem_Icon.webp"
     },
     {
@@ -119,5 +119,170 @@ const stratagems = [
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Heavy Armor Penetrating", "Stationary Reload"],
         img: "images/support/Heavy_Machine_Gun_Stratagem_Icon.webp"
+    },
+    {
+        name: "RL-77 Airburst Rocket Launcher",
+        department: "Patriotic Administration Center",
+        type: "Support",
+        arrows: "5",
+        level: "15",
+        cooldown: "480",
+        calltime: "7.75",
+        traits: ["Support Weapon", "Hellpod", "Backpack", "Medium Armor Penetrating", "Stationary Reload"],
+        img: "images/support/RL-77_Airburst_Rocket_Launcher_Stratagem_Icon.webp"
+    },
+    {
+        name: "MLS-4X Commando",
+        department: "Patriotic Administration Center",
+        type: "Support",
+        arrows: "5",
+        level: "15",
+        cooldown: "120",
+        calltime: "7.75",
+        traits: ["Support Weapon", "Hellpod", "Anti-Tank", "Expendable"],
+        img: "images/support/Commando_Stratagem_Icon.webp"
+    },
+    {
+        name: "RS-422 Railgun",
+        department: "Patriotic Administration Center",
+        type: "Support",
+        arrows: "6",
+        level: "20",
+        cooldown: "480",
+        calltime: "7.75",
+        traits: ["Support Weapon", "Hellpod", "Anti-Tank", "Chargeup"],
+        img: "images/support/Railgun_Stratagem_Icon.webp"
+    },
+    {
+        name: "FAF-14 Spear",
+        department: "Patriotic Administration Center",
+        type: "Support",
+        arrows: "5",
+        level: "20",
+        cooldown: "480",
+        calltime: "7.75",
+        traits: ["Support Weapon", "Hellpod", "Backpack", "Anti-Tank", "Stationary Reload"],
+        img: "images/support/Spear_Stratagem_Icon.webp"
+    },
+    {
+        name: "StA-X3 W.A.S.P. Launcher",
+        department: "Patriotic Administration Center",
+        type: "Support",
+        arrows: "5",
+        level: "20",
+        cooldown: "120",
+        calltime: "7.75",
+        traits: ["Support Weapon", "Hellpod", "Backpack", "Anti-Tank", "Stationary Reload"],
+        img: "images/support/Commando_Stratagem_Icon.webp"
+    },
+    {
+        name: "Orbital Gatling Barrage",
+        department: "Orbital Cannons",
+        type: "Offense",
+        arrows: "5",
+        level: "1",
+        cooldown: "70",
+        calltime: "3.05",
+        traits: ["Explosive", "Orbital", "Heavy Armor Penetrating"],
+        img: "images/offense/Orbital_Gatling_Barrage_Stratagem_Icon.png"
+    },
+    {
+        name: "Orbital Airburst Strike",
+        department: "Orbital Cannons",
+        type: "Offense",
+        arrows: "3",
+        level: "5",
+        cooldown: "100",
+        calltime: "4.45",
+        traits: ["Explosive", "Orbital", "Medium Armor Penetrating"],
+        img: "images/offense/Orbital_Airburst_Strike_Stratagem_Icon.webp"
+    },
+    {
+        name: "Orbital 120mm HE Barrage",
+        department: "Orbital Cannons",
+        type: "Offense",
+        arrows: "6",
+        level: "5",
+        cooldown: "180",
+        calltime: "7.45",
+        traits: ["Explosive", "Orbital", "Anti-Tank"],
+        img: "images/offense/Orbital_120mm_HE_Barrage_Stratagem_Icon.webp"
+    },
+    {
+        name: "Orbital 380mm HE Barrage",
+        department: "Orbital Cannons",
+        type: "Offense",
+        arrows: "7",
+        level: "8",
+        cooldown: "240",
+        calltime: "8.45",
+        traits: ["Explosive", "Orbital", "Anti-Tank"],
+        img: "images/offense/Orbital_380mm_HE_Barrage_Stratagem_Icon.webp"
+    },
+    {
+        name: "Orbital Walking Barrage",
+        department: "Orbital Cannons",
+        type: "Offense",
+        arrows: "6",
+        level: "10",
+        cooldown: "240",
+        calltime: "5.45",
+        traits: ["Explosive", "Orbital", "Anti-Tank"],
+        img: "images/offense/Orbital_Walking_Barrage_Stratagem_Icon.webp"
+    },
+    {
+        name: "Orbital Napalm Barrage",
+        department: "Orbital Cannons",
+        type: "Offense",
+        arrows: "6",
+        level: "18",
+        cooldown: "240",
+        calltime: "7.45",
+        traits: ["Explosive", "Orbital", "Incendiary"],
+        img: "images/offense/Orbital_Napalm_Barrage_Stratagem_Icon.webp"
+    },
+    {
+        name: "Orbital Railcannon Strike",
+        department: "Orbital Cannons",
+        type: "Offense",
+        arrows: "5",
+        level: "20",
+        cooldown: "210",
+        calltime: "0",
+        traits: ["Orbital", "Anti-Tank"],
+        img: "images/offense/Orbital_Railcannon_Strike_Stratagem_Icon.webp"
+    },
+    {
+        name: "Eagle Strafing Run",
+        department: "Hangar",
+        type: "Offense",
+        arrows: "3",
+        level: "1",
+        cooldown: "150",
+        calltime: "2.4",
+        traits: ["Eagle", "Heavy Armor Penetrating"],
+        img: "images/offense/Eagle_Strafing_Run_Stratagem_Icon.webp"
+    },
+    {
+        name: "Eagle Cluster Bomb",
+        department: "Hangar",
+        type: "Offense",
+        arrows: "5",
+        level: "3",
+        cooldown: "150",
+        calltime: "4.1",
+        traits: ["Explosive", "Eagle", "Medium Armor Penetrating"],
+        img: "images/offense/Eagle_Cluster_Bomb_Stratagem_Icon.webp"
+    },
+    {
+        name: "Eagle Napalm Airstrike",
+        department: "Hangar",
+        type: "Offense",
+        arrows: "4",
+        level: "5",
+        cooldown: "150",
+        calltime: "4.1",
+        traits: ["Explosive", "Eagle", "Incendiary"],
+        img: "images/offense/Eagle_Cluster_Bomb_Stratagem_Icon.webp"
     },
 ];
