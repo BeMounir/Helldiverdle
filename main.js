@@ -27,8 +27,8 @@ setInterval(() => {
 }, 1000);
 
 console.log(stratagems.length + " Stratagems")
-let secret = stratagems[31];
-// let secret = getDailyStratagem();
+// let secret = stratagems[31];
+let secret = getDailyStratagem();
 // let secret = stratagems[Math.floor(Math.random() * stratagems.length)];
 
 console.log(secret.name)
