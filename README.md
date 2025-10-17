@@ -29,6 +29,6 @@ A Helldivers 2 themed wordle style guessing game where you must identify the cor
 
 ## Credits
 
-Created by Moukie>
+Created by Moukie
 Inspired by Loldle & Wordle
 Assets © Arrowhead Game Studios
