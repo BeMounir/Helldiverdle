@@ -61,6 +61,10 @@ input {
     margin-top: 10px;
 }
 
+#guess {
+    min-width: 300px;
+}
+
 #timer {
     margin-top: 10px;
     font-weight: bold;
@@ -141,7 +145,7 @@ input {
     left: 50%;
     transform: translateX(-50%);
     max-height: 150px;
-    width: 300px;
+    width: 393px;
     overflow-y: auto;
     background: #111;
     border: 1px solid #f5d742;
@@ -300,7 +304,6 @@ input {
 .liberty1 { color: var(--text-liberty1); }
 .liberty2 { color: var(--text-liberty2); }
 .liberty3 { color: var(--text-liberty3); }
-
 
 .information {
     margin-bottom: 15px;

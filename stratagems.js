@@ -395,4 +395,48 @@ const stratagems = [
         traits: ["Hellpod", "Heavy Armor Penetrating"],
         img: "images/defense/HMG_Emplacement_Stratagem_Icon.webp"
     },
+    {
+        name: "FX-12 Shield Generator Relay",
+        department: "Bridge",
+        type: "Defensive",
+        arrows: "6",
+        level: "10",
+        cooldown: "90",
+        calltime: "7.75",
+        traits: ["Hellpod"],
+        img: "images/defense/Shield_Generator_Relay_Stratagem_Icon.webp"
+    },
+    {
+        name: "A/ARC-3 Tesla Tower",
+        department: "Bridge",
+        type: "Defensive",
+        arrows: "6",
+        level: "15",
+        cooldown: "120",
+        calltime: "7.75",
+        traits: ["Hellpod", "Sentry"],
+        img: "images/defense/Tesla_Tower_Stratagem_Icon.webp"
+    },
+    {
+        name: "E/GL-21 Grenadier Battlement",
+        department: "Bridge",
+        type: "Defensive",
+        arrows: "5",
+        level: "15",
+        cooldown: "120",
+        calltime: "7.75",
+        traits: ["Hellpod", "Explosive", "Medium Armor Penetrating"],
+        img: "images/defense/GL-21_Grenadier_Battlement_Stratagem_Icon.webp"
+    },
+    {
+        name: "MD-6 Anti-Personnel Minefield",
+        department: "Engineering Bay",
+        type: "Defensive",
+        arrows: "4",
+        level: "1",
+        cooldown: "120",
+        calltime: "7.75",
+        traits: ["Hellpod", "Explosive", "Medium Armor Penetrating"],
+        img: "images/defense/Anti-Personnel_Minefield_Stratagem_Icon.webp"
+    },
 ];
