@@ -49,6 +49,6 @@ Add this to the stratagems dictionary, include the appropriate image path.
 
 ## Credits
 
-Created by Moukie
-Inspired by Loldle & Wordle
-Assets © Arrowhead Game Studios
+*Created by Moukie
+*Inspired by Loldle & Wordle
+*Assets © Arrowhead Game Studios
