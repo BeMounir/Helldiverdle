@@ -15,12 +15,6 @@ h1 {
     text-transform: uppercase;
 }
 
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
-
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
@@ -29,13 +23,11 @@ h1 {
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
-
     position: absolute;
     z-index: 1;
     bottom: 125%;
     left: 50%;
     margin-left: -60px;
-
     opacity: 0;
     transition: opacity 0.3s;
 }
@@ -144,18 +136,6 @@ input {
     text-align: center;
 }
 
-.result-box.correct {
-    background-color: #2e8b57;
-}
-
-.result-box.partial {
-    background-color: orange;
-}
-
-.result-box.incorrect {
-    background-color: #8b2e2e;
-}
-
 #suggestions {
     position: absolute;
     left: 50%;
@@ -180,10 +160,6 @@ input {
 
 .suggestion:hover {
     background: #333;
-}
-
-
-.suggestion:hover {
     text-decoration: underline;
 }
 
@@ -211,7 +187,9 @@ input {
     line-height: 22px;
     cursor: pointer;
     text-decoration: none;
+    border-bottom: 1px dotted black;
 }
+
 
 .tooltiptext {
     visibility: hidden;
@@ -301,41 +279,32 @@ input {
     margin-right: 5px;
 }
 
-.correct {
-    background: green;
+.correct { background: #2e8b57; }
+.partial { background: orange; }
+.incorrect   { background: #8b2e2e; }
+
+:root {
+    --text-green: #326021;
+    --text-red: #BA2F23;
+    --text-blue: #269EBB;
+    --text-white: #C8B168;
+    --text-liberty1: #D7394D;
+    --text-liberty2: #FFFFFF;
+    --text-liberty3: #083D7B;
 }
 
-.partial {
-    background: orange;
-}
+.green   { color: var(--text-green); }
+.red     { color: var(--text-red); }
+.blue    { color: var(--text-blue); }
+.white   { color: var(--text-white); }
+.liberty1 { color: var(--text-liberty1); }
+.liberty2 { color: var(--text-liberty2); }
+.liberty3 { color: var(--text-liberty3); }
 
-.wrong {
-    background: red;
-}
 
 .information {
     margin-bottom: 15px;
 }
-
-.green {
-    color: #326021;
-}
-
-.red {
-    color: #BA2F23;
-}
-
-.blue {
-    color: #269EBB;
-}
-
-.white {
-    color: #C8B168;
-}
-
-.liberty1 { color: #D7394D; }
-.liberty2 { color: #FFFFFF; }
-.liberty3 { color: #083D7B; }
 
 footer {
     margin-top: 500px;
