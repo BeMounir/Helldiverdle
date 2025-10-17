@@ -340,4 +340,59 @@ const stratagems = [
         traits: ["Vehicle"],
         img: "images/support/M-102_Fast_Recon_Vehicle_Stratagem_Icon.webp"
     },
+    {
+        name: "Orbital Precision Strike",
+        department: "Bridge",
+        type: "Offense",
+        arrows: "3",
+        level: "1",
+        cooldown: "90",
+        calltime: "4.45",
+        traits: ["Explosive", "Orbital", "Anti-Tank"],
+        img: "images/offense/Orbital_Precision_Strike_Stratagem_Icon.webp"
+    },
+    {
+        name: "Orbital Gas Strike",
+        department: "Bridge",
+        type: "Offense",
+        arrows: "4",
+        level: "1",
+        cooldown: "75",
+        calltime: "4.45",
+        traits: ["Explosive", "Orbital", "Caustic"],
+        img: "images/offense/Orbital_Gas_Strike_Stratagem_Icon.webp"
+    },
+    {
+        name: "Orbital EMS Strike",
+        department: "Bridge",
+        type: "Offense",
+        arrows: "4",
+        level: "5",
+        cooldown: "75",
+        calltime: "4.45",
+        traits: ["Orbital"],
+        img: "images/offense/Orbital_EMS_Strike_Stratagem_Icon.webp"
+    },
+    {
+        name: "Orbital Smoke Strike",
+        department: "Bridge",
+        type: "Offense",
+        arrows: "4",
+        level: "8",
+        cooldown: "100",
+        calltime: "4.45",
+        traits: ["Explosive", "Orbital"],
+        img: "images/offense/Orbital_Smoke_Strike_Stratagem_Icon.webp"
+    },
+    {
+        name: "E/MG-101 HMG Emplacement",
+        department: "Bridge",
+        type: "Defensive",
+        arrows: "6",
+        level: "10",
+        cooldown: "180",
+        calltime: "7.75",
+        traits: ["Hellpod", "Heavy Armor Penetrating"],
+        img: "images/defense/HMG_Emplacement_Stratagem_Icon.webp"
+    },
 ];

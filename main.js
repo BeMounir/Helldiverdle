@@ -26,7 +26,9 @@ setInterval(() => {
     document.getElementById('timer').textContent = timeUntilNextStratagem();
 }, 1000);
 
-let secret = getDailyStratagem();
+console.log(stratagems.length + " Stratagems")
+let secret = stratagems[31];
+// let secret = getDailyStratagem();
 // let secret = stratagems[Math.floor(Math.random() * stratagems.length)];
 
 console.log(secret.name)
