@@ -17,7 +17,7 @@ const stratagems = [
         arrows: "5",
         level: "0",
         cooldown: "120",
-        calltime: "3",
+        calltime: "3.00",
         traits: ["Hellpod"],
         img: "images/common/Reinforce_Stratagem_Icon.webp"
     },
@@ -28,7 +28,7 @@ const stratagems = [
         arrows: "4",
         level: "1",
         cooldown: "150",
-        calltime: "4.1",
+        calltime: "4.10",
         traits: ["Explosive", "Eagle", "Anti-Tank"],
         img: "images/offense/Eagle_Airstrike_Stratagem_Icon.webp"
     },
@@ -39,7 +39,7 @@ const stratagems = [
         arrows: "5",
         level: "15",
         cooldown: "300",
-        calltime: "2",
+        calltime: "2.00",
         traits: ["Orbital", "Anti-Tank", "Beam"],
         img: "images/offense/Orbital_Laser_Stratagem_Icon.webp"
     },
@@ -72,7 +72,7 @@ const stratagems = [
         arrows: "5",
         level: "3",
         cooldown: "70",
-        calltime: "7.75",
+        calltime: "6.75",
         traits: ["Support Weapon", "Hellpod", "Anti-Tank", "Expendable"],
         img: "images/support/Expendable_Anti-Tank_Stratagem_Icon.webp"
     },
@@ -248,7 +248,7 @@ const stratagems = [
         arrows: "5",
         level: "20",
         cooldown: "210",
-        calltime: "0",
+        calltime: "1.00",
         traits: ["Orbital", "Anti-Tank"],
         img: "images/offense/Orbital_Railcannon_Strike_Stratagem_Icon.webp"
     },
@@ -259,7 +259,7 @@ const stratagems = [
         arrows: "3",
         level: "1",
         cooldown: "150",
-        calltime: "2.4",
+        calltime: "2.40",
         traits: ["Eagle", "Heavy Armor Penetrating"],
         img: "images/offense/Eagle_Strafing_Run_Stratagem_Icon.webp"
     },
@@ -270,7 +270,7 @@ const stratagems = [
         arrows: "5",
         level: "3",
         cooldown: "150",
-        calltime: "4.1",
+        calltime: "4.10",
         traits: ["Explosive", "Eagle", "Medium Armor Penetrating"],
         img: "images/offense/Eagle_Cluster_Bomb_Stratagem_Icon.webp"
     },
@@ -281,8 +281,63 @@ const stratagems = [
         arrows: "4",
         level: "5",
         cooldown: "150",
-        calltime: "4.1",
+        calltime: "4.10",
         traits: ["Explosive", "Eagle", "Incendiary"],
         img: "images/offense/Eagle_Napalm_Airstrike_Stratagem_Icon.webp"
+    },
+    {
+        name: "LIFT-850 Jump Pack",
+        department: "Hangar",
+        type: "Support",
+        arrows: "5",
+        level: "8",
+        cooldown: "480",
+        calltime: "9.75",
+        traits: ["Hellpod", "Backpack"],
+        img: "images/support/Jump_Pack_Stratagem_Icon.webp"
+    },
+    {
+        name: "Eagle Smoke Strike",
+        department: "Hangar",
+        type: "Offense",
+        arrows: "4",
+        level: "8",
+        cooldown: "150",
+        calltime: "4.40",
+        traits: ["Explosive", "Eagle"],
+        img: "images/offense/Eagle_Smoke_Strike_Stratagem_Icon.webp"
+    },
+    {
+        name: "Eagle 110mm Rocket Pods",
+        department: "Hangar",
+        type: "Offense",
+        arrows: "4",
+        level: "10",
+        cooldown: "150",
+        calltime: "3.40",
+        traits: ["Explosive", "Eagle", "Anti-Tank"],
+        img: "images/offense/Eagle_110mm_Rocket_Pods_Stratagem_Icon.webp"
+    },
+    {
+        name: "Eagle 500kg Bomb",
+        department: "Hangar",
+        type: "Offense",
+        arrows: "5",
+        level: "15",
+        cooldown: "150",
+        calltime: "3.45",
+        traits: ["Explosive", "Eagle", "Anti-Tank"],
+        img: "images/offense/Eagle_500kg_Bomb_Stratagem_Icon.webp"
+    },
+    {
+        name: "M-102 Fast Reconnaissance Vehicle",
+        department: "Hangar",
+        type: "Support",
+        arrows: "7",
+        level: "25",
+        cooldown: "480",
+        calltime: "10.50",
+        traits: ["Vehicle"],
+        img: "images/support/M-102_Fast_Recon_Vehicle_Stratagem_Icon.webp"
     },
 ];

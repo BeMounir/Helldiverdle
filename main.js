@@ -141,19 +141,32 @@ function checkTraits(guessTraits = [], secretTraits = []) {
 function showSuggestions(input) {
     const suggestions = document.getElementById('suggestions');
     suggestions.innerHTML = '';
-    if (!input) return;
+
+    if (!input) {
+        suggestions.style.display = 'none';
+        return;
+    }
+
     const matches = stratagems.filter(s => s.name.toLowerCase().includes(input.toLowerCase()));
+
+    if (matches.length > 0) {
+        suggestions.style.display = 'block';
+    } else {
+        suggestions.style.display = 'none';
+    }
+
     matches.forEach(m => {
         const div = document.createElement('div');
         div.className = 'suggestion';
         div.textContent = m.name;
         div.onclick = () => {
             document.getElementById('guess').value = m.name;
-            suggestions.innerHTML = '';
+            suggestions.style.display = 'none';
         };
         suggestions.appendChild(div);
     });
 }
+
 
 document.getElementById("guess").addEventListener("keydown", function(event) {
     if (event.key === "Enter") {

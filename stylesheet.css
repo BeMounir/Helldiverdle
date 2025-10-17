@@ -109,7 +109,7 @@ input {
 .categories {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex: 1;
     justify-content: space-evenly;
 }
@@ -157,14 +157,31 @@ input {
 }
 
 #suggestions {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 150px;
+    width: 300px;
+    overflow-y: auto;
+    background: #111;
+    border: 1px solid #f5d742;
+    padding: 5px;
     margin-top: 5px;
-    color: #f5d742;
+    display: none;
+    z-index: 1000;
 }
 
 .suggestion {
     cursor: pointer;
-    padding: 4px;
+    padding: 6px;
+    text-align: left;
+    color: #f5d742;
 }
+
+.suggestion:hover {
+    background: #333;
+}
+
 
 .suggestion:hover {
     text-decoration: underline;
