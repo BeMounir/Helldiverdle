@@ -1,16 +1,5 @@
 const stratagems = [
     {
-        name: "MG-43 Machine Gun",
-        department: "Patriotic Administration Center",
-        type: "Support",
-        arrows: "5",
-        level: "1",
-        cooldown: "480",
-        calltime: "7.75",
-        traits: ["Support Weapon", "Hellpod", "Medium Armor Penetrating", "Stationary Reload"],
-        img: "images/support/Machine_Gun_Stratagem_Icon.webp"
-    },
-    {
         name: "Reinforce",
         department: "Mission Stratagems",
         type: "Common",
@@ -22,31 +11,20 @@ const stratagems = [
         img: "images/common/Reinforce_Stratagem_Icon.webp"
     },
     {
-        name: "Eagle Airstrike",
-        department: "Hangar",
-        type: "Offense",
-        arrows: "4",
-        level: "1",
-        cooldown: "150",
-        calltime: "4.10",
-        traits: ["Explosive", "Eagle", "Anti-Tank"],
-        img: "images/offense/Eagle_Airstrike_Stratagem_Icon.webp"
-    },
-    {
-        name: "Orbital Laser",
-        department: "Orbital Cannons",
-        type: "Offense",
+        name: "MG-43 Machine Gun",
+        department: "Patriotic Administration Center",
+        type: "Supply",
         arrows: "5",
-        level: "15",
-        cooldown: "300",
-        calltime: "2.00",
-        traits: ["Orbital", "Anti-Tank", "Beam"],
-        img: "images/offense/Orbital_Laser_Stratagem_Icon.webp"
+        level: "1",
+        cooldown: "480",
+        calltime: "7.75",
+        traits: ["Support Weapon", "Hellpod", "Medium Armor Penetrating", "Stationary Reload"],
+        img: "images/support/Machine_Gun_Stratagem_Icon.webp"
     },
     {
         name: "APW-1 Anti-Materiel Rifle",
         department: "Patriotic Administration Center",
-        type: "Support",
+        type: "Supply",
         arrows: "5",
         level: "1",
         cooldown: "480",
@@ -57,7 +35,7 @@ const stratagems = [
     {
         name: "M-105 Stalwart",
         department: "Patriotic Administration Center",
-        type: "Support",
+        type: "Supply",
         arrows: "6",
         level: "1",
         cooldown: "480",
@@ -68,117 +46,117 @@ const stratagems = [
     {
         name: "EAT-17 Expendable Anti-Tank",
         department: "Patriotic Administration Center",
-        type: "Support",
+        type: "Supply",
         arrows: "5",
         level: "3",
         cooldown: "70",
         calltime: "6.75",
-        traits: ["Support Weapon", "Hellpod", "Anti-Tank", "Expendable"],
+        traits: ["Supply Weapon", "Hellpod", "Anti-Tank", "Expendable"],
         img: "images/support/Expendable_Anti-Tank_Stratagem_Icon.webp"
     },
     {
         name: "GR-8 Recoilless Rifle",
         department: "Patriotic Administration Center",
-        type: "Support",
+        type: "Supply",
         arrows: "5",
         level: "5",
         cooldown: "480",
         calltime: "7.75",
-        traits: ["Support Weapon", "Hellpod", "Backpack", "Anti-Tank", "Stationary Reload"],
+        traits: ["Supply Weapon", "Hellpod", "Backpack", "Anti-Tank", "Stationary Reload"],
         img: "images/support/Recoilless_Rifle_Stratagem_Icon.webp"
     },
     {
         name: "FLAM-40 Flamethrower",
         department: "Patriotic Administration Center",
-        type: "Support",
+        type: "Supply",
         arrows: "5",
         level: "10",
         cooldown: "480",
         calltime: "7.75",
-        traits: ["Support Weapon", "Hellpod", "Incendiary"],
+        traits: ["Supply Weapon", "Hellpod", "Incendiary"],
         img: "images/support/Flamethrower_Stratagem_Icon.webp"
     },
     {
         name: "AC-8 Autocannon",
         department: "Patriotic Administration Center",
-        type: "Support",
+        type: "Supply",
         arrows: "6",
         level: "10",
         cooldown: "480",
         calltime: "7.75",
-        traits: ["Support Weapon", "Hellpod", "Backpack", "Heavy Armor Penetrating", "Stationary Reload"],
+        traits: ["Supply Weapon", "Hellpod", "Backpack", "Heavy Armor Penetrating", "Stationary Reload"],
         img: "images/support/Autocannon_Stratagem_Icon.webp"
     },
     {
         name: "MG-206 Heavy Machine Gun",
         department: "Patriotic Administration Center",
-        type: "Support",
+        type: "Supply",
         arrows: "5",
         level: "12",
         cooldown: "480",
         calltime: "7.75",
-        traits: ["Support Weapon", "Hellpod", "Heavy Armor Penetrating", "Stationary Reload"],
+        traits: ["Supply Weapon", "Hellpod", "Heavy Armor Penetrating", "Stationary Reload"],
         img: "images/support/Heavy_Machine_Gun_Stratagem_Icon.webp"
     },
     {
         name: "RL-77 Airburst Rocket Launcher",
         department: "Patriotic Administration Center",
-        type: "Support",
+        type: "Supply",
         arrows: "5",
         level: "15",
         cooldown: "480",
         calltime: "7.75",
-        traits: ["Support Weapon", "Hellpod", "Backpack", "Medium Armor Penetrating", "Stationary Reload"],
+        traits: ["Supply Weapon", "Hellpod", "Backpack", "Medium Armor Penetrating", "Stationary Reload"],
         img: "images/support/RL-77_Airburst_Rocket_Launcher_Stratagem_Icon.webp"
     },
     {
         name: "MLS-4X Commando",
         department: "Patriotic Administration Center",
-        type: "Support",
+        type: "Supply",
         arrows: "5",
         level: "15",
         cooldown: "120",
         calltime: "7.75",
-        traits: ["Support Weapon", "Hellpod", "Anti-Tank", "Expendable"],
+        traits: ["Supply Weapon", "Hellpod", "Anti-Tank", "Expendable"],
         img: "images/support/Commando_Stratagem_Icon.webp"
     },
     {
         name: "RS-422 Railgun",
         department: "Patriotic Administration Center",
-        type: "Support",
+        type: "Supply",
         arrows: "6",
         level: "20",
         cooldown: "480",
         calltime: "7.75",
-        traits: ["Support Weapon", "Hellpod", "Anti-Tank", "Chargeup"],
+        traits: ["Supply Weapon", "Hellpod", "Anti-Tank", "Chargeup"],
         img: "images/support/Railgun_Stratagem_Icon.webp"
     },
     {
         name: "FAF-14 Spear",
         department: "Patriotic Administration Center",
-        type: "Support",
+        type: "Supply",
         arrows: "5",
         level: "20",
         cooldown: "480",
         calltime: "7.75",
-        traits: ["Support Weapon", "Hellpod", "Backpack", "Anti-Tank", "Stationary Reload"],
+        traits: ["Supply Weapon", "Hellpod", "Backpack", "Anti-Tank", "Stationary Reload"],
         img: "images/support/Spear_Stratagem_Icon.webp"
     },
     {
         name: "StA-X3 W.A.S.P. Launcher",
         department: "Patriotic Administration Center",
-        type: "Support",
+        type: "Supply",
         arrows: "5",
         level: "20",
         cooldown: "120",
         calltime: "7.75",
-        traits: ["Support Weapon", "Hellpod", "Backpack", "Anti-Tank", "Stationary Reload"],
+        traits: ["Supply Weapon", "Hellpod", "Backpack", "Anti-Tank", "Stationary Reload"],
         img: "images/support/Commando_Stratagem_Icon.webp"
     },
     {
         name: "Orbital Gatling Barrage",
         department: "Orbital Cannons",
-        type: "Offense",
+        type: "Offensive",
         arrows: "5",
         level: "1",
         cooldown: "70",
@@ -189,7 +167,7 @@ const stratagems = [
     {
         name: "Orbital Airburst Strike",
         department: "Orbital Cannons",
-        type: "Offense",
+        type: "Offensive",
         arrows: "3",
         level: "5",
         cooldown: "100",
@@ -200,7 +178,7 @@ const stratagems = [
     {
         name: "Orbital 120mm HE Barrage",
         department: "Orbital Cannons",
-        type: "Offense",
+        type: "Offensive",
         arrows: "6",
         level: "5",
         cooldown: "180",
@@ -211,7 +189,7 @@ const stratagems = [
     {
         name: "Orbital 380mm HE Barrage",
         department: "Orbital Cannons",
-        type: "Offense",
+        type: "Offensive",
         arrows: "7",
         level: "8",
         cooldown: "240",
@@ -222,7 +200,7 @@ const stratagems = [
     {
         name: "Orbital Walking Barrage",
         department: "Orbital Cannons",
-        type: "Offense",
+        type: "Offensive",
         arrows: "6",
         level: "10",
         cooldown: "240",
@@ -231,9 +209,20 @@ const stratagems = [
         img: "images/offense/Orbital_Walking_Barrage_Stratagem_Icon.webp"
     },
     {
+        name: "Orbital Laser",
+        department: "Orbital Cannons",
+        type: "Offensive",
+        arrows: "5",
+        level: "15",
+        cooldown: "300",
+        calltime: "2.00",
+        traits: ["Orbital", "Anti-Tank", "Beam"],
+        img: "images/offense/Orbital_Laser_Stratagem_Icon.webp"
+    },
+    {
         name: "Orbital Napalm Barrage",
         department: "Orbital Cannons",
-        type: "Offense",
+        type: "Offensive",
         arrows: "6",
         level: "18",
         cooldown: "240",
@@ -244,7 +233,7 @@ const stratagems = [
     {
         name: "Orbital Railcannon Strike",
         department: "Orbital Cannons",
-        type: "Offense",
+        type: "Offensive",
         arrows: "5",
         level: "20",
         cooldown: "210",
@@ -255,7 +244,7 @@ const stratagems = [
     {
         name: "Eagle Strafing Run",
         department: "Hangar",
-        type: "Offense",
+        type: "Offensive",
         arrows: "3",
         level: "1",
         cooldown: "150",
@@ -264,9 +253,20 @@ const stratagems = [
         img: "images/offense/Eagle_Strafing_Run_Stratagem_Icon.webp"
     },
     {
+        name: "Eagle Airstrike",
+        department: "Hangar",
+        type: "Offensive",
+        arrows: "4",
+        level: "1",
+        cooldown: "150",
+        calltime: "4.10",
+        traits: ["Explosive", "Eagle", "Anti-Tank"],
+        img: "images/offense/Eagle_Airstrike_Stratagem_Icon.webp"
+    },
+    {
         name: "Eagle Cluster Bomb",
         department: "Hangar",
-        type: "Offense",
+        type: "Offensive",
         arrows: "5",
         level: "3",
         cooldown: "150",
@@ -277,7 +277,7 @@ const stratagems = [
     {
         name: "Eagle Napalm Airstrike",
         department: "Hangar",
-        type: "Offense",
+        type: "Offensive",
         arrows: "4",
         level: "5",
         cooldown: "150",
@@ -288,7 +288,7 @@ const stratagems = [
     {
         name: "LIFT-850 Jump Pack",
         department: "Hangar",
-        type: "Support",
+        type: "Supply",
         arrows: "5",
         level: "8",
         cooldown: "480",
@@ -299,7 +299,7 @@ const stratagems = [
     {
         name: "Eagle Smoke Strike",
         department: "Hangar",
-        type: "Offense",
+        type: "Offensive",
         arrows: "4",
         level: "8",
         cooldown: "150",
@@ -310,7 +310,7 @@ const stratagems = [
     {
         name: "Eagle 110mm Rocket Pods",
         department: "Hangar",
-        type: "Offense",
+        type: "Offensive",
         arrows: "4",
         level: "10",
         cooldown: "150",
@@ -321,7 +321,7 @@ const stratagems = [
     {
         name: "Eagle 500kg Bomb",
         department: "Hangar",
-        type: "Offense",
+        type: "Offensive",
         arrows: "5",
         level: "15",
         cooldown: "150",
@@ -332,7 +332,7 @@ const stratagems = [
     {
         name: "M-102 Fast Reconnaissance Vehicle",
         department: "Hangar",
-        type: "Support",
+        type: "Supply",
         arrows: "7",
         level: "25",
         cooldown: "480",
@@ -343,7 +343,7 @@ const stratagems = [
     {
         name: "Orbital Precision Strike",
         department: "Bridge",
-        type: "Offense",
+        type: "Offensive",
         arrows: "3",
         level: "1",
         cooldown: "90",
@@ -354,7 +354,7 @@ const stratagems = [
     {
         name: "Orbital Gas Strike",
         department: "Bridge",
-        type: "Offense",
+        type: "Offensive",
         arrows: "4",
         level: "1",
         cooldown: "75",
@@ -365,7 +365,7 @@ const stratagems = [
     {
         name: "Orbital EMS Strike",
         department: "Bridge",
-        type: "Offense",
+        type: "Offensive",
         arrows: "4",
         level: "5",
         cooldown: "75",
@@ -376,7 +376,7 @@ const stratagems = [
     {
         name: "Orbital Smoke Strike",
         department: "Bridge",
-        type: "Offense",
+        type: "Offensive",
         arrows: "4",
         level: "8",
         cooldown: "100",

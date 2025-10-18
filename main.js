@@ -64,23 +64,23 @@ function submitGuess() {
 
     const arrowsBox = row.querySelector('.arrows .result-box');
     const arrowsHint = check(found.arrows, secret.arrows);
-    arrowsBox.textContent = arrowsHint === '✅' ? found.arrows : `${found.arrows} ${arrowsHint}`;
-    arrowsBox.className = 'result-box ' + (arrowsHint === '✅' ? 'correct' : 'incorrect');
+    arrowsBox.textContent = arrowsHint === 'correct' ? found.arrows : `${found.arrows} ${arrowsHint}`;
+    arrowsBox.className = 'result-box ' + (arrowsHint === 'correct' ? 'correct' : 'incorrect');
 
     const levelBox = row.querySelector('.level .result-box');
     const levelHint = check(found.level, secret.level);
-    levelBox.textContent = levelHint === '✅' ? found.level : `${found.level} ${levelHint}`;
-    levelBox.className = 'result-box ' + (levelHint === '✅' ? 'correct' : 'incorrect');
+    levelBox.textContent = levelHint === 'correct' ? found.level : `${found.level} ${levelHint}`;
+    levelBox.className = 'result-box ' + (levelHint === 'correct' ? 'correct' : 'incorrect');
 
     const cdBox = row.querySelector('.cooldown .result-box');
     const cdHint = check(found.cooldown, secret.cooldown);
-    cdBox.textContent = cdHint === '✅' ? found.cooldown : `${found.cooldown} ${cdHint}`;
-    cdBox.className = 'result-box ' + (cdHint === '✅' ? 'correct' : 'incorrect');
+    cdBox.textContent = cdHint === 'correct' ? found.cooldown : `${found.cooldown} ${cdHint}`;
+    cdBox.className = 'result-box ' + (cdHint === 'correct' ? 'correct' : 'incorrect');
 
     const ctBox = row.querySelector('.calltime .result-box');
     const ctHint = check(found.calltime, secret.calltime);
-    ctBox.textContent = ctHint === '✅' ? found.calltime : `${found.calltime} ${ctHint}`;
-    ctBox.className = 'result-box ' + (ctHint === '✅' ? 'correct' : 'incorrect');
+    ctBox.textContent = ctHint === 'correct' ? found.calltime : `${found.calltime} ${ctHint}`;
+    ctBox.className = 'result-box ' + (ctHint === 'correct' ? 'correct' : 'incorrect');
 
     const traitsBox = row.querySelector('.traits .result-box');
     if (traitsBox) {
@@ -117,10 +117,10 @@ function check(a, b) {
     const isNumeric = !isNaN(numA) && !isNaN(numB) && a.match(/\d/) && b.match(/\d/);
 
     if (isNumeric) {
-        if (numA === numB) return '✅';
+        if (numA === numB) return 'correct';
         return numA < numB ? '⬆️' : '⬇️';
     }
-    return a.toLowerCase() === b.toLowerCase() ? '✅' : '❌';
+    return a.toLowerCase() === b.toLowerCase() ? 'correct' : 'incorrect';
 }
 
 function checkTraits(guessTraits = [], secretTraits = []) {
@@ -160,7 +160,21 @@ function showSuggestions(input) {
     matches.forEach(m => {
         const div = document.createElement('div');
         div.className = 'suggestion';
-        div.textContent = m.name;
+
+        const img = document.createElement('img');
+        img.src = m.img;
+        img.alt = m.name;
+        img.style.width = '40px';
+        img.style.height = '40px';
+        img.style.marginRight = '8px';
+        img.style.verticalAlign = 'middle';
+
+        const span = document.createElement('span');
+        span.textContent = m.name;
+
+        div.appendChild(img);
+        div.appendChild(span);
+
         div.onclick = () => {
             document.getElementById('guess').value = m.name;
             suggestions.style.display = 'none';
@@ -168,7 +182,6 @@ function showSuggestions(input) {
         suggestions.appendChild(div);
     });
 }
-
 
 document.getElementById("guess").addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
