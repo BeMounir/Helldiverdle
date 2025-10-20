@@ -45,9 +45,13 @@
                     the re-arm time.</em></li>
                 <li><strong>Call-in Time:</strong> Time it takes to land after calling. <em>Measured pre-upgrade.</em>
                 </li>
-                <li><strong>Traits:</strong> Describes unique properties of the stratagem, like Explosive, Anti-Tank, or Incendiary.
+                <li><strong>Traits:</strong> Describes unique properties of the stratagem, like Explosive, Anti-Tank, or
+                    Incendiary.
                 </li>
-                <em>(I did have to take creative <span class="liberty1">L</span><span class="liberty2">I</span><span class="liberty3">B</span><span class="liberty1">E</span><span class="liberty2">R</span><span class="liberty3">T</span><span class="liberty1">Y</span> on some stratagems without traits.)</em>
+                <em>(I did have to take creative <span class="liberty1">L</span><span class="liberty2">I</span><span
+                        class="liberty3">B</span><span class="liberty1">E</span><span class="liberty2">R</span><span
+                        class="liberty3">T</span><span class="liberty1">Y</span> on some stratagems without
+                    traits.)</em>
             </ul>
 
             <h2>Credits</h2>
@@ -59,8 +63,11 @@
         </div>
     </div>
 
-    <input id="guess" placeholder="Enter stratagem name" onfocus="this.value=''" oninput="showSuggestions(this.value)">
-    <button id="guessButton" onclick="submitGuess()">Guess</button>
+    <div class="guessingDiv">
+        <input id="guess" placeholder="Enter stratagem name" onfocus="this.value=''"
+               oninput="showSuggestions(this.value)">
+        <button id="guessButton" onclick="submitGuess()">Guess</button>
+    </div>
 
     <div id="suggestions"></div>
     <div class="feedback" id="feedback"></div>
@@ -84,7 +91,7 @@
                 <div class="result-box"></div>
             </div>
             <div class="category level">
-                <div class="cat-name">level</div>
+                <div class="cat-name">Level</div>
                 <div class="result-box"></div>
             </div>
             <div class="category cooldown">

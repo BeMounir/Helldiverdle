@@ -51,7 +51,7 @@ const stratagems = [
         level: "3",
         cooldown: "70",
         calltime: "6.75",
-        traits: ["Supply Weapon", "Hellpod", "Anti-Tank", "Expendable"],
+        traits: ["Support Weapon", "Hellpod", "Anti-Tank", "Expendable"],
         img: "images/support/Expendable_Anti-Tank_Stratagem_Icon.webp"
     },
     {
@@ -62,7 +62,7 @@ const stratagems = [
         level: "5",
         cooldown: "480",
         calltime: "7.75",
-        traits: ["Supply Weapon", "Hellpod", "Backpack", "Anti-Tank", "Stationary Reload"],
+        traits: ["Support Weapon", "Hellpod", "Backpack", "Anti-Tank", "Stationary Reload"],
         img: "images/support/Recoilless_Rifle_Stratagem_Icon.webp"
     },
     {
@@ -73,7 +73,7 @@ const stratagems = [
         level: "10",
         cooldown: "480",
         calltime: "7.75",
-        traits: ["Supply Weapon", "Hellpod", "Incendiary"],
+        traits: ["Support Weapon", "Hellpod", "Incendiary"],
         img: "images/support/Flamethrower_Stratagem_Icon.webp"
     },
     {
@@ -84,7 +84,7 @@ const stratagems = [
         level: "10",
         cooldown: "480",
         calltime: "7.75",
-        traits: ["Supply Weapon", "Hellpod", "Backpack", "Heavy Armor Penetrating", "Stationary Reload"],
+        traits: ["Support Weapon", "Hellpod", "Backpack", "Heavy Armor Penetrating", "Stationary Reload"],
         img: "images/support/Autocannon_Stratagem_Icon.webp"
     },
     {
@@ -95,7 +95,7 @@ const stratagems = [
         level: "12",
         cooldown: "480",
         calltime: "7.75",
-        traits: ["Supply Weapon", "Hellpod", "Heavy Armor Penetrating", "Stationary Reload"],
+        traits: ["Support Weapon", "Hellpod", "Heavy Armor Penetrating", "Stationary Reload"],
         img: "images/support/Heavy_Machine_Gun_Stratagem_Icon.webp"
     },
     {
@@ -106,7 +106,7 @@ const stratagems = [
         level: "15",
         cooldown: "480",
         calltime: "7.75",
-        traits: ["Supply Weapon", "Hellpod", "Backpack", "Medium Armor Penetrating", "Stationary Reload"],
+        traits: ["Support Weapon", "Hellpod", "Backpack", "Medium Armor Penetrating", "Stationary Reload"],
         img: "images/support/RL-77_Airburst_Rocket_Launcher_Stratagem_Icon.webp"
     },
     {
@@ -117,7 +117,7 @@ const stratagems = [
         level: "15",
         cooldown: "120",
         calltime: "7.75",
-        traits: ["Supply Weapon", "Hellpod", "Anti-Tank", "Expendable"],
+        traits: ["Support Weapon", "Hellpod", "Anti-Tank", "Expendable"],
         img: "images/support/Commando_Stratagem_Icon.webp"
     },
     {
@@ -128,7 +128,7 @@ const stratagems = [
         level: "20",
         cooldown: "480",
         calltime: "7.75",
-        traits: ["Supply Weapon", "Hellpod", "Anti-Tank", "Chargeup"],
+        traits: ["Support Weapon", "Hellpod", "Anti-Tank", "Chargeup"],
         img: "images/support/Railgun_Stratagem_Icon.webp"
     },
     {
@@ -139,7 +139,7 @@ const stratagems = [
         level: "20",
         cooldown: "480",
         calltime: "7.75",
-        traits: ["Supply Weapon", "Hellpod", "Backpack", "Anti-Tank", "Stationary Reload"],
+        traits: ["Support Weapon", "Hellpod", "Backpack", "Anti-Tank", "Stationary Reload"],
         img: "images/support/Spear_Stratagem_Icon.webp"
     },
     {
@@ -150,7 +150,7 @@ const stratagems = [
         level: "20",
         cooldown: "120",
         calltime: "7.75",
-        traits: ["Supply Weapon", "Hellpod", "Backpack", "Anti-Tank", "Stationary Reload"],
+        traits: ["Support Weapon", "Hellpod", "Backpack", "Anti-Tank", "Stationary Reload"],
         img: "images/support/Commando_Stratagem_Icon.webp"
     },
     {
@@ -438,5 +438,49 @@ const stratagems = [
         calltime: "7.75",
         traits: ["Hellpod", "Explosive", "Medium Armor Penetrating"],
         img: "images/defense/Anti-Personnel_Minefield_Stratagem_Icon.webp"
+    },
+    {
+        name: "B-1 Supply Pack",
+        department: "Engineering Bay",
+        type: "Supply",
+        arrows: "6",
+        level: "1",
+        cooldown: "480",
+        calltime: "9.75",
+        traits: ["Hellpod", "Backpack"],
+        img: "images/support/Supply_Pack_Stratagem_Icon.webp"
+    },
+    {
+        name: "GL-21 Grenade Launcher",
+        department: "Engineering Bay",
+        type: "Supply",
+        arrows: "5",
+        level: "5",
+        cooldown: "480",
+        calltime: "7.75",
+        traits: ["Support Weapon", "Hellpod", "Explosive", "Medium Armor Penetrating"],
+        img: "images/support/Grenade_Launcher_Stratagem_Icon.webp"
+    },
+    {
+        name: "LAS-98 Laser Cannon",
+        department: "Engineering Bay",
+        type: "Supply",
+        arrows: "5",
+        level: "5",
+        cooldown: "480",
+        calltime: "7.75",
+        traits: ["Support Weapon", "Hellpod", "Heavy Armor Penetrating", "Heat", "Beam"],
+        img: "images/support/Laser_Cannon_Stratagem_Icon.webp"
+    },
+    {
+        name: "MD-I4 Incendiary Mines",
+        department: "Engineering Bay",
+        type: "Defensive",
+        arrows: "4",
+        level: "8",
+        cooldown: "120",
+        calltime: "7.75",
+        traits: ["Hellpod", "Explosive", "Incendiary"],
+        img: "images/defense/Incendiary_Mines_Stratagem_Icon.webp"
     },
 ];
