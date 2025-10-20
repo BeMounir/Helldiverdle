@@ -15,6 +15,15 @@ h1 {
     text-transform: uppercase;
 }
 
+.container {
+    background: rgba(20, 20, 20, 0.85);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
