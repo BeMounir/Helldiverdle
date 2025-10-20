@@ -42,7 +42,6 @@ function submitGuess() {
         return;
     }
 
-
     guessCount++;
 
     const template = document.getElementById('template-row');
@@ -98,6 +97,13 @@ function submitGuess() {
 
     const feedback = document.getElementById('feedback');
     feedback.insertBefore(row, feedback.firstChild);
+
+    const boxes = row.querySelectorAll('.result-box');
+    boxes.forEach((box, index) => {
+        setTimeout(() => {
+            box.classList.add('show');
+        }, index * 400);
+    });
 
     if (found.name === secret.name) {
         if (guessCount <= 1) {
