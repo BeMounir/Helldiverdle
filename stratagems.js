@@ -483,4 +483,81 @@ const stratagems = [
         traits: ["Hellpod", "Explosive", "Incendiary"],
         img: "images/defense/Incendiary_Mines_Stratagem_Icon.webp"
     },
+    {
+        name: "AX/LAS-5 “Guard Dog” Rover",
+        department: "Robotics Workshop",
+        type: "Supply",
+        arrows: "6",
+        level: "10",
+        cooldown: "480",
+        calltime: "9.75",
+        traits: ["Hellpod", "Backpack"],
+        img: "images/support/Guard_Dog_Rover_Stratagem_Icon.webp"
+    },
+    {
+        name: "SH-20 Ballistic Shield Backpack",
+        department: "Engineering Bay",
+        type: "Supply",
+        arrows: "6",
+        level: "12",
+        cooldown: "300",
+        calltime: "9.75",
+        traits: ["Hellpod", "Backpack"],
+        img: "images/support/Ballistic_Shield_Backpack_Stratagem_Icon.webp"
+    },
+    {
+        name: "ARC-3 Arc Thrower",
+        department: "Engineering Bay",
+        type: "Supply",
+        arrows: "6",
+        level: "15",
+        cooldown: "480",
+        calltime: "7.75",
+        traits: ["Support Weapon", "Hellpod", "Chargeup"],
+        img: "images/support/Arc_Thrower_Stratagem_Icon.webp"
+    },
+    {
+        name: "MD-17 Anti-Tank Mines",
+        department: "Engineering Bay",
+        type: "Defensive",
+        arrows: "4",
+        level: "15",
+        cooldown: "120",
+        calltime: "7.75",
+        traits: ["Hellpod", "Explosive", "Anti-Tank"],
+        img: "images/defense/MD-17_Anti-Tank_Mines_Stratagem_Icon.webp"
+    },
+    {
+        name: "LAS-99 Quasar Cannon",
+        department: "Engineering Bay",
+        type: "Supply",
+        arrows: "5",
+        level: "18",
+        cooldown: "480",
+        calltime: "7.75",
+        traits: ["Support Weapon", "Hellpod", "Anti-Tank", "Chargeup"],
+        img: "images/support/Quasar_Cannon_Stratagem_Icon.webp"
+    },
+    {
+        name: "SH-32 Shield Generator Pack",
+        department: "Engineering Bay",
+        type: "Supply",
+        arrows: "6",
+        level: "20",
+        cooldown: "480",
+        calltime: "9.75",
+        traits: ["Hellpod", "Backpack"],
+        img: "images/support/Shield_Generator_Pack_Stratagem_Icon.webp"
+    },
+    {
+        name: "MD-8 Gas Mines",
+        department: "Engineering Bay",
+        type: "Defensive",
+        arrows: "4",
+        level: "20",
+        cooldown: "120",
+        calltime: "3",
+        traits: ["Hellpod", "Explosive", "Caustic"],
+        img: "images/defense/Gas_Minefield_Stratagem_Icon.webp"
+    },
 ];

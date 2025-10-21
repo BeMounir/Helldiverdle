@@ -42,7 +42,14 @@ const imageUrls = [
     "images/support/Supply_Pack_Stratagem_Icon.webp",
     "images/support/Grenade_Launcher_Stratagem_Icon.webp",
     "images/support/Laser_Cannon_Stratagem_Icon.webp",
-    "images/defense/Incendiary_Mines_Stratagem_Icon.webp"
+    "images/defense/Incendiary_Mines_Stratagem_Icon.webp",
+    "images/support/Guard_Dog_Rover_Stratagem_Icon.webp",
+    "images/support/Ballistic_Shield_Backpack_Stratagem_Icon.webp",
+    "images/support/Arc_Thrower_Stratagem_Icon.webp",
+    "images/defense/MD-17_Anti-Tank_Mines_Stratagem_Icon.webp",
+    "images/support/Quasar_Cannon_Stratagem_Icon.webp",
+    "images/support/Shield_Generator_Pack_Stratagem_Icon.webp",
+    "images/defense/Gas_Minefield_Stratagem_Icon.webp",
 ];
 
 function preloadImage(url) {
