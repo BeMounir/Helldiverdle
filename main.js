@@ -1,3 +1,64 @@
+const imageUrls = [
+    "images/common/Reinforce_Stratagem_Icon.webp",
+    "images/support/Machine_Gun_Stratagem_Icon.webp",
+    "images/support/Anti-Materiel_Rifle_Stratagem_Icon.webp",
+    "images/support/Machine_Gun_Stratagem_Icon.webp",
+    "images/support/Expendable_Anti-Tank_Stratagem_Icon.webp",
+    "images/support/Recoilless_Rifle_Stratagem_Icon.webp",
+    "images/support/Flamethrower_Stratagem_Icon.webp",
+    "images/support/Autocannon_Stratagem_Icon.webp",
+    "images/support/Heavy_Machine_Gun_Stratagem_Icon.webp",
+    "images/support/RL-77_Airburst_Rocket_Launcher_Stratagem_Icon.webp",
+    "images/support/Commando_Stratagem_Icon.webp",
+    "images/support/Railgun_Stratagem_Icon.webp",
+    "images/support/Spear_Stratagem_Icon.webp",
+    "images/support/Commando_Stratagem_Icon.webp",
+    "images/offense/Orbital_Gatling_Barrage_Stratagem_Icon.png",
+    "images/offense/Orbital_Airburst_Strike_Stratagem_Icon.webp",
+    "images/offense/Orbital_120mm_HE_Barrage_Stratagem_Icon.webp",
+    "images/offense/Orbital_380mm_HE_Barrage_Stratagem_Icon.webp",
+    "images/offense/Orbital_Walking_Barrage_Stratagem_Icon.webp",
+    "images/offense/Orbital_Laser_Stratagem_Icon.webp",
+    "images/offense/Orbital_Napalm_Barrage_Stratagem_Icon.webp",
+    "images/offense/Orbital_Railcannon_Strike_Stratagem_Icon.webp",
+    "images/offense/Eagle_Strafing_Run_Stratagem_Icon.webp",
+    "images/offense/Eagle_Airstrike_Stratagem_Icon.webp",
+    "images/offense/Eagle_Cluster_Bomb_Stratagem_Icon.webp",
+    "images/offense/Eagle_Napalm_Airstrike_Stratagem_Icon.webp",
+    "images/support/Jump_Pack_Stratagem_Icon.webp",
+    "images/offense/Eagle_Smoke_Strike_Stratagem_Icon.webp",
+    "images/offense/Eagle_110mm_Rocket_Pods_Stratagem_Icon.webp",
+    "images/offense/Eagle_500kg_Bomb_Stratagem_Icon.webp",
+    "images/support/M-102_Fast_Recon_Vehicle_Stratagem_Icon.webp",
+    "images/offense/Orbital_Precision_Strike_Stratagem_Icon.webp",
+    "images/offense/Orbital_Gas_Strike_Stratagem_Icon.webp",
+    "images/offense/Orbital_EMS_Strike_Stratagem_Icon.webp",
+    "images/offense/Orbital_Smoke_Strike_Stratagem_Icon.webp",
+    "images/defense/HMG_Emplacement_Stratagem_Icon.webp",
+    "images/defense/Shield_Generator_Relay_Stratagem_Icon.webp",
+    "images/defense/Tesla_Tower_Stratagem_Icon.webp",
+    "images/defense/GL-21_Grenadier_Battlement_Stratagem_Icon.webp",
+    "images/defense/Anti-Personnel_Minefield_Stratagem_Icon.webp",
+    "images/support/Supply_Pack_Stratagem_Icon.webp",
+    "images/support/Grenade_Launcher_Stratagem_Icon.webp",
+    "images/support/Laser_Cannon_Stratagem_Icon.webp",
+    "images/defense/Incendiary_Mines_Stratagem_Icon.webp"
+];
+
+function preloadImage(url) {
+    return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.onload = resolve;
+        img.onerror = reject;
+        img.src = url;
+    });
+}
+
+Promise.all(imageUrls.map(preloadImage))
+    .then(() => console.log("All images preloaded"))
+    .catch(err => console.error("Image failed to load:", err));
+
+
 function getDailyStratagem() {
     const startDateUTC = new Date(Date.UTC(2025, 9, 13));
     const now = new Date();
