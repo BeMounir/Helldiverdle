@@ -13,10 +13,11 @@ body {
 
 h1 {
     text-transform: uppercase;
+    font-size: 50px;
 }
 
 .container {
-    background: rgba(20, 20, 20, 0.85);
+    background: rgba(20, 20, 20, 0.95);
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
@@ -90,10 +91,8 @@ input {
     border-radius: 0;
     padding: 10px 0;
     width: 950px;
-    display: flex;
     gap: 20px;
     justify-content: space-evenly;
-
 }
 
 .image {
@@ -115,20 +114,15 @@ input {
 }
 
 .categories {
-    display: flex;
-    gap: 20px;
-    flex-wrap: nowrap;
     flex: 1;
     justify-content: space-evenly;
 }
 
 .categories-header {
-    display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin: 20px auto 10px;
     width: 950px;
-    gap: 20px;
     font-weight: bold;
     color: #f5d742;
     border-bottom: 2px solid #f5d742;
@@ -185,6 +179,10 @@ input {
     opacity: 0;
     transform: translateY(10px);
     transition: all 0.4s ease;
+}
+
+.result-box:hover {
+
 }
 
 .result-box.show {
@@ -335,9 +333,17 @@ input {
     margin-right: 5px;
 }
 
-.correct { background: #2e8b57; }
-.partial { background: orange; }
-.incorrect   { background: #8b2e2e; }
+.correct {
+    background: #2e8b57;
+}
+
+.partial {
+    background: orange;
+}
+
+.incorrect {
+    background: #8b2e2e;
+}
 
 :root {
     --text-green: #326021;
@@ -349,13 +355,33 @@ input {
     --text-liberty3: #083D7B;
 }
 
-.green   { color: var(--text-green); }
-.red     { color: var(--text-red); }
-.blue    { color: var(--text-blue); }
-.white   { color: var(--text-white); }
-.liberty1 { color: var(--text-liberty1); }
-.liberty2 { color: var(--text-liberty2); }
-.liberty3 { color: var(--text-liberty3); }
+.green {
+    color: var(--text-green);
+}
+
+.red {
+    color: var(--text-red);
+}
+
+.blue {
+    color: var(--text-blue);
+}
+
+.white {
+    color: var(--text-white);
+}
+
+.liberty1 {
+    color: var(--text-liberty1);
+}
+
+.liberty2 {
+    color: var(--text-liberty2);
+}
+
+.liberty3 {
+    color: var(--text-liberty3);
+}
 
 .information {
     margin-bottom: 15px;
@@ -378,11 +404,13 @@ footer .creator {
         flex-direction: column;
         gap: 5px;
     }
+
     .categories-header .cat-header,
     .categories .category,
     .categories .name-image {
         width: 100%;
     }
+
     .name-image img {
         width: 80px;
         height: 80px;

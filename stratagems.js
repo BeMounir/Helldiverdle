@@ -560,4 +560,103 @@ const stratagems = [
         traits: ["Hellpod", "Explosive", "Caustic"],
         img: "images/defense/Gas_Minefield_Stratagem_Icon.webp"
     },
+    {
+        name: "A/MG-43 Machine Gun Sentry",
+        department: "Robotics Workshop",
+        type: "Defensive",
+        arrows: "5",
+        level: "1",
+        cooldown: "90",
+        calltime: "7.75",
+        traits: ["Hellpod", "Sentry", "Medium Armor Penetrating"],
+        img: "images/defense/Machine_Gun_Sentry_Stratagem_Icon.webp"
+    },
+    {
+        name: "A/G-16 Gatling Sentry",
+        department: "Robotics Workshop",
+        type: "Defensive",
+        arrows: "4",
+        level: "5",
+        cooldown: "150",
+        calltime: "7.75",
+        traits: ["Hellpod", "Sentry", "Medium Armor Penetrating"],
+        img: "images/defense/Gatling_Sentry_Stratagem_Icon.webp"
+    },
+    {
+        name: "A/M-12 Mortar Sentry",
+        department: "Robotics Workshop",
+        type: "Defensive",
+        arrows: "5",
+        level: "8",
+        cooldown: "180",
+        calltime: "7.75",
+        traits: ["Hellpod", "Explosive", "Sentry", "Medium Armor Penetrating"],
+        img: "images/defense/Mortar_Sentry_Stratagem_Icon.webp"
+    },
+    {
+        name: "AX/AR-23 “Guard Dog”",
+        department: "Robotics Workshop",
+        type: "Supply",
+        arrows: "6",
+        level: "10",
+        cooldown: "480",
+        calltime: "9.75",
+        traits: ["Hellpod", "Backpack"],
+        img: "images/support/Guard_Dog_Stratagem_Icon.webp"
+    },
+    {
+        name: "A/AC-8 Autocannon Sentry",
+        department: "Robotics Workshop",
+        type: "Defensive",
+        arrows: "6",
+        level: "13",
+        cooldown: "150",
+        calltime: "7.75",
+        traits: ["Hellpod", "Sentry", "Anti-Tank"],
+        img: "images/defense/Autocannon_Sentry_Stratagem_Icon.webp"
+    },
+    {
+        name: "A/MLS-4X Rocket Sentry",
+        department: "Robotics Workshop",
+        type: "Defensive",
+        arrows: "5",
+        level: "15",
+        cooldown: "150",
+        calltime: "7.75",
+        traits: ["Hellpod", "Explosive", "Sentry", "Anti-Tank"],
+        img: "images/defense/Rocket_Sentry_Stratagem_Icon.webp"
+    },
+    {
+        name: "A/M-23 EMS Mortar Sentry",
+        department: "Robotics Workshop",
+        type: "Defensive",
+        arrows: "5",
+        level: "20",
+        cooldown: "180",
+        calltime: "7.75",
+        traits: ["Hellpod", "Explosive", "Sentry"],
+        img: "images/defense/AM-23_EMS_Mortar_Sentry_Stratagem_Icon.webp"
+    },
+    {
+        name: "EXO-45 Patriot Exosuit",
+        department: "Robotics Workshop",
+        type: "Supply",
+        arrows: "7",
+        level: "25",
+        cooldown: "600",
+        calltime: "10.50",
+        traits: ["Explosive", "Vehicle", "Anti-Tank", "Medium Armor Penetrating"],
+        img: "images/support/EXO-45_Patriot_Exosuit_Stratagem_Icon.webp"
+    },
+    {
+        name: "EXO-49 Emancipator Exosuit",
+        department: "Robotics Workshop",
+        type: "Supply",
+        arrows: "7",
+        level: "25",
+        cooldown: "600",
+        calltime: "10.50",
+        traits: ["Explosive", "Vehicle", "Anti-Tank"],
+        img: "images/support/EXO-49_Emancipator_Exosuit_Stratagem_Icon.webp"
+    },
 ];
