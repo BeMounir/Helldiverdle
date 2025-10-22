@@ -41,7 +41,7 @@ const stratagems = [
         cooldown: "480",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Light Armor Penetrating"],
-        img: "images/support/Machine_Gun_Stratagem_Icon.webp"
+        img: "images/support/Stalwart_Stratagem_Icon.webp"
     },
     {
         name: "EAT-17 Expendable Anti-Tank",

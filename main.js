@@ -2,6 +2,7 @@ const imageUrls = [
     "images/common/Reinforce_Stratagem_Icon.webp",
     "images/support/Machine_Gun_Stratagem_Icon.webp",
     "images/support/Anti-Materiel_Rifle_Stratagem_Icon.webp",
+    "images/support/Stalwart_Stratagem_Icon.webp",
     "images/support/Machine_Gun_Stratagem_Icon.webp",
     "images/support/Expendable_Anti-Tank_Stratagem_Icon.webp",
     "images/support/Recoilless_Rifle_Stratagem_Icon.webp",
@@ -90,6 +91,8 @@ function timeUntilNextStratagem() {
 const timerElement = document.getElementById('timer');
 timerElement.textContent = timeUntilNextStratagem();
 let guessCount = 0;
+const guessedStratagems = new Set();
+
 setInterval(() => {
     document.getElementById('timer').textContent = timeUntilNextStratagem();
 }, 1000);
@@ -104,11 +107,19 @@ console.log(secret.name)
 
 function submitGuess() {
     const val = document.getElementById('guess').value.trim();
+
+    if (guessedStratagems.has(val.toLowerCase())) {
+        alert("You already guessed that stratagem!");
+        return;
+    }
+
     const found = stratagems.find(s => s.name.toLowerCase() === val.toLowerCase());
     if (!found) {
         alert('Not a known stratagem');
         return;
     }
+
+    guessedStratagems.add(val.toLowerCase());
 
     guessCount++;
 
@@ -117,7 +128,6 @@ function submitGuess() {
     row.classList.remove('template-row');
     row.style.display = 'flex';
 
-    row.querySelector('.name').textContent = found.name;
     row.querySelector('img').src = found.img;
     row.querySelector('img').alt = found.name;
 
@@ -223,7 +233,9 @@ function showSuggestions(input) {
         return;
     }
 
-    const matches = stratagems.filter(s => s.name.toLowerCase().includes(input.toLowerCase()));
+    const matches = stratagems
+        .filter(s => s.name.toLowerCase().includes(input.toLowerCase()))
+        .filter(s => !guessedStratagems.has(s.name.toLowerCase()));
 
     if (matches.length > 0) {
         suggestions.style.display = 'block';
