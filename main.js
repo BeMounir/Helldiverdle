@@ -1,5 +1,4 @@
 const imageUrls = [
-    "images/common/Reinforce_Stratagem_Icon.webp",
     "images/support/Machine_Gun_Stratagem_Icon.webp",
     "images/support/Anti-Materiel_Rifle_Stratagem_Icon.webp",
     "images/support/Stalwart_Stratagem_Icon.webp",
@@ -70,6 +69,16 @@ const imageUrls = [
     "images/support/CQC-1_One_True_Flag_Stratagem_Icon.webp",
     "images/support/GL-52_De-Escalator_Stratagem_Icon.webp",
     "images/support/AX_ARC-3__Guard_Dog__K-9_Stratagem_Icon.webp",
+    "images/support/PLAS-45_Epoch_Stratagem_Icon.webp",
+    "images/defense/A_LAS-98_Laser_Sentry_Stratagem_Icon.webp",
+    "images/support/LIFT-182_Warp_Pack_Stratagem_Icon.webp",
+    "images/support/S-11_Speargun_Stratagem_Icon.webp",
+    "images/support/EAT-700_Expendable_Napalm_Stratagem_Icon.webp",
+    "images/support/MS-11_Stratagem_Icon.webp",
+    "images/common/Reinforce_Stratagem_Icon.webp",
+    "images/common/SOS_Beacon_Stratagem_Icon.webp",
+    "images/objective/Hellbomb_Stratagem_Icon.webp",
+    "images/objective/Dark_Fluid_Vessel_Stratagem_Icon.webp",
 ];
 
 function preloadImage(url) {
@@ -91,9 +100,16 @@ function getDailyStratagem() {
     const now = new Date();
     const nowUTC = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
     const diffDays = Math.floor((nowUTC - startDateUTC) / (1000 * 60 * 60 * 24));
-    const index = diffDays % stratagems.length;
-    return stratagems[index];
+
+    function seededRandom(seed) {
+        const x = Math.sin(seed) * 10000;
+        return x - Math.floor(x);
+    }
+
+    const randomIndex = Math.floor(seededRandom(diffDays * 37 + 12345) * stratagems.length);
+    return stratagems[randomIndex];
 }
+
 
 function timeUntilNextStratagem() {
     const now = new Date();
@@ -117,8 +133,8 @@ setInterval(() => {
 }, 1000);
 
 console.log(stratagems.length + " Stratagems")
-// let secret = stratagems[31];
 let secret = getDailyStratagem();
+// let secret = stratagems[31];
 // let secret = stratagems[Math.floor(Math.random() * stratagems.length)];
 
 console.log(secret.name)

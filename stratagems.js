@@ -1,16 +1,5 @@
 const stratagems = [
     {
-        name: "Reinforce",
-        department: "Mission Stratagems",
-        type: "Common",
-        arrows: "5",
-        level: "0",
-        cooldown: "120",
-        calltime: "3.00",
-        traits: ["Hellpod"],
-        img: "images/common/Reinforce_Stratagem_Icon.webp"
-    },
-    {
         name: "MG-43 Machine Gun",
         department: "Patriotic Administration Center",
         type: "Supply",
@@ -709,8 +698,8 @@ const stratagems = [
         type: "Defensive",
         arrows: "6",
         level: "0",
-        cooldown: "100",
-        calltime: "7.75",
+        cooldown: "125",
+        calltime: "4.75",
         traits: ["Hellpod", "Incendiary", "Sentry"],
         img: "images/defense/A_FLAM-40_Flame_Sentry_Stratagem_Icon.webp"
     },
@@ -768,5 +757,115 @@ const stratagems = [
         calltime: "9.75",
         traits: ["Hellpod", "Backpack", "Stun"],
         img: "images/support/AX_ARC-3__Guard_Dog__K-9_Stratagem_Icon.webp"
+    },
+    {
+        name: "PLAS-45 Epoch",
+        department: "Warbonds",
+        type: "Supply",
+        arrows: "5",
+        level: "0",
+        cooldown: "600",
+        calltime: "7.75",
+        traits: ["Support Weapon", "Hellpod", "Explosive", "Heavy Armor Penetrating", "Chargeup"],
+        img: "images/support/PLAS-45_Epoch_Stratagem_Icon.webp"
+    },
+    {
+        name: "A/LAS-98 Laser Sentry",
+        department: "Warbonds",
+        type: "Defensive",
+        arrows: "6",
+        level: "0",
+        cooldown: "188",
+        calltime: "7.75",
+        traits: ["Hellpod", "Sentry", "Heavy Armor Penetrating", "Heat", "Beam"],
+        img: "images/defense/A_LAS-98_Laser_Sentry_Stratagem_Icon.webp"
+    },
+    {
+        name: "LIFT-182 Warp Pack",
+        department: "Warbonds",
+        type: "Supply",
+        arrows: "6",
+        level: "0",
+        cooldown: "600",
+        calltime: "9.75",
+        traits: ["Hellpod", "Backpack"],
+        img: "images/support/LIFT-182_Warp_Pack_Stratagem_Icon.webp"
+    },
+    {
+        name: "S-11 Speargun",
+        department: "Warbonds",
+        type: "Supply",
+        arrows: "6",
+        level: "0",
+        cooldown: "600",
+        calltime: "7.75",
+        traits: ["Support Weapon", "Hellpod", "Anti-Tank"],
+        img: "images/support/S-11_Speargun_Stratagem_Icon.webp"
+    },
+    {
+        name: "EAT-700 Expendable Napalm",
+        department: "Warbonds",
+        type: "Supply",
+        arrows: "5",
+        level: "0",
+        cooldown: "175",
+        calltime: "6.75",
+        traits: ["Support Weapon", "Hellpod", "Incendiary", "Expendable"],
+        img: "images/support/EAT-700_Expendable_Napalm_Stratagem_Icon.webp"
+    },
+    {
+        name: "MS-11 Solo Silo",
+        department: "Warbonds",
+        type: "Supply",
+        arrows: "5",
+        level: "0",
+        cooldown: "225",
+        calltime: "7.75",
+        traits: ["Support Weapon", "Hellpod", "Anti-Tank"],
+        img: "images/support/MS-11_Stratagem_Icon.webp"
+    },
+    {
+        name: "Reinforce",
+        department: "Mission Stratagems",
+        type: "Common",
+        arrows: "5",
+        level: "0",
+        cooldown: "120",
+        calltime: "3.00",
+        traits: ["Hellpod"],
+        img: "images/common/Reinforce_Stratagem_Icon.webp"
+    },
+    {
+        name: "SoS Beacon",
+        department: "Mission Stratagems",
+        type: "Common",
+        arrows: "4",
+        level: "1",
+        cooldown: "0",
+        calltime: "3.00",
+        traits: ["Hellpod"],
+        img: "images/common/SOS_Beacon_Stratagem_Icon.webp"
+    },
+    {
+        name: "NUX-223 Hellbomb",
+        department: "Mission Stratagems",
+        type: "Objectives",
+        arrows: "8",
+        level: "0",
+        cooldown: "30",
+        calltime: "10.00",
+        traits: ["Hellpod", "Explosive", "Anti-Tank"],
+        img: "images/objective/Hellbomb_Stratagem_Icon.webp"
+    },
+    {
+        name: "Dark Fluid Vessel",
+        department: "Mission Stratagems",
+        type: "Objectives",
+        arrows: "6",
+        level: "0",
+        cooldown: "0",
+        calltime: "10.00",
+        traits: ["Hellpod", "Backpack"],
+        img: "images/objective/Dark_Fluid_Vessel_Stratagem_Icon.webp"
     },
 ];
