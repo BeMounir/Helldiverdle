@@ -59,7 +59,17 @@ const imageUrls = [
     "images/defense/Rocket_Sentry_Stratagem_Icon.webp",
     "images/defense/AM-23_EMS_Mortar_Sentry_Stratagem_Icon.webp",
     "images/support/EXO-45_Patriot_Exosuit_Stratagem_Icon.webp",
-    "images/support/EXO-49_Emancipator_Exosuit_Stratagem_Icon.webp"
+    "images/support/EXO-49_Emancipator_Exosuit_Stratagem_Icon.webp",
+    "images/support/Sterilizer_Stratagem_Icon.webp",
+    "images/support/Guard_Dog_Dog_Breath_Stratagem_Icon.webp",
+    "images/support/SH-51_Directional_Shield_Stratagem_Icon.webp",
+    "images/defense/E_AT-12_Anti-Tank_Emplacement_Stratagem_Icon.webp",
+    "images/defense/A_FLAM-40_Flame_Sentry_Stratagem_Icon.webp",
+    "images/support/Portable_Hellbomb_Stratagem_Icon.webp",
+    "images/support/Hover_Pack_Stratagem_Icon.webp",
+    "images/support/CQC-1_One_True_Flag_Stratagem_Icon.webp",
+    "images/support/GL-52_De-Escalator_Stratagem_Icon.webp",
+    "images/support/AX_ARC-3__Guard_Dog__K-9_Stratagem_Icon.webp",
 ];
 
 function preloadImage(url) {

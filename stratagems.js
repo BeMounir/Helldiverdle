@@ -16,7 +16,7 @@ const stratagems = [
         type: "Supply",
         arrows: "5",
         level: "1",
-        cooldown: "480",
+        cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Medium Armor Penetrating", "Stationary Reload"],
         img: "images/support/Machine_Gun_Stratagem_Icon.webp"
@@ -27,7 +27,7 @@ const stratagems = [
         type: "Supply",
         arrows: "5",
         level: "1",
-        cooldown: "480",
+        cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Heavy Armor Penetrating"],
         img: "images/support/Anti-Materiel_Rifle_Stratagem_Icon.webp"
@@ -38,7 +38,7 @@ const stratagems = [
         type: "Supply",
         arrows: "6",
         level: "1",
-        cooldown: "480",
+        cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Light Armor Penetrating"],
         img: "images/support/Stalwart_Stratagem_Icon.webp"
@@ -49,7 +49,7 @@ const stratagems = [
         type: "Supply",
         arrows: "5",
         level: "3",
-        cooldown: "70",
+        cooldown: "90",
         calltime: "6.75",
         traits: ["Support Weapon", "Hellpod", "Anti-Tank", "Expendable"],
         img: "images/support/Expendable_Anti-Tank_Stratagem_Icon.webp"
@@ -60,7 +60,7 @@ const stratagems = [
         type: "Supply",
         arrows: "5",
         level: "5",
-        cooldown: "480",
+        cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Backpack", "Anti-Tank", "Stationary Reload"],
         img: "images/support/Recoilless_Rifle_Stratagem_Icon.webp"
@@ -71,7 +71,7 @@ const stratagems = [
         type: "Supply",
         arrows: "5",
         level: "10",
-        cooldown: "480",
+        cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Incendiary"],
         img: "images/support/Flamethrower_Stratagem_Icon.webp"
@@ -82,7 +82,7 @@ const stratagems = [
         type: "Supply",
         arrows: "6",
         level: "10",
-        cooldown: "480",
+        cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Backpack", "Heavy Armor Penetrating", "Stationary Reload"],
         img: "images/support/Autocannon_Stratagem_Icon.webp"
@@ -93,7 +93,7 @@ const stratagems = [
         type: "Supply",
         arrows: "5",
         level: "12",
-        cooldown: "480",
+        cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Heavy Armor Penetrating", "Stationary Reload"],
         img: "images/support/Heavy_Machine_Gun_Stratagem_Icon.webp"
@@ -104,7 +104,7 @@ const stratagems = [
         type: "Supply",
         arrows: "5",
         level: "15",
-        cooldown: "480",
+        cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Backpack", "Medium Armor Penetrating", "Stationary Reload"],
         img: "images/support/RL-77_Airburst_Rocket_Launcher_Stratagem_Icon.webp"
@@ -115,7 +115,7 @@ const stratagems = [
         type: "Supply",
         arrows: "5",
         level: "15",
-        cooldown: "120",
+        cooldown: "150",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Anti-Tank", "Expendable"],
         img: "images/support/Commando_Stratagem_Icon.webp"
@@ -126,7 +126,7 @@ const stratagems = [
         type: "Supply",
         arrows: "6",
         level: "20",
-        cooldown: "480",
+        cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Anti-Tank", "Chargeup"],
         img: "images/support/Railgun_Stratagem_Icon.webp"
@@ -137,7 +137,7 @@ const stratagems = [
         type: "Supply",
         arrows: "5",
         level: "20",
-        cooldown: "480",
+        cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Backpack", "Anti-Tank", "Stationary Reload"],
         img: "images/support/Spear_Stratagem_Icon.webp"
@@ -148,7 +148,7 @@ const stratagems = [
         type: "Supply",
         arrows: "5",
         level: "20",
-        cooldown: "120",
+        cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Backpack", "Anti-Tank", "Stationary Reload"],
         img: "images/support/Commando_Stratagem_Icon.webp"
@@ -159,7 +159,7 @@ const stratagems = [
         type: "Offensive",
         arrows: "5",
         level: "1",
-        cooldown: "70",
+        cooldown: "88",
         calltime: "3.05",
         traits: ["Explosive", "Orbital", "Heavy Armor Penetrating"],
         img: "images/offense/Orbital_Gatling_Barrage_Stratagem_Icon.png"
@@ -170,7 +170,7 @@ const stratagems = [
         type: "Offensive",
         arrows: "3",
         level: "5",
-        cooldown: "100",
+        cooldown: "125",
         calltime: "4.45",
         traits: ["Explosive", "Orbital", "Medium Armor Penetrating"],
         img: "images/offense/Orbital_Airburst_Strike_Stratagem_Icon.webp"
@@ -181,7 +181,7 @@ const stratagems = [
         type: "Offensive",
         arrows: "6",
         level: "5",
-        cooldown: "180",
+        cooldown: "225",
         calltime: "7.45",
         traits: ["Explosive", "Orbital", "Anti-Tank"],
         img: "images/offense/Orbital_120mm_HE_Barrage_Stratagem_Icon.webp"
@@ -192,7 +192,7 @@ const stratagems = [
         type: "Offensive",
         arrows: "7",
         level: "8",
-        cooldown: "240",
+        cooldown: "300",
         calltime: "8.45",
         traits: ["Explosive", "Orbital", "Anti-Tank"],
         img: "images/offense/Orbital_380mm_HE_Barrage_Stratagem_Icon.webp"
@@ -203,7 +203,7 @@ const stratagems = [
         type: "Offensive",
         arrows: "6",
         level: "10",
-        cooldown: "240",
+        cooldown: "300",
         calltime: "5.45",
         traits: ["Explosive", "Orbital", "Anti-Tank"],
         img: "images/offense/Orbital_Walking_Barrage_Stratagem_Icon.webp"
@@ -214,7 +214,7 @@ const stratagems = [
         type: "Offensive",
         arrows: "5",
         level: "15",
-        cooldown: "300",
+        cooldown: "375",
         calltime: "2.00",
         traits: ["Orbital", "Anti-Tank", "Beam"],
         img: "images/offense/Orbital_Laser_Stratagem_Icon.webp"
@@ -225,7 +225,7 @@ const stratagems = [
         type: "Offensive",
         arrows: "6",
         level: "18",
-        cooldown: "240",
+        cooldown: "300",
         calltime: "7.45",
         traits: ["Explosive", "Orbital", "Incendiary"],
         img: "images/offense/Orbital_Napalm_Barrage_Stratagem_Icon.webp"
@@ -236,7 +236,7 @@ const stratagems = [
         type: "Offensive",
         arrows: "5",
         level: "20",
-        cooldown: "210",
+        cooldown: "225",
         calltime: "1.00",
         traits: ["Orbital", "Anti-Tank"],
         img: "images/offense/Orbital_Railcannon_Strike_Stratagem_Icon.webp"
@@ -291,7 +291,7 @@ const stratagems = [
         type: "Supply",
         arrows: "5",
         level: "8",
-        cooldown: "480",
+        cooldown: "600",
         calltime: "9.75",
         traits: ["Hellpod", "Backpack"],
         img: "images/support/Jump_Pack_Stratagem_Icon.webp"
@@ -335,7 +335,7 @@ const stratagems = [
         type: "Supply",
         arrows: "7",
         level: "25",
-        cooldown: "480",
+        cooldown: "600",
         calltime: "10.50",
         traits: ["Vehicle"],
         img: "images/support/M-102_Fast_Recon_Vehicle_Stratagem_Icon.webp"
@@ -346,7 +346,7 @@ const stratagems = [
         type: "Offensive",
         arrows: "3",
         level: "1",
-        cooldown: "90",
+        cooldown: "113",
         calltime: "4.45",
         traits: ["Explosive", "Orbital", "Anti-Tank"],
         img: "images/offense/Orbital_Precision_Strike_Stratagem_Icon.webp"
@@ -357,7 +357,7 @@ const stratagems = [
         type: "Offensive",
         arrows: "4",
         level: "1",
-        cooldown: "75",
+        cooldown: "94",
         calltime: "4.45",
         traits: ["Explosive", "Orbital", "Caustic"],
         img: "images/offense/Orbital_Gas_Strike_Stratagem_Icon.webp"
@@ -368,7 +368,7 @@ const stratagems = [
         type: "Offensive",
         arrows: "4",
         level: "5",
-        cooldown: "75",
+        cooldown: "94",
         calltime: "4.45",
         traits: ["Orbital"],
         img: "images/offense/Orbital_EMS_Strike_Stratagem_Icon.webp"
@@ -379,7 +379,7 @@ const stratagems = [
         type: "Offensive",
         arrows: "4",
         level: "8",
-        cooldown: "100",
+        cooldown: "125",
         calltime: "4.45",
         traits: ["Explosive", "Orbital"],
         img: "images/offense/Orbital_Smoke_Strike_Stratagem_Icon.webp"
@@ -658,5 +658,115 @@ const stratagems = [
         calltime: "10.50",
         traits: ["Explosive", "Vehicle", "Anti-Tank"],
         img: "images/support/EXO-49_Emancipator_Exosuit_Stratagem_Icon.webp"
+    },
+    {
+        name: "TX-41 Sterilizer",
+        department: "Warbonds",
+        type: "Supply",
+        arrows: "5",
+        level: "0",
+        cooldown: "480",
+        calltime: "9.75",
+        traits: ["Support Weapon", "Hellpod", "Caustic"],
+        img: "images/support/Sterilizer_Stratagem_Icon.webp"
+    },
+    {
+        name: "AX/TX-13 “Guard Dog” Dog Breath",
+        department: "Warbonds",
+        type: "Supply",
+        arrows: "6",
+        level: "0",
+        cooldown: "480",
+        calltime: "9.75",
+        traits: ["Hellpod", "Backpack", "Caustic"],
+        img: "images/support/Guard_Dog_Dog_Breath_Stratagem_Icon.webp"
+    },
+    {
+        name: "SH-51 Directional Shield",
+        department: "Warbonds",
+        type: "Supply",
+        arrows: "6",
+        level: "0",
+        cooldown: "300",
+        calltime: "9.75",
+        traits: ["Hellpod", "Backpack"],
+        img: "images/support/SH-51_Directional_Shield_Stratagem_Icon.webp"
+    },
+    {
+        name: "E/AT-12 Anti-Tank Emplacement",
+        department: "Warbonds",
+        type: "Defensive",
+        arrows: "6",
+        level: "0",
+        cooldown: "180",
+        calltime: "7.75",
+        traits: ["Hellpod", "Anti-Tank"],
+        img: "images/defense/E_AT-12_Anti-Tank_Emplacement_Stratagem_Icon.webp"
+    },
+    {
+        name: "A/FLAM-40 Flame Sentry",
+        department: "Warbonds",
+        type: "Defensive",
+        arrows: "6",
+        level: "0",
+        cooldown: "100",
+        calltime: "7.75",
+        traits: ["Hellpod", "Incendiary", "Sentry"],
+        img: "images/defense/A_FLAM-40_Flame_Sentry_Stratagem_Icon.webp"
+    },
+    {
+        name: "B-100 Portable Hellbomb",
+        department: "Warbonds",
+        type: "Supply",
+        arrows: "5",
+        level: "0",
+        cooldown: "300",
+        calltime: "9.75",
+        traits: ["Hellpod", "Explosive", "Backpack", "Anti-Tank"],
+        img: "images/support/Portable_Hellbomb_Stratagem_Icon.webp"
+    },
+    {
+        name: "LIFT-860 Hover Pack",
+        department: "Warbonds",
+        type: "Supply",
+        arrows: "6",
+        level: "0",
+        cooldown: "480",
+        calltime: "9.75",
+        traits: ["Hellpod", "Backpack"],
+        img: "images/support/Hover_Pack_Stratagem_Icon.webp"
+    },
+    {
+        name: "CQC-1 One True Flag",
+        department: "Warbonds",
+        type: "Supply",
+        arrows: "5",
+        level: "0",
+        cooldown: "600",
+        calltime: "7.75",
+        traits: ["Support Weapon", "Hellpod", "Melee", "One Handed"],
+        img: "images/support/CQC-1_One_True_Flag_Stratagem_Icon.webp"
+    },
+    {
+        name: "GL-52 De-Escalator",
+        department: "Warbonds",
+        type: "Supply",
+        arrows: "5",
+        level: "0",
+        cooldown: "600",
+        calltime: "7.75",
+        traits: ["Support Weapon", "Hellpod", "Stun"],
+        img: "images/support/GL-52_De-Escalator_Stratagem_Icon.webp"
+    },
+    {
+        name: "AX/ARC-3 “Guard Dog” K-9",
+        department: "Warbonds",
+        type: "Supply",
+        arrows: "6",
+        level: "0",
+        cooldown: "600",
+        calltime: "9.75",
+        traits: ["Hellpod", "Backpack", "Stun"],
+        img: "images/support/AX_ARC-3__Guard_Dog__K-9_Stratagem_Icon.webp"
     },
 ];
