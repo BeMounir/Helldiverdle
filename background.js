@@ -1,6 +1,6 @@
-const images = 'images/backgrounds/background.png';
+const image = 'images/backgrounds/background.png';
 
 document.body.style.background = `
-    url('${images}') no-repeat center center fixed
+    url('${image}') no-repeat center center fixed
   `;
 document.body.style.backgroundSize = 'cover';

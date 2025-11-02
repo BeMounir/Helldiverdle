@@ -94,7 +94,6 @@ Promise.all(imageUrls.map(preloadImage))
     .then(() => console.log("All images preloaded"))
     .catch(err => console.error("Image failed to load:", err));
 
-
 function getDailyStratagem() {
     const startDateUTC = new Date(Date.UTC(2025, 9, 13));
     const now = new Date();
@@ -110,16 +109,13 @@ function getDailyStratagem() {
     return stratagems[randomIndex];
 }
 
-
 function timeUntilNextStratagem() {
     const now = new Date();
     const nextUTC = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + 1));
     const diffMs = nextUTC - now;
-
     const hours = Math.floor(diffMs / (1000 * 60 * 60));
     const minutes = Math.floor((diffMs / (1000 * 60)) % 60);
     const seconds = Math.floor((diffMs / 1000) % 60);
-
     return `${hours}h ${minutes}m ${seconds}s until next stratagem`;
 }
 
@@ -127,37 +123,36 @@ const timerElement = document.getElementById('timer');
 timerElement.textContent = timeUntilNextStratagem();
 let guessCount = 0;
 const guessedStratagems = new Set();
-
 setInterval(() => {
     document.getElementById('timer').textContent = timeUntilNextStratagem();
 }, 1000);
 
-console.log(stratagems.length + " Stratagems")
+const todayKey = new Date().toISOString().split('T')[0];
+const storageKey = `stratagemGame_${todayKey}`;
+for (let key in localStorage) {
+    if (key.startsWith('stratagemGame_') && key !== storageKey) {
+        localStorage.removeItem(key);
+    }
+}
+
+console.log(stratagems.length + " Stratagems");
 let secret = getDailyStratagem();
-// let secret = stratagems[31];
-// let secret = stratagems[Math.floor(Math.random() * stratagems.length)];
-
-console.log(secret.name)
-
+console.log(secret.name);
 
 function submitGuess() {
     const val = document.getElementById('guess').value.trim();
 
     if (guessedStratagems.has(val.toLowerCase())) {
-        alert("You already guessed that stratagem!");
         return;
     }
 
     const found = stratagems.find(s => s.name.toLowerCase() === val.toLowerCase());
     if (!found) {
-        alert('Not a known stratagem');
         return;
     }
 
     guessedStratagems.add(val.toLowerCase());
-
     guessCount++;
-
     const template = document.getElementById('template-row');
     const row = template.cloneNode(true);
     row.classList.remove('template-row');
@@ -228,7 +223,39 @@ function submitGuess() {
         console.log('Correct! It took you ' + guessCount + ' tries.')
     }
     document.getElementById('suggestions').innerHTML = '';
+    saveGameState();
 }
+
+function saveGameState() {
+    const state = {
+        guessedStratagems: Array.from(guessedStratagems),
+        guessCount,
+        feedbackHTML: document.getElementById('feedback').innerHTML,
+        guessReadOnly: document.getElementById('guess').readOnly
+    };
+    localStorage.setItem(storageKey, JSON.stringify(state));
+}
+
+function loadGameState() {
+    const saved = localStorage.getItem(storageKey);
+    if (!saved) return;
+    try {
+        const state = JSON.parse(saved);
+        guessCount = state.guessCount || 0;
+        (state.guessedStratagems || []).forEach(g => guessedStratagems.add(g));
+        document.getElementById('feedback').innerHTML = state.feedbackHTML || '';
+        document.getElementById('guess').readOnly = !!state.guessReadOnly;
+
+        const boxes = document.querySelectorAll('#feedback .result-box');
+        boxes.forEach(box => box.classList.add('show'));
+
+    } catch (e) {
+        console.error("Failed to load saved game:", e);
+        localStorage.removeItem(storageKey);
+    }
+}
+
+loadGameState();
 
 function check(a, b) {
     const numA = Number(a.replace(/\D/g, ''));
@@ -271,7 +298,6 @@ function showSuggestions(input) {
     const matches = stratagems
         .filter(s => s.name.toLowerCase().includes(input.toLowerCase()))
         .filter(s => !guessedStratagems.has(s.name.toLowerCase()));
-
     if (matches.length > 0) {
         suggestions.style.display = 'block';
     } else {
@@ -304,7 +330,7 @@ function showSuggestions(input) {
     });
 }
 
-document.getElementById("guess").addEventListener("keydown", function(event) {
+document.getElementById("guess").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         event.preventDefault();
         submitGuess();

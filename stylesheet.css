@@ -194,7 +194,7 @@ input {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    max-height: 150px;
+    max-height: 250px;
     width: 398px;
     overflow-y: auto;
     background: #111;
