@@ -399,6 +399,125 @@ footer .creator {
     font-weight: bold;
 }
 
+.win-screen {
+    text-align: center;
+    border: 3px solid #f5d742;
+    box-shadow: 0 0 30px rgba(245, 215, 66, 0.6);
+    animation: fadeIn 0.6s ease forwards;
+    overflow: hidden;
+}
+
+.win-header h2 {
+    font-size: 32px;
+    color: #f5d742;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    animation: popIn 0.6s ease;
+}
+
+.win-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.win-flex h2 {
+    margin: 0;
+    font-size: 32px;
+    color: #f5d742;
+    letter-spacing: 2px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.wing img {
+    width: 50px;
+    height: auto;
+}
+
+.win-subtitle {
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+.win-body {
+    padding: 15px 0;
+}
+
+.rating {
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.win-rewards {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 1px 0;
+}
+
+.xp-text {
+    color: #A8B1F2;
+}
+
+.req-text {
+    color: #FDFD5B;
+}
+
+.rectangle {
+    width: 100px;
+    height: 30px;
+    background-color: #171717;
+    border-radius: 4px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.rect-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.win-stats {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.share {
+    background: #f5d742;
+    color: #0b0b0b;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.share:hover {
+    background: #fff06a;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    60% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+
 @media (max-width: 600px) {
     .categories-header, .categories {
         flex-direction: column;

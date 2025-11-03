@@ -153,6 +153,8 @@ function submitGuess() {
 
     guessedStratagems.add(val.toLowerCase());
     guessCount++;
+    const triesElement = document.getElementById('tries');
+    if (triesElement) triesElement.innerHTML = guessCount;
     const template = document.getElementById('template-row');
     const row = template.cloneNode(true);
     row.classList.remove('template-row');
@@ -215,12 +217,12 @@ function submitGuess() {
 
     if (found.name === secret.name) {
         if (guessCount <= 1) {
-            alert('Correct! You got it first try!.');
         } else {
-            alert('Correct! It took you ' + guessCount + ' tries.');
         }
         document.getElementById('guess').readOnly = true;
         console.log('Correct! It took you ' + guessCount + ' tries.')
+        document.querySelector('.win').click();
+        document.getElementById('tries').innerHTML = guessCount
     }
     document.getElementById('suggestions').innerHTML = '';
     saveGameState();
@@ -248,6 +250,9 @@ function loadGameState() {
 
         const boxes = document.querySelectorAll('#feedback .result-box');
         boxes.forEach(box => box.classList.add('show'));
+
+        const triesElement = document.getElementById('tries');
+        if (triesElement) triesElement.innerHTML = guessCount;
 
     } catch (e) {
         console.error("Failed to load saved game:", e);
@@ -328,6 +333,16 @@ function showSuggestions(input) {
         };
         suggestions.appendChild(div);
     });
+}
+
+function copy() {
+    const copyText = "test"
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+
+    navigator.clipboard.writeText(copyText.value);
+
+    alert("Copied the text: " + copyText.value);
 }
 
 document.getElementById("guess").addEventListener("keydown", function (event) {

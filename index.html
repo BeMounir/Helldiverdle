@@ -121,6 +121,51 @@
     </footer>
 </div>
 
+<a class="win" href="#win"></a>
+
+<div id="win" class="popup">
+    <div class="popup-content win-screen">
+        <a href="#" class="closeButton">✖</a>
+
+        <div class="win-header">
+            <div class="win-flex">
+                <div class="wing left-wing">
+                    <img src="images/icons/wing%20left.png" alt="Left Wing" />
+                </div>
+                <h2>MISSION COMPLETED!</h2>
+                <div class="wing right-wing">
+                    <img src="images/icons/wing%20right.png" alt="Right Wing" />
+                </div>
+            </div>
+            <p class="win-subtitle">For Super Earth!</p>
+        </div>
+
+
+        <p class="rating">⭐⭐⭐⭐⭐</p>
+
+        <div class="win-rewards">
+            <div class="rectangle">
+                <img class="rect-icon" src="images/icons/xp.PNG" alt="Icon Left">
+                <span class="xp-text">100/100</span>
+            </div>
+            <div class="rectangle">
+                <img class="rect-icon" src="images/icons/req.PNG" alt="Icon Left">
+                <span class="req-text">100/100</span>
+            </div>
+        </div>
+
+        <div class="win-body">
+            <p class="win-stats">
+                You completed today's stratagem in <span id="tries">0</span> tries!
+                <br>Well done, Helldiver.
+            </p>
+            <div class="confetti"></div>
+            <button class="share" onclick="copy()">Share</button>
+        </div>
+    </div>
+</div>
+
+
 <script src="stratagems.js"></script>
 <script src="main.js"></script>
 <script src="background.js"></script>
