@@ -8,7 +8,15 @@
 </head>
 <body>
 <div class="container">
-    <h1>Helldiverdle</h1>
+    <div class="title-container">
+        <div class="wing left-wing">
+            <img src="images/icons/wing%20left.png" alt="Left Wing"/>
+        </div>
+        <h1>Helldiverdle</h1>
+        <div class="wing right-wing">
+            <img src="images/icons/wing%20right.png" alt="Right Wing"/>
+        </div>
+    </div>
 
     <div class="intro">
         <p>Guess today's stratagem!</p>
@@ -130,15 +138,14 @@
         <div class="win-header">
             <div class="win-flex">
                 <div class="wing left-wing">
-                    <img src="images/icons/wing%20left.png" alt="Left Wing" />
+                    <img src="images/icons/wing%20left.png" alt="Left Wing"/>
                 </div>
                 <h2>MISSION COMPLETED</h2>
                 <div class="wing right-wing">
-                    <img src="images/icons/wing%20right.png" alt="Right Wing" />
+                    <img src="images/icons/wing%20right.png" alt="Right Wing"/>
                 </div>
             </div>
         </div>
-
 
         <p class="rating">⭐⭐⭐⭐⭐</p>
 
@@ -155,13 +162,15 @@
 
         <p class="win-subtitle">Outstanding Patriotism</p>
 
-
         <div class="win-body">
             <p class="win-stats">
                 You completed today's stratagem in <span id="tries">0</span> tries!
                 <br>Well done, Helldiver.
             </p>
+            <div class=""></div>
             <button class="share" onclick="copy()">Share</button>
+            <button id="reset" class="share" onclick="location.href='#'">Reset</button>
+            <p>Your Streak: 1🔥</p>
         </div>
     </div>
 </div>
@@ -170,6 +179,7 @@
 <script src="stratagems.js"></script>
 <script src="main.js"></script>
 <script src="background.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 
 </body>
 

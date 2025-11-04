@@ -16,6 +16,13 @@ h1 {
     font-size: 50px;
 }
 
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
 .container {
     background: rgba(20, 20, 20, 0.95);
     padding: 40px;
@@ -421,7 +428,7 @@ footer .creator {
     justify-content: center;
     gap: 15px;
 
-    animation: missionWinAnimation 3s ease forwards;
+    animation: missionWinAnimation 2s ease forwards;
 }
 
 .win-flex h2 {
@@ -462,9 +469,16 @@ footer .creator {
 }
 
 .rating {
-    margin-bottom: 0px;
-    transition: all 0.4s ease;
-    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.star-icon {
+    width: 45px;
+    height: auto;
+    object-fit: contain;
 }
 
 .win-rewards {
@@ -527,6 +541,7 @@ footer .creator {
     cursor: pointer;
     text-transform: uppercase;
     transition: all 0.3s ease;
+    min-width: 100px;
 }
 
 .share:hover {
@@ -538,8 +553,18 @@ footer .creator {
 .win-subtitle {
     opacity: 0;
     animation: fadeInRest 1s ease forwards;
-    animation-delay: 3s;
+    animation-delay: 2s;
 }
+
+.win-subtitle{
+    animation-delay: 3s !important;
+}
+
+
+.win-body {
+    animation-delay: 4s !important;
+}
+
 
 @keyframes fadeInRest {
     from { opacity: 0; }

@@ -80,7 +80,12 @@ const imageUrls = [
     "images/objective/Hellbomb_Stratagem_Icon.webp",
     "images/objective/Dark_Fluid_Vessel_Stratagem_Icon.webp",
     "images/icons/wing%20left.png",
-    "images/icons/wing%20right.png"
+    "images/icons/wing%20right.png",
+    "images/icons/StarFilled.png",
+    "images/icons/StarEmpty.png",
+    "images/icons/req.PNG",
+    "images/icons/xp.PNG"
+
 ];
 
 function preloadImage(url) {
@@ -226,10 +231,13 @@ function submitGuess() {
         document.querySelector('.win').click();
         document.getElementById('tries').innerHTML = guessCount
 
+        var winAudio = new Audio('audio/winAudio.mp3');
+        winAudio.play();
+
         let stars = 0;
         let xp = 0;
         let req = 0;
-        let quote = "hi"
+        let quote = "quote"
 
         if (guessCount <= 3) {
             stars = 5;
@@ -259,11 +267,21 @@ function submitGuess() {
         }
 
         const totalStars = 5;
-        const filledStar = "⭐";
-        const emptyStar = "❌";
+        const filledStar = "images/icons/StarFilled.png";
+        const emptyStar = "images/icons/StarEmpty.png";
         const ratingEl = document.querySelector('.rating');
         if (ratingEl) {
-            ratingEl.textContent = filledStar.repeat(stars) + emptyStar.repeat(totalStars - stars);
+            ratingEl.innerHTML = '';
+
+            for (let i = 0; i < totalStars; i++) {
+                const img = document.createElement('img');
+                img.src = i < stars ? filledStar : emptyStar;
+                img.alt = i < stars ? 'Filled star' : 'Empty star';
+                img.classList.add('star-icon');
+                ratingEl.appendChild(img);
+                var audio = new Audio('audio_file.mp3');
+                audio.play();
+            }
         }
 
         const xpText = document.querySelector('.xp-text');
@@ -272,6 +290,22 @@ function submitGuess() {
         if (subText) subText.textContent = quote;
         if (xpText) xpText.textContent = `${xp}`;
         if (reqText) reqText.textContent = `${req}`;
+
+        confetti({
+            particleCount: 50,
+            spread: 0,
+            origin: { x: 0, y: 0 },
+            angle: 60,
+            zIndex: 9999
+        });
+
+        confetti({
+            particleCount: 50,
+            spread: 70,
+            origin: { x: 1, y: 0 },
+            angle: 200,
+            zIndex: 9999
+        });
     }
     document.getElementById('suggestions').innerHTML = '';
     saveGameState();
@@ -411,14 +445,13 @@ function showSuggestions(input) {
 }
 
 function copy() {
-    const copyText = "I just won in helldiverdle with " + guessCount + " guesses! https://bemounir.github.io/Helldiverdle/";
-    const buttonText = document.querySelector('.share').innerHTML
+    const copyText = "I just won in helldiverdle with " + guessCount + " guesses!\nhttps://bemounir.github.io/Helldiverdle/";
 
     navigator.clipboard.writeText(copyText)
 
     document.querySelector('.share').innerHTML = "Copied"
     setTimeout(function(){
-        document.querySelector('.share').innerHTML = buttonText
+        document.querySelector('.share').innerHTML = "Share"
     }, 2000);
 }
 
@@ -428,4 +461,9 @@ document.getElementById("guess").addEventListener("keydown", function (event) {
         event.preventDefault();
         submitGuess();
     }
+});
+
+document.getElementById('reset').addEventListener('click', () => {
+    localStorage.clear();
+    location.reload();
 });
