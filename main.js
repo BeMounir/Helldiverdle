@@ -79,6 +79,8 @@ const imageUrls = [
     "images/common/SOS_Beacon_Stratagem_Icon.webp",
     "images/objective/Hellbomb_Stratagem_Icon.webp",
     "images/objective/Dark_Fluid_Vessel_Stratagem_Icon.webp",
+    "images/icons/wing%20left.png",
+    "images/icons/wing%20right.png"
 ];
 
 function preloadImage(url) {
@@ -223,17 +225,73 @@ function submitGuess() {
         console.log('Correct! It took you ' + guessCount + ' tries.')
         document.querySelector('.win').click();
         document.getElementById('tries').innerHTML = guessCount
+
+        let stars = 0;
+        let xp = 0;
+        let req = 0;
+        let quote = "hi"
+
+        if (guessCount <= 3) {
+            stars = 5;
+            xp = 100;
+            req = 100;
+            quote = "Outstanding Patriotism"
+        } else if (guessCount <= 6) {
+            stars = 4;
+            xp = 75;
+            req = 75;
+            quote = "Superior Valor"
+        } else if (guessCount <= 9) {
+            stars = 3;
+            xp = 50;
+            req = 50;
+            quote = "Honorable Duty"
+        } else if (guessCount <= 12) {
+            stars = 2;
+            xp = 25;
+            req = 25;
+            quote = "Unremarkable Performance"
+        } else {
+            stars = 1;
+            xp = 10;
+            req = 10;
+            quote = "Disappointing Service"
+        }
+
+        const totalStars = 5;
+        const filledStar = "⭐";
+        const emptyStar = "❌";
+        const ratingEl = document.querySelector('.rating');
+        if (ratingEl) {
+            ratingEl.textContent = filledStar.repeat(stars) + emptyStar.repeat(totalStars - stars);
+        }
+
+        const xpText = document.querySelector('.xp-text');
+        const reqText = document.querySelector('.req-text');
+        const subText = document.querySelector('.win-subtitle');
+        if (subText) subText.textContent = quote;
+        if (xpText) xpText.textContent = `${xp}`;
+        if (reqText) reqText.textContent = `${req}`;
     }
     document.getElementById('suggestions').innerHTML = '';
     saveGameState();
 }
 
 function saveGameState() {
+    const ratingEl = document.querySelector('.rating');
+    const xpText = document.querySelector('.xp-text');
+    const reqText = document.querySelector('.req-text');
+    const subText = document.querySelector('.win-subtitle');
     const state = {
         guessedStratagems: Array.from(guessedStratagems),
         guessCount,
         feedbackHTML: document.getElementById('feedback').innerHTML,
-        guessReadOnly: document.getElementById('guess').readOnly
+        win: document.getElementById('guess').readOnly,
+        ratingHTML: ratingEl ? ratingEl.innerHTML : '',
+        xpText: xpText ? xpText.textContent : '',
+        reqText: reqText ? reqText.textContent : '',
+        subText: subText ? subText.textContent : ''
+
     };
     localStorage.setItem(storageKey, JSON.stringify(state));
 }
@@ -241,10 +299,12 @@ function saveGameState() {
 function loadGameState() {
     const saved = localStorage.getItem(storageKey);
     if (!saved) return;
+
     try {
         const state = JSON.parse(saved);
         guessCount = state.guessCount || 0;
         (state.guessedStratagems || []).forEach(g => guessedStratagems.add(g));
+
         document.getElementById('feedback').innerHTML = state.feedbackHTML || '';
         document.getElementById('guess').readOnly = !!state.guessReadOnly;
 
@@ -254,11 +314,26 @@ function loadGameState() {
         const triesElement = document.getElementById('tries');
         if (triesElement) triesElement.innerHTML = guessCount;
 
+        const ratingEl = document.querySelector('.rating');
+        const xpText = document.querySelector('.xp-text');
+        const reqText = document.querySelector('.req-text');
+        const subText = document.querySelector('.win-subtitle');
+
+        if (ratingEl && state.ratingHTML) ratingEl.innerHTML = state.ratingHTML;
+        if (xpText && state.xpText) xpText.textContent = state.xpText;
+        if (reqText && state.reqText) reqText.textContent = state.reqText;
+        if (subText && state.subText) subText.textContent = state.subText;
+
+        if (state.win) {
+            document.querySelector('.win').click();
+        }
+
     } catch (e) {
         console.error("Failed to load saved game:", e);
         localStorage.removeItem(storageKey);
     }
 }
+
 
 loadGameState();
 
@@ -336,14 +411,17 @@ function showSuggestions(input) {
 }
 
 function copy() {
-    const copyText = "test"
-    copyText.select();
-    copyText.setSelectionRange(0, 99999);
+    const copyText = "I just won in helldiverdle with " + guessCount + " guesses! https://bemounir.github.io/Helldiverdle/";
+    const buttonText = document.querySelector('.share').innerHTML
 
-    navigator.clipboard.writeText(copyText.value);
+    navigator.clipboard.writeText(copyText)
 
-    alert("Copied the text: " + copyText.value);
+    document.querySelector('.share').innerHTML = "Copied"
+    setTimeout(function(){
+        document.querySelector('.share').innerHTML = buttonText
+    }, 2000);
 }
+
 
 document.getElementById("guess").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {

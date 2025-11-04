@@ -420,6 +420,8 @@ footer .creator {
     align-items: center;
     justify-content: center;
     gap: 15px;
+
+    animation: missionWinAnimation 3s ease forwards;
 }
 
 .win-flex h2 {
@@ -429,6 +431,7 @@ footer .creator {
     letter-spacing: 2px;
     text-align: center;
     white-space: nowrap;
+
 }
 
 .wing img {
@@ -437,21 +440,31 @@ footer .creator {
 }
 
 .win-subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    height: 45px;
+    margin: 20px auto 20px auto;
+    text-align: center;
     font-size: 18px;
-    color: #fff;
-    text-transform: uppercase;
-    margin-bottom: 20px;
     letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #FCEB09;
+    color: #0e0e0e;
     opacity: 0.8;
 }
+
 
 .win-body {
     padding: 15px 0;
 }
 
 .rating {
-    font-size: 30px;
     margin-bottom: 0px;
+    transition: all 0.4s ease;
+    font-size: 2rem;
 }
 
 .win-rewards {
@@ -461,27 +474,42 @@ footer .creator {
     margin: 1px 0;
 }
 
+.rectangle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 120px;
+    height: 35px;
+    background-color: #171717;
+    border-radius: 6px;
+    padding: 4px 8px;
+}
+
+.rect-icon-xp {
+    width: 30px;
+    height: auto;
+    object-fit: contain;
+}
+
+.rect-icon-req{
+    width: 20px;
+    height: auto;
+    object-fit: contain;
+}
+
 .xp-text {
     color: #A8B1F2;
+}
+.xp-text-max {
+    color: #565570;
 }
 
 .req-text {
     color: #FDFD5B;
 }
-
-.rectangle {
-    width: 100px;
-    height: 30px;
-    background-color: #171717;
-    border-radius: 4px;
-
-    align-items: center;
-    justify-content: center;
-}
-
-.rect-icon {
-    width: 16px;
-    height: 16px;
+.req-text-max {
+    color: #6A6931;
 }
 
 .win-stats {
@@ -506,15 +534,41 @@ footer .creator {
     transform: scale(1.05);
 }
 
+.win-screen > *:not(.win-header),
+.win-subtitle {
+    opacity: 0;
+    animation: fadeInRest 1s ease forwards;
+    animation-delay: 3s;
+}
+
+@keyframes fadeInRest {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes missionWinAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(170px);
+    }
+    20% {
+        opacity: 1;
+        transform: translateY(170px);
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(170px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 @keyframes fadeIn {
     from { opacity: 0; transform: scale(0.9); }
     to { opacity: 1; transform: scale(1); }
-}
-
-@keyframes popIn {
-    0% { transform: scale(0.5); opacity: 0; }
-    60% { transform: scale(1.2); opacity: 1; }
-    100% { transform: scale(1); }
 }
 
 
