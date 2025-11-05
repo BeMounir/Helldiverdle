@@ -1,0 +1,88 @@
+@font-face {
+    font-family: Arial;
+    src: url("../../../public/fonts/Athabasca Bd.otf") format('truetype');
+}
+
+body {
+    background: #0b0b0b;
+    color: #f5d742;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.container {
+    background: rgba(20, 20, 20, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game-button {
+    width: 150px;
+    height: 100px;
+    background-color: #f5d742;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.game-button:hover {
+    transform: scale(1.05);
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.information {
+    margin-bottom: 15px;
+}
+
+footer {
+    margin-top: 500px;
+    font-size: 1rem;
+    color: #aaaaaa;
+    text-shadow: 0 0 3px #000;
+}
+
+footer .creator {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.wing img {
+    width: 50px;
+    height: auto;
+}
