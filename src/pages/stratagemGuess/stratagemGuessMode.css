@@ -1,6 +1,6 @@
 @font-face {
     font-family: Arial;
-    src: url("fonts/Athabasca Bd.otf") format('truetype');
+    src: url("../../../public/fonts/Athabasca Bd.otf") format('truetype');
 }
 
 body {
@@ -574,15 +574,15 @@ footer .creator {
 @keyframes missionWinAnimation {
     0% {
         opacity: 0;
-        transform: translateY(170px);
+        transform: translateY(180px);
     }
     20% {
         opacity: 1;
-        transform: translateY(170px);
+        transform: translateY(180px);
     }
     80% {
         opacity: 1;
-        transform: translateY(170px);
+        transform: translateY(180px);
     }
     100% {
         opacity: 1;

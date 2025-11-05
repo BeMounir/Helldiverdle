@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Helldiverdle</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link id="favicon" rel="icon" type="image/png" href="images/icons/favicon.jpg">
+    <link rel="stylesheet" href="stratagemGuessMode.css">
+    <link id="favicon" rel="icon" type="image/png" href="../../../public/images/icons/favicon.jpg">
 </head>
 <body>
 <div class="container">
     <div class="title-container">
         <div class="wing left-wing">
-            <img src="images/icons/wing%20left.png" alt="Left Wing"/>
+            <img src="../../../public/images/icons/wing%20left.png" alt="Left Wing"/>
         </div>
         <h1>Helldiverdle</h1>
         <div class="wing right-wing">
-            <img src="images/icons/wing%20right.png" alt="Right Wing"/>
+            <img src="../../../public/images/icons/wing%20right.png" alt="Right Wing"/>
         </div>
     </div>
 
@@ -72,7 +72,7 @@
     </div>
 
     <div class="guessingDiv">
-        <input id="guess" placeholder="Enter stratagem name" onfocus="this.value=''"
+        <input id="guess" placeholder="Enter stratagem name..." onfocus="this.value=''"
                oninput="showSuggestions(this.value)">
         <button id="guessButton" onclick="submitGuess()">Guess</button>
     </div>
@@ -123,7 +123,7 @@
     <p id="timer"></p>
 
     <footer>
-        <a href="arrowGuessMode.html">different mode WIP</a><br>
+        <a href="../arrowGuess/arrowGuessMode.html">different mode WIP</a><br>
         Made by <span class="creator">Moukie</span>
         <br>Assets belong to Arrowhead game studio.
     </footer>
@@ -138,11 +138,11 @@
         <div class="win-header">
             <div class="win-flex">
                 <div class="wing left-wing">
-                    <img src="images/icons/wing%20left.png" alt="Left Wing"/>
+                    <img src="../../../public/images/icons/wing%20left.png" alt="Left Wing"/>
                 </div>
                 <h2>MISSION COMPLETED</h2>
                 <div class="wing right-wing">
-                    <img src="images/icons/wing%20right.png" alt="Right Wing"/>
+                    <img src="../../../public/images/icons/wing%20right.png" alt="Right Wing"/>
                 </div>
             </div>
         </div>
@@ -151,11 +151,11 @@
 
         <div class="win-rewards">
             <div class="rectangle">
-                <img class="rect-icon-xp" src="images/icons/xp.PNG" alt="Icon Left">
+                <img class="rect-icon-xp" src="../../../public/images/icons/xp.PNG" alt="Icon Left">
                 <span class="xp-text">100</span><span class="xp-text-max">/100</span>
             </div>
             <div class="rectangle">
-                <img class="rect-icon-req" src="images/icons/req.PNG" alt="Icon Left">
+                <img class="rect-icon-req" src="../../../public/images/icons/req.PNG" alt="Icon Left">
                 <span class="req-text">100</span><span class="req-text-max">/100</span>
             </div>
         </div>
@@ -170,17 +170,16 @@
             <div class=""></div>
             <button class="share" onclick="copy()">Share</button>
             <button id="reset" class="share" onclick="location.href='#'">Reset</button>
-            <p>Your Streak: 1🔥</p>
+            <p>Your Streak: <span id="streak">0</span>🔥</p>
         </div>
     </div>
 </div>
 
 
-<script src="stratagems.js"></script>
-<script src="main.js"></script>
-<script src="background.js"></script>
+<script src="../../data/stratagems.js"></script>
+<script src="../../scripts/main.js"></script>
+<script src="../../scripts/background.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 
 </body>
-
 </html>

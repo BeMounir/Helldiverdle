@@ -8,7 +8,7 @@ const stratagems = [
         cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Medium Armor Penetrating", "Stationary Reload"],
-        img: "images/support/Machine_Gun_Stratagem_Icon.webp"
+        img: "../../../public/images/support/Machine_Gun_Stratagem_Icon.webp"
     },
     {
         name: "APW-1 Anti-Materiel Rifle",
@@ -19,7 +19,7 @@ const stratagems = [
         cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Heavy Armor Penetrating"],
-        img: "images/support/Anti-Materiel_Rifle_Stratagem_Icon.webp"
+        img: "../../../public/images/support/Anti-Materiel_Rifle_Stratagem_Icon.webp"
     },
     {
         name: "M-105 Stalwart",
@@ -30,7 +30,7 @@ const stratagems = [
         cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Light Armor Penetrating"],
-        img: "images/support/Stalwart_Stratagem_Icon.webp"
+        img: "../../../public/images/support/Stalwart_Stratagem_Icon.webp"
     },
     {
         name: "EAT-17 Expendable Anti-Tank",
@@ -41,7 +41,7 @@ const stratagems = [
         cooldown: "90",
         calltime: "6.75",
         traits: ["Support Weapon", "Hellpod", "Anti-Tank", "Expendable"],
-        img: "images/support/Expendable_Anti-Tank_Stratagem_Icon.webp"
+        img: "../../../public/images/support/Expendable_Anti-Tank_Stratagem_Icon.webp"
     },
     {
         name: "GR-8 Recoilless Rifle",
@@ -52,7 +52,7 @@ const stratagems = [
         cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Backpack", "Anti-Tank", "Stationary Reload"],
-        img: "images/support/Recoilless_Rifle_Stratagem_Icon.webp"
+        img: "../../../public/images/support/Recoilless_Rifle_Stratagem_Icon.webp"
     },
     {
         name: "FLAM-40 Flamethrower",
@@ -63,7 +63,7 @@ const stratagems = [
         cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Incendiary"],
-        img: "images/support/Flamethrower_Stratagem_Icon.webp"
+        img: "../../../public/images/support/Flamethrower_Stratagem_Icon.webp"
     },
     {
         name: "AC-8 Autocannon",
@@ -74,7 +74,7 @@ const stratagems = [
         cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Backpack", "Heavy Armor Penetrating", "Stationary Reload"],
-        img: "images/support/Autocannon_Stratagem_Icon.webp"
+        img: "../../../public/images/support/Autocannon_Stratagem_Icon.webp"
     },
     {
         name: "MG-206 Heavy Machine Gun",
@@ -85,7 +85,7 @@ const stratagems = [
         cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Heavy Armor Penetrating", "Stationary Reload"],
-        img: "images/support/Heavy_Machine_Gun_Stratagem_Icon.webp"
+        img: "../../../public/images/support/Heavy_Machine_Gun_Stratagem_Icon.webp"
     },
     {
         name: "RL-77 Airburst Rocket Launcher",
@@ -96,7 +96,7 @@ const stratagems = [
         cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Backpack", "Medium Armor Penetrating", "Stationary Reload"],
-        img: "images/support/RL-77_Airburst_Rocket_Launcher_Stratagem_Icon.webp"
+        img: "../../../public/images/support/RL-77_Airburst_Rocket_Launcher_Stratagem_Icon.webp"
     },
     {
         name: "MLS-4X Commando",
@@ -107,7 +107,7 @@ const stratagems = [
         cooldown: "150",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Anti-Tank", "Expendable"],
-        img: "images/support/Commando_Stratagem_Icon.webp"
+        img: "../../../public/images/support/Commando_Stratagem_Icon.webp"
     },
     {
         name: "RS-422 Railgun",
@@ -118,7 +118,7 @@ const stratagems = [
         cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Anti-Tank", "Chargeup"],
-        img: "images/support/Railgun_Stratagem_Icon.webp"
+        img: "../../../public/images/support/Railgun_Stratagem_Icon.webp"
     },
     {
         name: "FAF-14 Spear",
@@ -129,7 +129,7 @@ const stratagems = [
         cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Backpack", "Anti-Tank", "Stationary Reload"],
-        img: "images/support/Spear_Stratagem_Icon.webp"
+        img: "../../../public/images/support/Spear_Stratagem_Icon.webp"
     },
     {
         name: "StA-X3 W.A.S.P. Launcher",
@@ -140,7 +140,7 @@ const stratagems = [
         cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Backpack", "Anti-Tank", "Stationary Reload"],
-        img: "images/support/Commando_Stratagem_Icon.webp"
+        img: "../../../public/images/support/Commando_Stratagem_Icon.webp"
     },
     {
         name: "Orbital Gatling Barrage",
@@ -151,7 +151,7 @@ const stratagems = [
         cooldown: "88",
         calltime: "3.05",
         traits: ["Explosive", "Orbital", "Heavy Armor Penetrating"],
-        img: "images/offense/Orbital_Gatling_Barrage_Stratagem_Icon.png"
+        img: "../../../public/images/offense/Orbital_Gatling_Barrage_Stratagem_Icon.png"
     },
     {
         name: "Orbital Airburst Strike",
@@ -162,7 +162,7 @@ const stratagems = [
         cooldown: "125",
         calltime: "4.45",
         traits: ["Explosive", "Orbital", "Medium Armor Penetrating"],
-        img: "images/offense/Orbital_Airburst_Strike_Stratagem_Icon.webp"
+        img: "../../../public/images/offense/Orbital_Airburst_Strike_Stratagem_Icon.webp"
     },
     {
         name: "Orbital 120mm HE Barrage",
@@ -173,7 +173,7 @@ const stratagems = [
         cooldown: "225",
         calltime: "7.45",
         traits: ["Explosive", "Orbital", "Anti-Tank"],
-        img: "images/offense/Orbital_120mm_HE_Barrage_Stratagem_Icon.webp"
+        img: "../../../public/images/offense/Orbital_120mm_HE_Barrage_Stratagem_Icon.webp"
     },
     {
         name: "Orbital 380mm HE Barrage",
@@ -184,7 +184,7 @@ const stratagems = [
         cooldown: "300",
         calltime: "8.45",
         traits: ["Explosive", "Orbital", "Anti-Tank"],
-        img: "images/offense/Orbital_380mm_HE_Barrage_Stratagem_Icon.webp"
+        img: "../../../public/images/offense/Orbital_380mm_HE_Barrage_Stratagem_Icon.webp"
     },
     {
         name: "Orbital Walking Barrage",
@@ -195,7 +195,7 @@ const stratagems = [
         cooldown: "300",
         calltime: "5.45",
         traits: ["Explosive", "Orbital", "Anti-Tank"],
-        img: "images/offense/Orbital_Walking_Barrage_Stratagem_Icon.webp"
+        img: "../../../public/images/offense/Orbital_Walking_Barrage_Stratagem_Icon.webp"
     },
     {
         name: "Orbital Laser",
@@ -206,7 +206,7 @@ const stratagems = [
         cooldown: "375",
         calltime: "2.00",
         traits: ["Orbital", "Anti-Tank", "Beam"],
-        img: "images/offense/Orbital_Laser_Stratagem_Icon.webp"
+        img: "../../../public/images/offense/Orbital_Laser_Stratagem_Icon.webp"
     },
     {
         name: "Orbital Napalm Barrage",
@@ -217,7 +217,7 @@ const stratagems = [
         cooldown: "300",
         calltime: "7.45",
         traits: ["Explosive", "Orbital", "Incendiary"],
-        img: "images/offense/Orbital_Napalm_Barrage_Stratagem_Icon.webp"
+        img: "../../../public/images/offense/Orbital_Napalm_Barrage_Stratagem_Icon.webp"
     },
     {
         name: "Orbital Railcannon Strike",
@@ -228,7 +228,7 @@ const stratagems = [
         cooldown: "225",
         calltime: "1.00",
         traits: ["Orbital", "Anti-Tank"],
-        img: "images/offense/Orbital_Railcannon_Strike_Stratagem_Icon.webp"
+        img: "../../../public/images/offense/Orbital_Railcannon_Strike_Stratagem_Icon.webp"
     },
     {
         name: "Eagle Strafing Run",
@@ -239,7 +239,7 @@ const stratagems = [
         cooldown: "150",
         calltime: "2.40",
         traits: ["Eagle", "Heavy Armor Penetrating"],
-        img: "images/offense/Eagle_Strafing_Run_Stratagem_Icon.webp"
+        img: "../../../public/images/offense/Eagle_Strafing_Run_Stratagem_Icon.webp"
     },
     {
         name: "Eagle Airstrike",
@@ -250,7 +250,7 @@ const stratagems = [
         cooldown: "150",
         calltime: "4.10",
         traits: ["Explosive", "Eagle", "Anti-Tank"],
-        img: "images/offense/Eagle_Airstrike_Stratagem_Icon.webp"
+        img: "../../../public/images/offense/Eagle_Airstrike_Stratagem_Icon.webp"
     },
     {
         name: "Eagle Cluster Bomb",
@@ -261,7 +261,7 @@ const stratagems = [
         cooldown: "150",
         calltime: "4.10",
         traits: ["Explosive", "Eagle", "Medium Armor Penetrating"],
-        img: "images/offense/Eagle_Cluster_Bomb_Stratagem_Icon.webp"
+        img: "../../../public/images/offense/Eagle_Cluster_Bomb_Stratagem_Icon.webp"
     },
     {
         name: "Eagle Napalm Airstrike",
@@ -272,7 +272,7 @@ const stratagems = [
         cooldown: "150",
         calltime: "4.10",
         traits: ["Explosive", "Eagle", "Incendiary"],
-        img: "images/offense/Eagle_Napalm_Airstrike_Stratagem_Icon.webp"
+        img: "../../../public/images/offense/Eagle_Napalm_Airstrike_Stratagem_Icon.webp"
     },
     {
         name: "LIFT-850 Jump Pack",
@@ -283,7 +283,7 @@ const stratagems = [
         cooldown: "600",
         calltime: "9.75",
         traits: ["Hellpod", "Backpack"],
-        img: "images/support/Jump_Pack_Stratagem_Icon.webp"
+        img: "../../../public/images/support/Jump_Pack_Stratagem_Icon.webp"
     },
     {
         name: "Eagle Smoke Strike",
@@ -294,7 +294,7 @@ const stratagems = [
         cooldown: "150",
         calltime: "4.40",
         traits: ["Explosive", "Eagle"],
-        img: "images/offense/Eagle_Smoke_Strike_Stratagem_Icon.webp"
+        img: "../../../public/images/offense/Eagle_Smoke_Strike_Stratagem_Icon.webp"
     },
     {
         name: "Eagle 110mm Rocket Pods",
@@ -305,7 +305,7 @@ const stratagems = [
         cooldown: "150",
         calltime: "3.40",
         traits: ["Explosive", "Eagle", "Anti-Tank"],
-        img: "images/offense/Eagle_110mm_Rocket_Pods_Stratagem_Icon.webp"
+        img: "../../../public/images/offense/Eagle_110mm_Rocket_Pods_Stratagem_Icon.webp"
     },
     {
         name: "Eagle 500kg Bomb",
@@ -316,7 +316,7 @@ const stratagems = [
         cooldown: "150",
         calltime: "3.45",
         traits: ["Explosive", "Eagle", "Anti-Tank"],
-        img: "images/offense/Eagle_500kg_Bomb_Stratagem_Icon.webp"
+        img: "../../../public/images/offense/Eagle_500kg_Bomb_Stratagem_Icon.webp"
     },
     {
         name: "M-102 Fast Reconnaissance Vehicle",
@@ -327,7 +327,7 @@ const stratagems = [
         cooldown: "600",
         calltime: "10.50",
         traits: ["Vehicle"],
-        img: "images/support/M-102_Fast_Recon_Vehicle_Stratagem_Icon.webp"
+        img: "../../../public/images/support/M-102_Fast_Recon_Vehicle_Stratagem_Icon.webp"
     },
     {
         name: "Orbital Precision Strike",
@@ -338,7 +338,7 @@ const stratagems = [
         cooldown: "113",
         calltime: "4.45",
         traits: ["Explosive", "Orbital", "Anti-Tank"],
-        img: "images/offense/Orbital_Precision_Strike_Stratagem_Icon.webp"
+        img: "../../../public/images/offense/Orbital_Precision_Strike_Stratagem_Icon.webp"
     },
     {
         name: "Orbital Gas Strike",
@@ -349,7 +349,7 @@ const stratagems = [
         cooldown: "94",
         calltime: "4.45",
         traits: ["Explosive", "Orbital", "Caustic"],
-        img: "images/offense/Orbital_Gas_Strike_Stratagem_Icon.webp"
+        img: "../../../public/images/offense/Orbital_Gas_Strike_Stratagem_Icon.webp"
     },
     {
         name: "Orbital EMS Strike",
@@ -360,7 +360,7 @@ const stratagems = [
         cooldown: "94",
         calltime: "4.45",
         traits: ["Orbital"],
-        img: "images/offense/Orbital_EMS_Strike_Stratagem_Icon.webp"
+        img: "../../../public/images/offense/Orbital_EMS_Strike_Stratagem_Icon.webp"
     },
     {
         name: "Orbital Smoke Strike",
@@ -371,7 +371,7 @@ const stratagems = [
         cooldown: "125",
         calltime: "4.45",
         traits: ["Explosive", "Orbital"],
-        img: "images/offense/Orbital_Smoke_Strike_Stratagem_Icon.webp"
+        img: "../../../public/images/offense/Orbital_Smoke_Strike_Stratagem_Icon.webp"
     },
     {
         name: "E/MG-101 HMG Emplacement",
@@ -382,7 +382,7 @@ const stratagems = [
         cooldown: "180",
         calltime: "7.75",
         traits: ["Hellpod", "Heavy Armor Penetrating"],
-        img: "images/defense/HMG_Emplacement_Stratagem_Icon.webp"
+        img: "../../../public/images/defense/HMG_Emplacement_Stratagem_Icon.webp"
     },
     {
         name: "FX-12 Shield Generator Relay",
@@ -393,7 +393,7 @@ const stratagems = [
         cooldown: "90",
         calltime: "7.75",
         traits: ["Hellpod"],
-        img: "images/defense/Shield_Generator_Relay_Stratagem_Icon.webp"
+        img: "../../../public/images/defense/Shield_Generator_Relay_Stratagem_Icon.webp"
     },
     {
         name: "A/ARC-3 Tesla Tower",
@@ -404,7 +404,7 @@ const stratagems = [
         cooldown: "120",
         calltime: "7.75",
         traits: ["Hellpod", "Sentry"],
-        img: "images/defense/Tesla_Tower_Stratagem_Icon.webp"
+        img: "../../../public/images/defense/Tesla_Tower_Stratagem_Icon.webp"
     },
     {
         name: "E/GL-21 Grenadier Battlement",
@@ -415,7 +415,7 @@ const stratagems = [
         cooldown: "120",
         calltime: "7.75",
         traits: ["Hellpod", "Explosive", "Medium Armor Penetrating"],
-        img: "images/defense/GL-21_Grenadier_Battlement_Stratagem_Icon.webp"
+        img: "../../../public/images/defense/GL-21_Grenadier_Battlement_Stratagem_Icon.webp"
     },
     {
         name: "MD-6 Anti-Personnel Minefield",
@@ -426,7 +426,7 @@ const stratagems = [
         cooldown: "120",
         calltime: "7.75",
         traits: ["Hellpod", "Explosive", "Medium Armor Penetrating"],
-        img: "images/defense/Anti-Personnel_Minefield_Stratagem_Icon.webp"
+        img: "../../../public/images/defense/Anti-Personnel_Minefield_Stratagem_Icon.webp"
     },
     {
         name: "B-1 Supply Pack",
@@ -437,7 +437,7 @@ const stratagems = [
         cooldown: "480",
         calltime: "9.75",
         traits: ["Hellpod", "Backpack"],
-        img: "images/support/Supply_Pack_Stratagem_Icon.webp"
+        img: "../../../public/images/support/Supply_Pack_Stratagem_Icon.webp"
     },
     {
         name: "GL-21 Grenade Launcher",
@@ -448,7 +448,7 @@ const stratagems = [
         cooldown: "480",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Explosive", "Medium Armor Penetrating"],
-        img: "images/support/Grenade_Launcher_Stratagem_Icon.webp"
+        img: "../../../public/images/support/Grenade_Launcher_Stratagem_Icon.webp"
     },
     {
         name: "LAS-98 Laser Cannon",
@@ -459,7 +459,7 @@ const stratagems = [
         cooldown: "480",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Heavy Armor Penetrating", "Heat", "Beam"],
-        img: "images/support/Laser_Cannon_Stratagem_Icon.webp"
+        img: "../../../public/images/support/Laser_Cannon_Stratagem_Icon.webp"
     },
     {
         name: "MD-I4 Incendiary Mines",
@@ -470,7 +470,7 @@ const stratagems = [
         cooldown: "120",
         calltime: "7.75",
         traits: ["Hellpod", "Explosive", "Incendiary"],
-        img: "images/defense/Incendiary_Mines_Stratagem_Icon.webp"
+        img: "../../../public/images/defense/Incendiary_Mines_Stratagem_Icon.webp"
     },
     {
         name: "AX/LAS-5 “Guard Dog” Rover",
@@ -481,7 +481,7 @@ const stratagems = [
         cooldown: "480",
         calltime: "9.75",
         traits: ["Hellpod", "Backpack"],
-        img: "images/support/Guard_Dog_Rover_Stratagem_Icon.webp"
+        img: "../../../public/images/support/Guard_Dog_Rover_Stratagem_Icon.webp"
     },
     {
         name: "SH-20 Ballistic Shield Backpack",
@@ -492,7 +492,7 @@ const stratagems = [
         cooldown: "300",
         calltime: "9.75",
         traits: ["Hellpod", "Backpack"],
-        img: "images/support/Ballistic_Shield_Backpack_Stratagem_Icon.webp"
+        img: "../../../public/images/support/Ballistic_Shield_Backpack_Stratagem_Icon.webp"
     },
     {
         name: "ARC-3 Arc Thrower",
@@ -503,7 +503,7 @@ const stratagems = [
         cooldown: "480",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Chargeup"],
-        img: "images/support/Arc_Thrower_Stratagem_Icon.webp"
+        img: "../../../public/images/support/Arc_Thrower_Stratagem_Icon.webp"
     },
     {
         name: "MD-17 Anti-Tank Mines",
@@ -514,7 +514,7 @@ const stratagems = [
         cooldown: "120",
         calltime: "7.75",
         traits: ["Hellpod", "Explosive", "Anti-Tank"],
-        img: "images/defense/MD-17_Anti-Tank_Mines_Stratagem_Icon.webp"
+        img: "../../../public/images/defense/MD-17_Anti-Tank_Mines_Stratagem_Icon.webp"
     },
     {
         name: "LAS-99 Quasar Cannon",
@@ -525,7 +525,7 @@ const stratagems = [
         cooldown: "480",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Anti-Tank", "Chargeup"],
-        img: "images/support/Quasar_Cannon_Stratagem_Icon.webp"
+        img: "../../../public/images/support/Quasar_Cannon_Stratagem_Icon.webp"
     },
     {
         name: "SH-32 Shield Generator Pack",
@@ -536,7 +536,7 @@ const stratagems = [
         cooldown: "480",
         calltime: "9.75",
         traits: ["Hellpod", "Backpack"],
-        img: "images/support/Shield_Generator_Pack_Stratagem_Icon.webp"
+        img: "../../../public/images/support/Shield_Generator_Pack_Stratagem_Icon.webp"
     },
     {
         name: "MD-8 Gas Mines",
@@ -547,7 +547,7 @@ const stratagems = [
         cooldown: "120",
         calltime: "3",
         traits: ["Hellpod", "Explosive", "Caustic"],
-        img: "images/defense/Gas_Minefield_Stratagem_Icon.webp"
+        img: "../../../public/images/defense/Gas_Minefield_Stratagem_Icon.webp"
     },
     {
         name: "A/MG-43 Machine Gun Sentry",
@@ -558,7 +558,7 @@ const stratagems = [
         cooldown: "90",
         calltime: "7.75",
         traits: ["Hellpod", "Sentry", "Medium Armor Penetrating"],
-        img: "images/defense/Machine_Gun_Sentry_Stratagem_Icon.webp"
+        img: "../../../public/images/defense/Machine_Gun_Sentry_Stratagem_Icon.webp"
     },
     {
         name: "A/G-16 Gatling Sentry",
@@ -569,7 +569,7 @@ const stratagems = [
         cooldown: "150",
         calltime: "7.75",
         traits: ["Hellpod", "Sentry", "Medium Armor Penetrating"],
-        img: "images/defense/Gatling_Sentry_Stratagem_Icon.webp"
+        img: "../../../public/images/defense/Gatling_Sentry_Stratagem_Icon.webp"
     },
     {
         name: "A/M-12 Mortar Sentry",
@@ -580,7 +580,7 @@ const stratagems = [
         cooldown: "180",
         calltime: "7.75",
         traits: ["Hellpod", "Explosive", "Sentry", "Medium Armor Penetrating"],
-        img: "images/defense/Mortar_Sentry_Stratagem_Icon.webp"
+        img: "../../../public/images/defense/Mortar_Sentry_Stratagem_Icon.webp"
     },
     {
         name: "AX/AR-23 “Guard Dog”",
@@ -591,7 +591,7 @@ const stratagems = [
         cooldown: "480",
         calltime: "9.75",
         traits: ["Hellpod", "Backpack"],
-        img: "images/support/Guard_Dog_Stratagem_Icon.webp"
+        img: "../../../public/images/support/Guard_Dog_Stratagem_Icon.webp"
     },
     {
         name: "A/AC-8 Autocannon Sentry",
@@ -602,7 +602,7 @@ const stratagems = [
         cooldown: "150",
         calltime: "7.75",
         traits: ["Hellpod", "Sentry", "Anti-Tank"],
-        img: "images/defense/Autocannon_Sentry_Stratagem_Icon.webp"
+        img: "../../../public/images/defense/Autocannon_Sentry_Stratagem_Icon.webp"
     },
     {
         name: "A/MLS-4X Rocket Sentry",
@@ -613,7 +613,7 @@ const stratagems = [
         cooldown: "150",
         calltime: "7.75",
         traits: ["Hellpod", "Explosive", "Sentry", "Anti-Tank"],
-        img: "images/defense/Rocket_Sentry_Stratagem_Icon.webp"
+        img: "../../../public/images/defense/Rocket_Sentry_Stratagem_Icon.webp"
     },
     {
         name: "A/M-23 EMS Mortar Sentry",
@@ -624,7 +624,7 @@ const stratagems = [
         cooldown: "180",
         calltime: "7.75",
         traits: ["Hellpod", "Explosive", "Sentry"],
-        img: "images/defense/AM-23_EMS_Mortar_Sentry_Stratagem_Icon.webp"
+        img: "../../../public/images/defense/AM-23_EMS_Mortar_Stratagem_Icon.webp"
     },
     {
         name: "EXO-45 Patriot Exosuit",
@@ -635,7 +635,7 @@ const stratagems = [
         cooldown: "600",
         calltime: "10.50",
         traits: ["Explosive", "Vehicle", "Anti-Tank", "Medium Armor Penetrating"],
-        img: "images/support/EXO-45_Patriot_Exosuit_Stratagem_Icon.webp"
+        img: "../../../public/images/support/EXO-45_Patriot_Exosuit_Stratagem_Icon.webp"
     },
     {
         name: "EXO-49 Emancipator Exosuit",
@@ -646,7 +646,7 @@ const stratagems = [
         cooldown: "600",
         calltime: "10.50",
         traits: ["Explosive", "Vehicle", "Anti-Tank"],
-        img: "images/support/EXO-49_Emancipator_Exosuit_Stratagem_Icon.webp"
+        img: "../../../public/images/support/EXO-49_Emancipator_Exosuit_Stratagem_Icon.webp"
     },
     {
         name: "TX-41 Sterilizer",
@@ -657,7 +657,7 @@ const stratagems = [
         cooldown: "480",
         calltime: "9.75",
         traits: ["Support Weapon", "Hellpod", "Caustic"],
-        img: "images/support/Sterilizer_Stratagem_Icon.webp"
+        img: "../../../public/images/support/Sterilizer_Stratagem_Icon.webp"
     },
     {
         name: "AX/TX-13 “Guard Dog” Dog Breath",
@@ -668,7 +668,7 @@ const stratagems = [
         cooldown: "480",
         calltime: "9.75",
         traits: ["Hellpod", "Backpack", "Caustic"],
-        img: "images/support/Guard_Dog_Dog_Breath_Stratagem_Icon.webp"
+        img: "../../../public/images/support/Guard_Dog_Dog_Breath_Stratagem_Icon.webp"
     },
     {
         name: "SH-51 Directional Shield",
@@ -679,7 +679,7 @@ const stratagems = [
         cooldown: "300",
         calltime: "9.75",
         traits: ["Hellpod", "Backpack"],
-        img: "images/support/SH-51_Directional_Shield_Stratagem_Icon.webp"
+        img: "../../../public/images/support/SH-51_Directional_Shield_Stratagem_Icon.webp"
     },
     {
         name: "E/AT-12 Anti-Tank Emplacement",
@@ -690,7 +690,7 @@ const stratagems = [
         cooldown: "180",
         calltime: "7.75",
         traits: ["Hellpod", "Anti-Tank"],
-        img: "images/defense/E_AT-12_Anti-Tank_Emplacement_Stratagem_Icon.webp"
+        img: "../../../public/images/defense/E_AT-12_Anti-Tank_Emplacement_Stratagem_Icon.webp"
     },
     {
         name: "A/FLAM-40 Flame Sentry",
@@ -701,7 +701,7 @@ const stratagems = [
         cooldown: "125",
         calltime: "4.75",
         traits: ["Hellpod", "Incendiary", "Sentry"],
-        img: "images/defense/A_FLAM-40_Flame_Sentry_Stratagem_Icon.webp"
+        img: "../../../public/images/defense/A_FLAM-40_Flame_Sentry_Stratagem_Icon.webp"
     },
     {
         name: "B-100 Portable Hellbomb",
@@ -712,7 +712,7 @@ const stratagems = [
         cooldown: "300",
         calltime: "9.75",
         traits: ["Hellpod", "Explosive", "Backpack", "Anti-Tank"],
-        img: "images/support/Portable_Hellbomb_Stratagem_Icon.webp"
+        img: "../../../public/images/support/Portable_Hellbomb_Stratagem_Icon.webp"
     },
     {
         name: "LIFT-860 Hover Pack",
@@ -723,7 +723,7 @@ const stratagems = [
         cooldown: "480",
         calltime: "9.75",
         traits: ["Hellpod", "Backpack"],
-        img: "images/support/Hover_Pack_Stratagem_Icon.webp"
+        img: "../../../public/images/support/Hover_Pack_Stratagem_Icon.webp"
     },
     {
         name: "CQC-1 One True Flag",
@@ -734,7 +734,7 @@ const stratagems = [
         cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Melee", "One Handed"],
-        img: "images/support/CQC-1_One_True_Flag_Stratagem_Icon.webp"
+        img: "../../../public/images/support/CQC-1_One_True_Flag_Stratagem_Icon.webp"
     },
     {
         name: "GL-52 De-Escalator",
@@ -745,7 +745,7 @@ const stratagems = [
         cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Stun"],
-        img: "images/support/GL-52_De-Escalator_Stratagem_Icon.webp"
+        img: "../../../public/images/support/GL-52_De-Escalator_Stratagem_Icon.webp"
     },
     {
         name: "AX/ARC-3 “Guard Dog” K-9",
@@ -756,7 +756,7 @@ const stratagems = [
         cooldown: "600",
         calltime: "9.75",
         traits: ["Hellpod", "Backpack", "Stun"],
-        img: "images/support/AX_ARC-3__Guard_Dog__K-9_Stratagem_Icon.webp"
+        img: "../../../public/images/support/AX_ARC-3__Guard_Dog__K-9_Stratagem_Icon.webp"
     },
     {
         name: "PLAS-45 Epoch",
@@ -767,7 +767,7 @@ const stratagems = [
         cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Explosive", "Heavy Armor Penetrating", "Chargeup"],
-        img: "images/support/PLAS-45_Epoch_Stratagem_Icon.webp"
+        img: "../../../public/images/support/PLAS-45_Epoch_Stratagem_Icon.webp"
     },
     {
         name: "A/LAS-98 Laser Sentry",
@@ -778,7 +778,7 @@ const stratagems = [
         cooldown: "188",
         calltime: "7.75",
         traits: ["Hellpod", "Sentry", "Heavy Armor Penetrating", "Heat", "Beam"],
-        img: "images/defense/A_LAS-98_Laser_Sentry_Stratagem_Icon.webp"
+        img: "../../../public/images/defense/A_LAS-98_Laser_Sentry_Stratagem_Icon.webp"
     },
     {
         name: "LIFT-182 Warp Pack",
@@ -789,7 +789,7 @@ const stratagems = [
         cooldown: "600",
         calltime: "9.75",
         traits: ["Hellpod", "Backpack"],
-        img: "images/support/LIFT-182_Warp_Pack_Stratagem_Icon.webp"
+        img: "../../../public/images/support/LIFT-182_Warp_Pack_Stratagem_Icon.webp"
     },
     {
         name: "S-11 Speargun",
@@ -800,7 +800,7 @@ const stratagems = [
         cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Anti-Tank"],
-        img: "images/support/S-11_Speargun_Stratagem_Icon.webp"
+        img: "../../../public/images/support/S-11_Speargun_Stratagem_Icon.webp"
     },
     {
         name: "EAT-700 Expendable Napalm",
@@ -811,7 +811,7 @@ const stratagems = [
         cooldown: "175",
         calltime: "6.75",
         traits: ["Support Weapon", "Hellpod", "Incendiary", "Expendable"],
-        img: "images/support/EAT-700_Expendable_Napalm_Stratagem_Icon.webp"
+        img: "../../../public/images/support/EAT-700_Expendable_Napalm_Stratagem_Icon.webp"
     },
     {
         name: "MS-11 Solo Silo",
@@ -822,7 +822,7 @@ const stratagems = [
         cooldown: "225",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Anti-Tank"],
-        img: "images/support/MS-11_Stratagem_Icon.webp"
+        img: "../../../public/images/support/MS-11_Stratagem_Icon.webp"
     },
     {
         name: "Reinforce",
@@ -833,7 +833,7 @@ const stratagems = [
         cooldown: "120",
         calltime: "3.00",
         traits: ["Hellpod"],
-        img: "images/common/Reinforce_Stratagem_Icon.webp"
+        img: "../../../public/images/common/Reinforce_Stratagem_Icon.webp"
     },
     {
         name: "SoS Beacon",
@@ -844,7 +844,7 @@ const stratagems = [
         cooldown: "0",
         calltime: "3.00",
         traits: ["Hellpod"],
-        img: "images/common/SOS_Beacon_Stratagem_Icon.webp"
+        img: "../../../public/images/common/SOS_Beacon_Stratagem_Icon.webp"
     },
     {
         name: "NUX-223 Hellbomb",
@@ -855,7 +855,7 @@ const stratagems = [
         cooldown: "30",
         calltime: "10.00",
         traits: ["Hellpod", "Explosive", "Anti-Tank"],
-        img: "images/objective/Hellbomb_Stratagem_Icon.webp"
+        img: "../../../public/images/objective/Hellbomb_Stratagem_Icon.webp"
     },
     {
         name: "Dark Fluid Vessel",
@@ -866,6 +866,6 @@ const stratagems = [
         cooldown: "0",
         calltime: "10.00",
         traits: ["Hellpod", "Backpack"],
-        img: "images/objective/Dark_Fluid_Vessel_Stratagem_Icon.webp"
+        img: "../../../public/images/objective/Dark_Fluid_Vessel_Stratagem_Icon.webp"
     },
 ];
