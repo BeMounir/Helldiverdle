@@ -184,6 +184,64 @@ input {
     margin-bottom: 15px;
 }
 
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+
+.result-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 60px;
+    border: 2px solid #ffeb3b;
+    background-color: #1a1a1a;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 235, 59, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.result-box .arrow-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 4px;
+}
+
+.template-row {
+    display: none;
+}
+
+.result-box.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.correct {
+    background: #2e8b57;
+}
+
+.partial {
+    background: orange;
+}
+
+.incorrect {
+    background: #8b2e2e;
+}
+
 footer {
     margin-top: 500px;
     font-size: 1rem;

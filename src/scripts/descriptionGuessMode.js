@@ -63,13 +63,25 @@ function submitGuess() {
     if (guessedStratagems.has(val)) return;
     guessedStratagems.add(val);
     guessCount++;
+
+    const found = stratagems.find(s => s.name.toLowerCase() === val);
+    if (!found) {
+        console.warn("No stratagem found for guess:", val);
+        return;
+    }
+
     document.getElementById("tries").textContent = guessCount;
+    const template = document.getElementById('template-row');
+    const row = template.cloneNode(true);
+    row.classList.remove('template-row');
+    row.style.display = 'flex';
+    const codeBox = row.querySelector('.code .result-box');
+    codeBox.textContent = found.name;
+    codeBox.className = 'result-box ' + (found.name.toLowerCase() === secret.name.toLowerCase() ? 'correct' : 'incorrect');
     if (val === secret.name.toLowerCase()) {
         revealAllWords()
         document.querySelector(".win").click();
         input.readOnly = true;
-        confetti({particleCount: 50, spread: 0, origin: {x: 0.2, y: -0.2}, angle: 60, zIndex: 9999});
-        confetti({particleCount: 50, spread: 70, origin: {x: 0.8, y: -0.2}, angle: 200, zIndex: 9999});
         var winAudio = new Audio('../../../public/audio/winAudio.mp3');
         winAudio.play();
         let stars = 0;
@@ -122,6 +134,9 @@ function submitGuess() {
         if (subText) subText.textContent = quote;
         if (xpText) xpText.textContent = `${xp}`;
         if (reqText) reqText.textContent = `${req}`;
+
+        const jsConfetti = new JSConfetti();
+        jsConfetti.addConfetti()
         return;
     }
 
@@ -129,4 +144,16 @@ function submitGuess() {
         revealWord();
     }
     input.value = "";
+}
+
+function checkCode(guessCode = [], secretCode = []) {
+    if (!Array.isArray(guessCode)) guessCode = [];
+    if (!Array.isArray(secretCode)) secretCode = [];
+
+    const exactMatch = guessCode.length === secretCode.length &&
+        guessCode.every((val, idx) => val === secretCode[idx]);
+
+    if (exactMatch) return 'perfect';
+
+    return 'none';
 }

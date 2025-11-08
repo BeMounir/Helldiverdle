@@ -10,5 +10,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="@tsparticles/confetti" level="application" />
     <orderEntry type="library" name="tsparticles" level="application" />
+    <orderEntry type="library" name="js-confetti" level="application" />
   </component>
 </module>

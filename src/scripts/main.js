@@ -154,8 +154,9 @@ function submitGuess() {
         if (reqText) reqText.textContent = `${req}`;
         const streakEl = document.getElementById('streak');
         if (streakEl) streakEl.textContent = streak;
-        confetti({particleCount: 50, spread: 0, origin: {x: 0.2, y: -0.2}, angle: 60, zIndex: 9999});
-        confetti({particleCount: 50, spread: 70, origin: {x: 0.8, y: -0.2}, angle: 200, zIndex: 9999});
+
+        const jsConfetti = new JSConfetti();
+        jsConfetti.addConfetti()
     }
     document.getElementById('suggestions').innerHTML = '';
     saveGameState();

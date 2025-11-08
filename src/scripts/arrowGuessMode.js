@@ -89,8 +89,6 @@ function submitGuess() {
     if (val === secret.name.toLowerCase()) {
         document.querySelector(".win").click();
         input.readOnly = true;
-        confetti({particleCount: 50, spread: 0, origin: {x: 0.2, y: -0.2}, angle: 60, zIndex: 9999});
-        confetti({particleCount: 50, spread: 70, origin: {x: 0.8, y: -0.2}, angle: 200, zIndex: 9999});
         var winAudio = new Audio('../../../public/audio/winAudio.mp3');
         winAudio.play();
         let stars = 0;
@@ -143,6 +141,9 @@ function submitGuess() {
         if (subText) subText.textContent = quote;
         if (xpText) xpText.textContent = `${xp}`;
         if (reqText) reqText.textContent = `${req}`;
+
+        const jsConfetti = new JSConfetti();
+        jsConfetti.addConfetti()
         return;
     }
     input.value = "";
