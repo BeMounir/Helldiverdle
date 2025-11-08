@@ -13,6 +13,20 @@ function getDailyStratagem() {
     return stratagems[randomIndex];
 }
 
+function timeUntilNextStratagem() {
+    const now = new Date();
+    const nextUTC = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + 1));
+    const diffMs = nextUTC - now;
+    const hours = Math.floor(diffMs / (1000 * 60 * 60));
+    const minutes = Math.floor((diffMs / (1000 * 60)) % 60);
+    const seconds = Math.floor((diffMs / 1000) % 60);
+    return `${hours}h ${minutes}m ${seconds}s until next stratagem`;
+}
+
+setInterval(() => {
+    document.getElementById('timer').textContent = timeUntilNextStratagem();
+}, 1000);
+
 function seededShuffle(array, seed) {
     let result = array.slice();
     let m = result.length, i;
@@ -46,6 +60,14 @@ function revealWord() {
     renderDescription();
 }
 
+function revealAllWords() {
+    for (let i = 0; i < words.length; i++) {
+        hidden[i] = words[i];
+    }
+    revealedWords = words.length;
+    renderDescription();
+}
+
 revealWord();
 
 function submitGuess() {
@@ -56,12 +78,64 @@ function submitGuess() {
     guessedStratagems.add(val);
     guessCount++;
     document.getElementById("tries").textContent = guessCount;
-
     if (val === secret.name.toLowerCase()) {
+        revealAllWords()
         document.querySelector(".win").click();
         input.readOnly = true;
         confetti({particleCount: 50, spread: 0, origin: {x: 0.2, y: -0.2}, angle: 60, zIndex: 9999});
         confetti({particleCount: 50, spread: 70, origin: {x: 0.8, y: -0.2}, angle: 200, zIndex: 9999});
+        var winAudio = new Audio('../../../public/audio/winAudio.mp3');
+        winAudio.play();
+        let stars = 0;
+        let xp = 0;
+        let req = 0;
+        let quote = "quote";
+        if (guessCount <= 3) {
+            stars = 5;
+            xp = 100;
+            req = 100;
+            quote = "Outstanding Patriotism";
+        } else if (guessCount <= 6) {
+            stars = 4;
+            xp = 75;
+            req = 75;
+            quote = "Superior Valor";
+        } else if (guessCount <= 9) {
+            stars = 3;
+            xp = 50;
+            req = 50;
+            quote = "Honorable Duty";
+        } else if (guessCount <= 12) {
+            stars = 2;
+            xp = 25;
+            req = 25;
+            quote = "Unremarkable Performance";
+        } else {
+            stars = 1;
+            xp = 10;
+            req = 10;
+            quote = "Disappointing Service";
+        }
+        const totalStars = 5;
+        const filledStar = "../../../public/images/icons/StarFilled.png";
+        const emptyStar = "../../../public/images/icons/StarEmpty.png";
+        const ratingEl = document.querySelector('.rating');
+        if (ratingEl) {
+            ratingEl.innerHTML = '';
+            for (let i = 0; i < totalStars; i++) {
+                const img = document.createElement('img');
+                img.src = i < stars ? filledStar : emptyStar;
+                img.alt = i < stars ? 'Filled star' : 'Empty star';
+                img.classList.add('star-icon');
+                ratingEl.appendChild(img);
+            }
+        }
+        const xpText = document.querySelector('.xp-text');
+        const reqText = document.querySelector('.req-text');
+        const subText = document.querySelector('.win-subtitle');
+        if (subText) subText.textContent = quote;
+        if (xpText) xpText.textContent = `${xp}`;
+        if (reqText) reqText.textContent = `${req}`;
         return;
     }
 

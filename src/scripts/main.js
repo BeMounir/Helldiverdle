@@ -129,14 +129,14 @@ function timeUntilNextStratagem() {
     return `${hours}h ${minutes}m ${seconds}s until next stratagem`;
 }
 
-const timerElement = document.getElementById('timer');
-timerElement.textContent = timeUntilNextStratagem();
-let guessCount = 0;
-const guessedStratagems = new Set();
 setInterval(() => {
     document.getElementById('timer').textContent = timeUntilNextStratagem();
 }, 1000);
 
+const timerElement = document.getElementById('timer');
+timerElement.textContent = timeUntilNextStratagem();
+let guessCount = 0;
+const guessedStratagems = new Set();
 const todayKey = new Date().toISOString().split('T')[0];
 const storageKey = `stratagemGame_${todayKey}`;
 for (let key in localStorage) {

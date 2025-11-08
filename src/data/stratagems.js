@@ -9,7 +9,8 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Support Weapon', 'Hellpod', 'Medium Armor Penetrating', 'Stationary Reload'],
         img: '../../../public/images/support/Machine_Gun_Stratagem_Icon.webp',
-        description: 'A machine gun designed for stationary use. Trades higher power for increased recoil and reduced accuracy.'
+        description: 'A machine gun designed for stationary use. Trades higher power for increased recoil and reduced accuracy.',
+        code: ['↓', '←', '↓', '↑', '→'],
     },
     {
         name: 'APW-1 Anti-Materiel Rifle',
@@ -21,7 +22,8 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Support Weapon', 'Hellpod', 'Heavy Armor Penetrating'],
         img: '../../../public/images/support/Anti-Materiel_Rifle_Stratagem_Icon.webp',
-        description: 'A high-caliber sniper rifle effective over long distances against light vehicle armor. This rifle must be aimed downscope.'
+        description: 'A high-caliber sniper rifle effective over long distances against light vehicle armor. This rifle must be aimed downscope.',
+        code: ['↓', '←', '→', '↑', '↓'],
     },
     {
         name: 'M-105 Stalwart',
@@ -33,7 +35,8 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Support Weapon', 'Hellpod', 'Light Armor Penetrating'],
         img: '../../../public/images/support/Stalwart_Stratagem_Icon.webp',
-        description: 'A compact, low caliber machine gun. Trades power for ease of use, with faster reloading than heavier machine guns.'
+        description: 'A compact, low caliber machine gun. Trades power for ease of use, with faster reloading than heavier machine guns.',
+        code: ['↓', '←', '↓', '↑', '↑', '←'],
     },
     {
         name: 'EAT-17 Expendable Anti-Tank',
@@ -45,7 +48,8 @@ const stratagems = [
         calltime: '6.75',
         traits: ['Support Weapon', 'Hellpod', 'Anti-Tank', 'Expendable'],
         img: '../../../public/images/support/Expendable_Anti-Tank_Stratagem_Icon.webp',
-        description: 'A single-use weapon specialized for damaging vehicle armor. Discarded after every use.'
+        description: 'A single-use weapon specialized for damaging vehicle armor. Discarded after every use.',
+        code: ['↓', '↓', '←', '↑', '→'],
     },
     {
         name: 'GR-8 Recoilless Rifle',
@@ -55,15 +59,10 @@ const stratagems = [
         level: '5',
         cooldown: '600',
         calltime: '7.75',
-        traits: [
-            'Support Weapon',
-            'Hellpod',
-            'Backpack',
-            'Anti-Tank',
-            'Stationary Reload'
-        ],
+        traits: ['Support Weapon', 'Hellpod', 'Backpack', 'Anti-Tank', 'Stationary Reload'],
         img: '../../../public/images/support/Recoilless_Rifle_Stratagem_Icon.webp',
-        description: 'A recoilless rifle effective against vehicle armor. Includes support backpack required for reloading.'
+        description: 'A recoilless rifle effective against vehicle armor. Includes support backpack required for reloading.',
+        code: ['↓', '←', '→', '→', '←'],
     },
     {
         name: 'FLAM-40 Flamethrower',
@@ -75,7 +74,8 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Support Weapon', 'Hellpod', 'Incendiary'],
         img: '../../../public/images/support/Flamethrower_Stratagem_Icon.webp',
-        description: 'An incendiary weapon for close range. Will ignite targets, terrain, and any flammable teammates.'
+        description: 'An incendiary weapon for close range. Will ignite targets, terrain, and any flammable teammates.',
+        code: ['↓', '←', '↑', '↓', '↑'],
     },
     {
         name: 'AC-8 Autocannon',
@@ -85,15 +85,10 @@ const stratagems = [
         level: '10',
         cooldown: '600',
         calltime: '7.75',
-        traits: [
-            'Support Weapon',
-            'Hellpod',
-            'Backpack',
-            'Heavy Armor Penetrating',
-            'Stationary Reload'
-        ],
+        traits: ['Support Weapon', 'Hellpod', 'Backpack', 'Heavy Armor Penetrating', 'Stationary Reload'],
         img: '../../../public/images/support/Autocannon_Stratagem_Icon.webp',
-        description: 'A fully-automatic cannon effective against light vehicle armor. Includes support backpack required for reloading.'
+        description: 'A fully-automatic cannon effective against light vehicle armor. Includes support backpack required for reloading.',
+        code: ['↓', '←', '↓', '↑', '↑', '→'],
     },
     {
         name: 'MG-206 Heavy Machine Gun',
@@ -103,14 +98,10 @@ const stratagems = [
         level: '12',
         cooldown: '600',
         calltime: '7.75',
-        traits: [
-            'Support Weapon',
-            'Hellpod',
-            'Heavy Armor Penetrating',
-            'Stationary Reload'
-        ],
+        traits: ['Support Weapon', 'Hellpod', 'Heavy Armor Penetrating', 'Stationary Reload'],
         img: '../../../public/images/support/Heavy_Machine_Gun_Stratagem_Icon.webp',
-        description: 'A very powerful but difficult-to-wield machine gun with intense recoil.'
+        description: 'A very powerful but difficult-to-wield machine gun with intense recoil.',
+        code: ['↓', '←', '↑', '↓', '↓'],
     },
     {
         name: 'RL-77 Airburst Rocket Launcher',
@@ -120,15 +111,10 @@ const stratagems = [
         level: '15',
         cooldown: '600',
         calltime: '7.75',
-        traits: [
-            'Support Weapon',
-            'Hellpod',
-            'Backpack',
-            'Medium Armor Penetrating',
-            'Stationary Reload'
-        ],
+        traits: ['Support Weapon', 'Hellpod', 'Backpack', 'Medium Armor Penetrating', 'Stationary Reload'],
         img: '../../../public/images/support/RL-77_Airburst_Rocket_Launcher_Stratagem_Icon.webp',
-        description: 'Fires a rocket that detonates within proximity of a target, and deploys a cluster of explosive bomblets.'
+        description: 'Fires a rocket that detonates within proximity of a target, and deploys a cluster of explosive bomblets.',
+        code: ['↓', '↑', '↑', '←', '→'],
     },
     {
         name: 'MLS-4X Commando',
@@ -140,7 +126,8 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Support Weapon', 'Hellpod', 'Anti-Tank', 'Expendable'],
         img: '../../../public/images/support/Commando_Stratagem_Icon.webp',
-        description: 'An expendable missile launcher equipped with four laser-guided missiles.'
+        description: 'An expendable missile launcher equipped with four laser-guided missiles.',
+        code: ['↓', '←', '↑', '↓', '→'],
     },
     {
         name: 'RS-422 Railgun',
@@ -152,7 +139,8 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Support Weapon', 'Hellpod', 'Anti-Tank', 'Chargeup'],
         img: '../../../public/images/support/Railgun_Stratagem_Icon.webp',
-        description: 'An experimental weapon which prioritizes armor penetration. Must be charged between shots - choose targets carefully.'
+        description: 'An experimental weapon which prioritizes armor penetration. Must be charged between shots - choose targets carefully.',
+        code: ['↓', '→', '↓', '↑', '←', '→'],
     },
     {
         name: 'FAF-14 Spear',
@@ -162,15 +150,10 @@ const stratagems = [
         level: '20',
         cooldown: '600',
         calltime: '7.75',
-        traits: [
-            'Support Weapon',
-            'Hellpod',
-            'Backpack',
-            'Anti-Tank',
-            'Stationary Reload'
-        ],
+        traits: ['Support Weapon', 'Hellpod', 'Backpack', 'Anti-Tank', 'Stationary Reload'],
         img: '../../../public/images/support/Spear_Stratagem_Icon.webp',
-        description: 'An anti-tank homing missile which must lock onto its target before launch. Effective against large and armored enemies.'
+        description: 'An anti-tank homing missile which must lock onto its target before launch. Effective against large and armored enemies.',
+        code: ['↓', '↓', '↑', '↓', '↓'],
     },
     {
         name: 'StA-X3 W.A.S.P. Launcher',
@@ -180,16 +163,12 @@ const stratagems = [
         level: '20',
         cooldown: '600',
         calltime: '7.75',
-        traits: [
-            'Support Weapon',
-            'Hellpod',
-            'Backpack',
-            'Anti-Tank',
-            'Stationary Reload'
-        ],
+        traits: ['Support Weapon', 'Hellpod', 'Backpack', 'Anti-Tank', 'Stationary Reload'],
         img: '../../../public/images/support/Commando_Stratagem_Icon.webp',
-        description: 'A versatile missile launcher loaded with seven lock-on homing missiles. These can either be fired from the launcher directly or as an airburst. Includes support backpack required for reloading. Produced by Stål Arms.'
+        description: 'A versatile missile launcher loaded with seven lock-on homing missiles. These can either be fired from the launcher directly or as an airburst. Includes support backpack required for reloading. Produced by Stål Arms.',
+        code: ['↓', '↓', '↑', '↓', '→'],
     },
+
     {
         name: 'Orbital Gatling Barrage',
         department: 'Orbital Cannons',
@@ -452,7 +431,7 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Hellpod', 'Heavy Armor Penetrating'],
         img: '../../../public/images/defense/HMG_Emplacement_Stratagem_Icon.webp',
-        description: ''
+        description: 'A manned fortification offering superior firepower against lightly armored targets. Slow to turn, so place it wisely'
     },
     {
         name: 'FX-12 Shield Generator Relay',
@@ -464,7 +443,7 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Hellpod'],
         img: '../../../public/images/defense/Shield_Generator_Relay_Stratagem_Icon.webp',
-        description: ''
+        description: 'A stationary energy shield which provides cover against projectiles. Has a limited lifetime once deployed.'
     },
     {
         name: 'A/ARC-3 Tesla Tower',
@@ -476,7 +455,7 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Hellpod', 'Sentry'],
         img: '../../../public/images/defense/Tesla_Tower_Stratagem_Icon.webp',
-        description: ''
+        description: 'A turret which fires electrical charges at targets in close range. To avoid friendly fire, remain prone.'
     },
     {
         name: 'E/GL-21 Grenadier Battlement',
@@ -488,7 +467,7 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Hellpod', 'Explosive', 'Medium Armor Penetrating'],
         img: '../../../public/images/defense/GL-21_Grenadier_Battlement_Stratagem_Icon.webp',
-        description: ''
+        description: 'A stationary ballistic cover with a mounted grenade launcher. Can protect multiple Helldivers from small arms fire.'
     },
     {
         name: 'MD-6 Anti-Personnel Minefield',
@@ -500,7 +479,7 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Hellpod', 'Explosive', 'Medium Armor Penetrating'],
         img: '../../../public/images/defense/Anti-Personnel_Minefield_Stratagem_Icon.webp',
-        description: ''
+        description: 'Deploys a defensive anti-personnel minefield, to halt enemy advance.'
     },
     {
         name: 'B-1 Supply Pack',
@@ -512,7 +491,7 @@ const stratagems = [
         calltime: '9.75',
         traits: ['Hellpod', 'Backpack'],
         img: '../../../public/images/support/Supply_Pack_Stratagem_Icon.webp',
-        description: ''
+        description: 'Supply boxes containing ammunition, with a backpack that allows the user to distribute boxes to fellow Helldivers.'
     },
     {
         name: 'GL-21 Grenade Launcher',
@@ -522,14 +501,9 @@ const stratagems = [
         level: '5',
         cooldown: '480',
         calltime: '7.75',
-        traits: [
-            'Support Weapon',
-            'Hellpod',
-            'Explosive',
-            'Medium Armor Penetrating'
-        ],
+        traits: ['Support Weapon', 'Hellpod', 'Explosive', 'Medium Armor Penetrating'],
         img: '../../../public/images/support/Grenade_Launcher_Stratagem_Icon.webp',
-        description: ''
+        description: 'A grenade launcher effective against armored infantry. Not intended for use against vehicle armor or fortified buildings.'
     },
     {
         name: 'LAS-98 Laser Cannon',
@@ -539,15 +513,9 @@ const stratagems = [
         level: '5',
         cooldown: '480',
         calltime: '7.75',
-        traits: [
-            'Support Weapon',
-            'Hellpod',
-            'Heavy Armor Penetrating',
-            'Heat',
-            'Beam'
-        ],
+        traits: ['Support Weapon', 'Hellpod', 'Heavy Armor Penetrating', 'Heat', 'Beam'],
         img: '../../../public/images/support/Laser_Cannon_Stratagem_Icon.webp',
-        description: ''
+        description: 'A laser weapon firing a continuous beam. Doesn\'t require ammunition, but will need heat sink replaced if it overheats.'
     },
     {
         name: 'MD-I4 Incendiary Mines',
@@ -559,7 +527,7 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Hellpod', 'Explosive', 'Incendiary'],
         img: '../../../public/images/defense/Incendiary_Mines_Stratagem_Icon.webp',
-        description: ''
+        description: 'Deploys a defensive incendiary minefield, which will set both terrain and targets alight when triggered.'
     },
     {
         name: 'AX/LAS-5 “Guard Dog” Rover',
@@ -571,7 +539,7 @@ const stratagems = [
         calltime: '9.75',
         traits: ['Hellpod', 'Backpack'],
         img: '../../../public/images/support/Guard_Dog_Rover_Stratagem_Icon.webp',
-        description: ''
+        description: 'An autonomous drone equipped with a laser rifle, providing 360° cover. Returns to backpack to cool down.'
     },
     {
         name: 'SH-20 Ballistic Shield Backpack',
@@ -583,7 +551,7 @@ const stratagems = [
         calltime: '9.75',
         traits: ['Hellpod', 'Backpack'],
         img: '../../../public/images/support/Ballistic_Shield_Backpack_Stratagem_Icon.webp',
-        description: ''
+        description: 'A backpack which can be wielded as a one-handed ballistic shield, protecting against small arms fire.'
     },
     {
         name: 'ARC-3 Arc Thrower',
@@ -595,7 +563,7 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Support Weapon', 'Hellpod', 'Chargeup'],
         img: '../../../public/images/support/Arc_Thrower_Stratagem_Icon.webp',
-        description: ''
+        description: 'Projects an arc of lightning at close range. Charges up to project bolts, and may discharge through multiple targets.'
     },
     {
         name: 'MD-17 Anti-Tank Mines',
@@ -607,7 +575,7 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Hellpod', 'Explosive', 'Anti-Tank'],
         img: '../../../public/images/defense/MD-17_Anti-Tank_Mines_Stratagem_Icon.webp',
-        description: ''
+        description: 'Scatters powerful anti-tank mines that deal heavy, armor-penetrating damage. Minefield is less densely packed relative to smaller mines.'
     },
     {
         name: 'LAS-99 Quasar Cannon',
@@ -619,7 +587,7 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Support Weapon', 'Hellpod', 'Anti-Tank', 'Chargeup'],
         img: '../../../public/images/support/Quasar_Cannon_Stratagem_Icon.webp',
-        description: ''
+        description: 'Charges up to fire a powerful, explosive energy burst. Has a long cooldown period after firing.'
     },
     {
         name: 'SH-32 Shield Generator Pack',
@@ -631,7 +599,7 @@ const stratagems = [
         calltime: '9.75',
         traits: ['Hellpod', 'Backpack'],
         img: '../../../public/images/support/Shield_Generator_Pack_Stratagem_Icon.webp',
-        description: ''
+        description: 'Encloses the wearer in a spherical shield which blocks high-speed projectiles. Has a limited lifetime once deployed.'
     },
     {
         name: 'MD-8 Gas Mines',
@@ -643,7 +611,7 @@ const stratagems = [
         calltime: '3',
         traits: ['Hellpod', 'Explosive', 'Caustic'],
         img: '../../../public/images/defense/Gas_Minefield_Stratagem_Icon.webp',
-        description: ''
+        description: 'Deploys mines that release gas on activation, temporarily blinding and slowing most enemies.'
     },
     {
         name: 'A/MG-43 Machine Gun Sentry',
@@ -655,7 +623,7 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Hellpod', 'Sentry', 'Medium Armor Penetrating'],
         img: '../../../public/images/defense/Machine_Gun_Sentry_Stratagem_Icon.webp',
-        description: ''
+        description: 'An agile automated machine gun turret. Will fire at targets even if Helldivers will be caught in the crossfire.'
     },
     {
         name: 'A/G-16 Gatling Sentry',
@@ -667,7 +635,7 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Hellpod', 'Sentry', 'Medium Armor Penetrating'],
         img: '../../../public/images/defense/Gatling_Sentry_Stratagem_Icon.webp',
-        description: ''
+        description: 'An automated turret with an extremely high rate of fire. Caution: does not check if friendly units are in line of fire.'
     },
     {
         name: 'A/M-12 Mortar Sentry',
@@ -679,7 +647,7 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Hellpod', 'Explosive', 'Sentry', 'Medium Armor Penetrating'],
         img: '../../../public/images/defense/Mortar_Sentry_Stratagem_Icon.webp',
-        description: ''
+        description: 'A turret firing powerful shells in a high arc. Effective at long ranges, and able to strike at targets behind cover.'
     },
     {
         name: 'AX/AR-23 “Guard Dog”',
@@ -703,7 +671,7 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Hellpod', 'Sentry', 'Anti-Tank'],
         img: '../../../public/images/defense/Autocannon_Sentry_Stratagem_Icon.webp',
-        description: ''
+        description: 'An automated cannon turret firing anti-tank ammunition over long ranges. Sacrifices agility for range and power.'
     },
     {
         name: 'A/MLS-4X Rocket Sentry',
@@ -715,7 +683,7 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Hellpod', 'Explosive', 'Sentry', 'Anti-Tank'],
         img: '../../../public/images/defense/Rocket_Sentry_Stratagem_Icon.webp',
-        description: ''
+        description: 'A powerful automated turret, effective against armored targets. The turret will primarily aim at larger enemies.'
     },
     {
         name: 'A/M-23 EMS Mortar Sentry',
@@ -727,7 +695,7 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Hellpod', 'Explosive', 'Sentry'],
         img: '../../../public/images/defense/AM-23_EMS_Mortar_Stratagem_Icon.webp',
-        description: ''
+        description: 'A turret firing static field generators that slow the advance of enemies.'
     },
     {
         name: 'EXO-45 Patriot Exosuit',
@@ -739,7 +707,7 @@ const stratagems = [
         calltime: '10.50',
         traits: ['Explosive', 'Vehicle', 'Anti-Tank', 'Medium Armor Penetrating'],
         img: '../../../public/images/support/EXO-45_Patriot_Exosuit_Stratagem_Icon.webp',
-        description: ''
+        description: 'A heavily-armored walking exosuit equipped with a rocket launcher and heavy machine gun.'
     },
     {
         name: 'EXO-49 Emancipator Exosuit',
@@ -751,7 +719,7 @@ const stratagems = [
         calltime: '10.50',
         traits: ['Explosive', 'Vehicle', 'Anti-Tank'],
         img: '../../../public/images/support/EXO-49_Emancipator_Exosuit_Stratagem_Icon.webp',
-        description: ''
+        description: 'A heavily armored walking exosuit equipped with dual autocannons.'
     },
     {
         name: 'TX-41 Sterilizer',
@@ -763,7 +731,7 @@ const stratagems = [
         calltime: '9.75',
         traits: ['Support Weapon', 'Hellpod', 'Caustic'],
         img: '../../../public/images/support/Sterilizer_Stratagem_Icon.webp',
-        description: ''
+        description: 'Atomizes caustic chemicals into a fine mist that liquifies sensitive electronics and tissues. Blinds and slows most enemies.'
     },
     {
         name: 'AX/TX-13 “Guard Dog” Dog Breath',
@@ -775,7 +743,7 @@ const stratagems = [
         calltime: '9.75',
         traits: ['Hellpod', 'Backpack', 'Caustic'],
         img: '../../../public/images/support/Guard_Dog_Dog_Breath_Stratagem_Icon.webp',
-        description: ''
+        description: 'A drone that defends its user by firing caustic gas at nearby enemies. Returns to backpack to refill.'
     },
     {
         name: 'SH-51 Directional Shield',
@@ -787,7 +755,7 @@ const stratagems = [
         calltime: '9.75',
         traits: ['Hellpod', 'Backpack'],
         img: '../../../public/images/support/SH-51_Directional_Shield_Stratagem_Icon.webp',
-        description: ''
+        description: 'A one-handed device that deploys a wide energy barrier in front of the user. The barrier is semipermeable and blocks high-speed projectiles from the outside only, leaving the user free to shoot through it.'
     },
     {
         name: 'E/AT-12 Anti-Tank Emplacement',
@@ -799,7 +767,7 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Hellpod', 'Anti-Tank'],
         img: '../../../public/images/defense/E_AT-12_Anti-Tank_Emplacement_Stratagem_Icon.webp',
-        description: ''
+        description: 'A powerful manned gun emplacement, capable of taking out armored targets at long ranges.'
     },
     {
         name: 'A/FLAM-40 Flame Sentry',
@@ -811,7 +779,7 @@ const stratagems = [
         calltime: '4.75',
         traits: ['Hellpod', 'Incendiary', 'Sentry'],
         img: '../../../public/images/defense/A_FLAM-40_Flame_Sentry_Stratagem_Icon.webp',
-        description: ''
+        description: 'An automated flamethrower turret. Warning: fuel canister prone to explosion when ruptured.'
     },
     {
         name: 'B-100 Portable Hellbomb',
@@ -823,7 +791,7 @@ const stratagems = [
         calltime: '9.75',
         traits: ['Hellpod', 'Explosive', 'Backpack', 'Anti-Tank'],
         img: '../../../public/images/support/Portable_Hellbomb_Stratagem_Icon.webp',
-        description: ''
+        description: 'A backpack-mounted Hellbomb that can be armed by the wearer or an ally, starting a countdown. Users are recommended to remove the backpack before the countdown reaches zero.'
     },
     {
         name: 'LIFT-860 Hover Pack',
@@ -835,7 +803,7 @@ const stratagems = [
         calltime: '9.75',
         traits: ['Hellpod', 'Backpack'],
         img: '../../../public/images/support/Hover_Pack_Stratagem_Icon.webp',
-        description: ''
+        description: 'Offers its user brief fixed-height flight, stable enough for pinpoint marksmanship.'
     },
     {
         name: 'CQC-1 One True Flag',
@@ -847,7 +815,7 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Support Weapon', 'Hellpod', 'Melee', 'One Handed'],
         img: '../../../public/images/support/CQC-1_One_True_Flag_Stratagem_Icon.webp',
-        description: ''
+        description: 'The eternal colors of Super Earth can never be tainted. Only quenched, by the blood of its enemies.'
     },
     {
         name: 'GL-52 De-Escalator',
@@ -859,7 +827,7 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Support Weapon', 'Hellpod', 'Stun'],
         img: '../../../public/images/support/GL-52_De-Escalator_Stratagem_Icon.webp',
-        description: ''
+        description: 'A humane grenade launcher firing high-powered arc grenades.'
     },
     {
         name: 'AX/ARC-3 “Guard Dog” K-9',
@@ -871,7 +839,7 @@ const stratagems = [
         calltime: '9.75',
         traits: ['Hellpod', 'Backpack', 'Stun'],
         img: '../../../public/images/support/AX_ARC-3__Guard_Dog__K-9_Stratagem_Icon.webp',
-        description: ''
+        description: 'A humane, autonomous drone equipped with a modified Arc Thrower. Capable of projecting arcs of lightning through multiple targets. Does not need to recharge between shots.'
     },
     {
         name: 'PLAS-45 Epoch',
@@ -881,15 +849,9 @@ const stratagems = [
         level: '0',
         cooldown: '600',
         calltime: '7.75',
-        traits: [
-            'Support Weapon',
-            'Hellpod',
-            'Explosive',
-            'Heavy Armor Penetrating',
-            'Chargeup'
-        ],
+        traits: ['Support Weapon', 'Hellpod', 'Explosive', 'Heavy Armor Penetrating', 'Chargeup'],
         img: '../../../public/images/support/PLAS-45_Epoch_Stratagem_Icon.webp',
-        description: ''
+        description: 'A powerful plasma weapon that fires one blast at a time, each blast exploding on impact. Must be charged to fire. Warning: do not overcharge.'
     },
     {
         name: 'A/LAS-98 Laser Sentry',
@@ -901,7 +863,7 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Hellpod', 'Sentry', 'Heavy Armor Penetrating', 'Heat', 'Beam'],
         img: '../../../public/images/defense/A_LAS-98_Laser_Sentry_Stratagem_Icon.webp',
-        description: ''
+        description: 'A turret firing powerful and precise laser beams. Warning: overloading heat sink may cause adverse effects.'
     },
     {
         name: 'LIFT-182 Warp Pack',
@@ -913,7 +875,7 @@ const stratagems = [
         calltime: '9.75',
         traits: ['Hellpod', 'Backpack'],
         img: '../../../public/images/support/LIFT-182_Warp_Pack_Stratagem_Icon.webp',
-        description: ''
+        description: 'A Dark Fluid-powered backpack that generates a portable micro-wormhole. This safe and well-understood technology allows the wearer to warp short distances. Warning: do not use while pack is overloaded.'
     },
     {
         name: 'S-11 Speargun',
@@ -925,7 +887,7 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Support Weapon', 'Hellpod', 'Anti-Tank'],
         img: '../../../public/images/support/S-11_Speargun_Stratagem_Icon.webp',
-        description: ''
+        description: 'A speargun firing heavy-duty projectiles. These projectiles release a cloud of gas on impact, and must be carefully loaded one at a time.'
     },
     {
         name: 'EAT-700 Expendable Napalm',
@@ -937,7 +899,7 @@ const stratagems = [
         calltime: '6.75',
         traits: ['Support Weapon', 'Hellpod', 'Incendiary', 'Expendable'],
         img: '../../../public/images/support/EAT-700_Expendable_Napalm_Stratagem_Icon.webp',
-        description: ''
+        description: 'A single-use weapon that fires a missile containing napalm cluster bombs that release upon impact.'
     },
     {
         name: 'MS-11 Solo Silo',
@@ -949,7 +911,7 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Support Weapon', 'Hellpod', 'Anti-Tank'],
         img: '../../../public/images/support/MS-11_Stratagem_Icon.webp',
-        description: ''
+        description: 'A silo that fit one single, powerful missile. Comes with a handheld targeting remote.'
     },
     {
         name: 'Reinforce',
@@ -961,7 +923,7 @@ const stratagems = [
         calltime: '3.00',
         traits: ['Hellpod'],
         img: '../../../public/images/common/Reinforce_Stratagem_Icon.webp',
-        description: ''
+        description: 'Used to call in a Helldiver if they have perished.'
     },
     {
         name: 'SoS Beacon',
@@ -973,7 +935,7 @@ const stratagems = [
         calltime: '3.00',
         traits: ['Hellpod'],
         img: '../../../public/images/common/SOS_Beacon_Stratagem_Icon.webp',
-        description: ''
+        description: 'Used to get priority on the mission select screen to increase the chances of Helldivers joining.'
     },
     {
         name: 'NUX-223 Hellbomb',
@@ -985,7 +947,7 @@ const stratagems = [
         calltime: '10.00',
         traits: ['Hellpod', 'Explosive', 'Anti-Tank'],
         img: '../../../public/images/objective/Hellbomb_Stratagem_Icon.webp',
-        description: ''
+        description: 'Used to call in a Hellbomb.'
     },
     {
         name: 'Dark Fluid Vessel',
@@ -997,6 +959,6 @@ const stratagems = [
         calltime: '10.00',
         traits: ['Hellpod', 'Backpack'],
         img: '../../../public/images/objective/Dark_Fluid_Vessel_Stratagem_Icon.webp',
-        description: ''
+        description: 'Event-exclusive stratagem for the Deploy Dark Fluid mission. Deploys a backpack full of Dark Fluid that acts as a more powerful Jump Pack when worn. Must be inserted into the Tectonic Drill.'
     }
 ]
