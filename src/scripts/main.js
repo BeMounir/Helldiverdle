@@ -234,8 +234,6 @@ function checkTraits(guessTraits = [], secretTraits = []) {
     return 'none';
 }
 
-
-
 function copy() {
     const copyText = "I just won in helldiverdle with " + guessCount + " guesses!\nhttps://bemounir.github.io/Helldiverdle/";
     navigator.clipboard.writeText(copyText);

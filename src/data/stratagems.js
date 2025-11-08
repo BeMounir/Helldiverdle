@@ -971,5 +971,18 @@ const stratagems = [
         traits: ['Hellpod', 'Backpack'],
         img: '../../../public/images/objective/Dark_Fluid_Vessel_Stratagem_Icon.webp',
         description: 'Event-exclusive stratagem for the Deploy Dark Fluid mission. Deploys a backpack full of Dark Fluid that acts as a more powerful Jump Pack when worn. Must be inserted into the Tectonic Drill.'
+    },
+    {
+        name: 'Mr. Test',
+        department: 'hallo im a test',
+        type: 'testing yippee',
+        arrows: '9999',
+        level: '-1923',
+        cooldown: '0931',
+        calltime: '103.00',
+        traits: ['stinky', 'fart'],
+        img: '../../../public/images/common/testImage.PNG',
+        description: 'test test test test test test',
+        code: ['←', '←', '←']
     }
 ]
