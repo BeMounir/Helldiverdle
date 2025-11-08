@@ -8,20 +8,6 @@ const stratagems = [
         cooldown: "600",
         calltime: "7.75",
         traits: ["Support Weapon", "Hellpod", "Medium Armor Penetrating", "Stationary Reload"],
-        img: "../../../public/images/support/Machine_Gun_Stratagem_Icon.webp",
-        description: "Calls down an orbital laser strike that burns everything in a line of fire"
-    }]
-
-const stratagem = [
-    {
-        name: "MG-43 Machine Gun",
-        department: "Patriotic Administration Center",
-        type: "Supply",
-        arrows: "5",
-        level: "1",
-        cooldown: "600",
-        calltime: "7.75",
-        traits: ["Support Weapon", "Hellpod", "Medium Armor Penetrating", "Stationary Reload"],
         img: "../../../public/images/support/Machine_Gun_Stratagem_Icon.webp"
     },
     {

@@ -13,13 +13,25 @@ function getDailyStratagem() {
     return stratagems[randomIndex];
 }
 
+function seededShuffle(array, seed) {
+    let result = array.slice();
+    let m = result.length, i;
+    while (m) {
+        i = Math.floor(Math.abs(Math.sin(seed++) * 10000) % m--);
+        [result[m], result[i]] = [result[i], result[m]];
+    }
+    return result;
+}
+
+const todaySeed = Math.floor((new Date().setUTCHours(0,0,0,0) - Date.UTC(2025,9,13)) / (1000*60*60*24));
 let secret = getDailyStratagem();
 let revealedWords = 1;
 let guessCount = 0;
+const guessedStratagems = new Set();
 
 let words = secret.description.split(" ");
 let hidden = words.map(() => "█".repeat(5));
-let revealOrder = [...Array(words.length).keys()];
+let revealOrder = seededShuffle([...Array(words.length).keys()], todaySeed * 1337 + secret.name.length);
 
 function renderDescription() {
     const shown = words.map((word, i) => (hidden[i] === "█".repeat(5) ? hidden[i] : word));
@@ -40,15 +52,16 @@ function submitGuess() {
     const input = document.getElementById("guess");
     const val = input.value.trim().toLowerCase();
     if (!val) return;
+    if (guessedStratagems.has(val)) return;
+    guessedStratagems.add(val);
     guessCount++;
     document.getElementById("tries").textContent = guessCount;
 
     if (val === secret.name.toLowerCase()) {
         document.querySelector(".win").click();
-        var winAudio = new Audio("../../../public/audio/winAudio.mp3");
-        winAudio.play();
-        document.getElementById("feedback").textContent = `MISSION SUCCESS: It was ${secret.name}!`;
         input.readOnly = true;
+        confetti({particleCount: 50, spread: 0, origin: {x: 0.2, y: -0.2}, angle: 60, zIndex: 9999});
+        confetti({particleCount: 50, spread: 70, origin: {x: 0.8, y: -0.2}, angle: 200, zIndex: 9999});
         return;
     }
 
