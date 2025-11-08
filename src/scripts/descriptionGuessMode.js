@@ -67,12 +67,7 @@ function submitGuess() {
 
     if (revealedWords <= words.length) {
         revealWord();
-    } else {
-        document.getElementById("feedback").textContent =
-            `MISSION FAILED: It was ${secret.name}!`;
-        input.readOnly = true;
     }
-
     input.value = "";
 }
 
