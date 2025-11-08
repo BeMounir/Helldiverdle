@@ -13,20 +13,6 @@ function getDailyStratagem() {
     return stratagems[randomIndex];
 }
 
-function timeUntilNextStratagem() {
-    const now = new Date();
-    const nextUTC = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + 1));
-    const diffMs = nextUTC - now;
-    const hours = Math.floor(diffMs / (1000 * 60 * 60));
-    const minutes = Math.floor((diffMs / (1000 * 60)) % 60);
-    const seconds = Math.floor((diffMs / 1000) % 60);
-    return `${hours}h ${minutes}m ${seconds}s until next stratagem`;
-}
-
-setInterval(() => {
-    document.getElementById('timer').textContent = timeUntilNextStratagem();
-}, 1000);
-
 function seededShuffle(array, seed) {
     let result = array.slice();
     let m = result.length, i;
@@ -143,36 +129,4 @@ function submitGuess() {
         revealWord();
     }
     input.value = "";
-}
-
-function showSuggestions(input) {
-    const suggestions = document.getElementById('suggestions');
-    suggestions.innerHTML = '';
-    if (!input) {
-        suggestions.style.display = 'none';
-        return;
-    }
-    const matches = stratagems.filter(s => s.name.toLowerCase().includes(input.toLowerCase())).filter(s => !guessedStratagems.has(s.name.toLowerCase()));
-    if (matches.length > 0) suggestions.style.display = 'block';
-    else suggestions.style.display = 'none';
-    matches.forEach(m => {
-        const div = document.createElement('div');
-        div.className = 'suggestion';
-        const img = document.createElement('img');
-        img.src = m.img;
-        img.alt = m.name;
-        img.style.width = '40px';
-        img.style.height = '40px';
-        img.style.marginRight = '8px';
-        img.style.verticalAlign = 'middle';
-        const span = document.createElement('span');
-        span.textContent = m.name;
-        div.appendChild(img);
-        div.appendChild(span);
-        div.onclick = () => {
-            document.getElementById('guess').value = m.name;
-            suggestions.style.display = 'none';
-        };
-        suggestions.appendChild(div);
-    });
 }
