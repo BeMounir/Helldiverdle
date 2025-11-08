@@ -41,22 +41,64 @@ h1 {
 }
 
 .game-button {
-    width: 150px;
-    height: 100px;
-    background-color: #f5d742;
-    color: black;
+    width: 400px;
+    height: 80px;
+    border: 2px solid #f5d742;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 10px;
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 0 20px;
     text-decoration: none;
+    font-weight: bold;
+    background: repeating-linear-gradient(
+            45deg,
+            rgba(255,255,255,0.2),
+            rgba(255,255,255,0.2) 2px,
+            transparent 2px,
+            transparent 6px
+    );
+    color: #f5d742;
     transition: transform 0.2s;
 }
 
 .game-button:hover {
     transform: scale(1.05);
+}
+
+.button-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.button-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.line1 {
+    font-size: 20px;
+    color: inherit;
+}
+
+.line2 {
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+
+.game-button:hover {
+    transform: scale(1.05);
+    border-color: #9BE6B2;
+    color: #9BE6B2;
+}
+
+.game-button:hover .button-icon {
+    filter: brightness(0) saturate(100%) invert(84%) sepia(12%) saturate(352%) hue-rotate(96deg) brightness(1);
 }
 
 .intro {
@@ -86,3 +128,19 @@ footer .creator {
     width: 50px;
     height: auto;
 }
+
+.three-dots {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.three-dots span {
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    display: block;
+}
+

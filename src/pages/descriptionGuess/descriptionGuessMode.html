@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Helldiverdle Arrow Mode</title>
+    <link rel="stylesheet" href="descriptionGuessMode.css">
+    <link id="favicon" rel="icon" type="image/png" href="../../../public/images/icons/favicon.jpg">
+</head>
+<body>
+<div class="container">
+    <h1>Helldiverdle</h1>
+    <div class="intro">
+        <p>Guess today's stratagem code!</p>
+        <a class="tooltip" href="#popup">?
+            <span class="tooltiptext">
+            How to Play.
+        </span>
+        </a>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <a href="#" class="closeButton">✖</a>
+            <h2>How to Play</h2>
+            <p class="information">
+                Each guess reveals how close your stratagem code is to today's secret one.<br><br>
+                WIP
+            </p>
+        </div>
+    </div>
+    <div id="description-box" class="description-box">
+        <p id="redacted-text"></p>
+    </div>
+
+    <div class="guessingDiv">
+        <input id="guess" placeholder="Enter stratagem name..." onfocus="this.value=''"
+               oninput="showSuggestions(this.value)">
+        <button id="guessButton" onclick="submitGuess()">Guess</button>
+    </div>
+
+    <div id="suggestions"></div>
+
+    <div id="feedback"></div>
+    <footer>
+        <a href="../stratagemGuess/stratagemGuessMode.html">Back to Main</a><br>
+        Made by <span class="creator">Moukie</span>
+        <br>Assets belong to Arrowhead game studio.
+    </footer>
+</div>
+
+
+
+<a class="win" href="#win"></a>
+
+<div id="win" class="popup">
+    <div class="popup-content win-screen">
+        <a href="#" class="closeButton">✖</a>
+
+        <div class="win-header">
+            <div class="win-flex">
+                <div class="wing left-wing">
+                    <img src="../../../public/images/icons/wing%20left.png" alt="Left Wing"/>
+                </div>
+                <h2>MISSION COMPLETED</h2>
+                <div class="wing right-wing">
+                    <img src="../../../public/images/icons/wing%20right.png" alt="Right Wing"/>
+                </div>
+            </div>
+        </div>
+
+        <p class="rating">⭐⭐⭐⭐⭐</p>
+
+        <div class="win-rewards">
+            <div class="rectangle">
+                <img class="rect-icon-xp" src="../../../public/images/icons/xp.PNG" alt="Icon Left">
+                <span class="xp-text">100</span><span class="xp-text-max">/100</span>
+            </div>
+            <div class="rectangle">
+                <img class="rect-icon-req" src="../../../public/images/icons/req.PNG" alt="Icon Left">
+                <span class="req-text">100</span><span class="req-text-max">/100</span>
+            </div>
+        </div>
+
+        <p class="win-subtitle">Outstanding Patriotism</p>
+
+        <div class="win-body">
+            <p class="win-stats">
+                You completed today's stratagem in <span id="tries">0</span> tries!
+                <br>Well done, Helldiver.
+            </p>
+            <div class=""></div>
+            <button class="share" onclick="copy()">Share</button>
+            <button id="reset" class="share" onclick="location.href='#'">Reset</button>
+            <p>Your Streak: <span id="streak">0</span>🔥</p>
+        </div>
+    </div>
+</div>
+
+<script src="../../data/stratagems.js"></script>
+<script src="../../scripts/background.js"></script>
+<script src="../../scripts/descriptionGuessMode.js"></script>
+
+</body>
+</html>
