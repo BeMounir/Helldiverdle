@@ -13,12 +13,44 @@ function getDailyStratagem() {
     return stratagems[randomIndex];
 }
 
+let secret = getDailyStratagem();
+console.log(secret)
 let guessCount = 0;
+const guessedStratagems = new Set();
+const arrowLeft = "../../../public/images/icons/Left_Arrow.webp";
+const arrowUp = "../../../public/images/icons/Up_Arrow.webp";
+const arrowRight = "../../../public/images/icons/Right_Arrow.webp";
+const arrowDown = "../../../public/images/icons/Down_Arrow.webp";
+
+const arrowMap = {
+    "↑": arrowUp,
+    "→": arrowRight,
+    "↓": arrowDown,
+    "←": arrowLeft
+};
+
+const arrowContainer = document.getElementById("arrow-combination");
+
+arrowContainer.innerHTML = "";
+
+secret.code.forEach(symbol => {
+    const img = document.createElement("img");
+    img.src = arrowMap[symbol];
+    img.alt = symbol;
+    img.classList.add("arrow-icon");
+    arrowContainer.appendChild(img);
+});
 
 function submitGuess() {
+    const input = document.getElementById("guess");
     const val = input.value.trim().toLowerCase();
-
-    if (val === secret.name) {
-
+    if (!val) return;
+    if (guessedStratagems.has(val)) return;
+    guessedStratagems.add(val);
+    guessCount++;
+    document.getElementById("tries").textContent = guessCount;
+    if (val === secret.name.toLowerCase()) {
+        document.querySelector(".win").click();
+        return;
     }
 }

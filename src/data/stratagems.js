@@ -168,7 +168,6 @@ const stratagems = [
         description: 'A versatile missile launcher loaded with seven lock-on homing missiles. These can either be fired from the launcher directly or as an airburst. Includes support backpack required for reloading. Produced by Stål Arms.',
         code: ['↓', '↓', '↑', '↓', '→'],
     },
-
     {
         name: 'Orbital Gatling Barrage',
         department: 'Orbital Cannons',
@@ -179,7 +178,8 @@ const stratagems = [
         calltime: '3.05',
         traits: ['Explosive', 'Orbital', 'Heavy Armor Penetrating'],
         img: '../../../public/images/offense/Orbital_Gatling_Barrage_Stratagem_Icon.png',
-        description: 'A barrage of high explosive rounds, fired from the Destroyer\'s high speed rotary autocannons.'
+        description: 'A barrage of high explosive rounds, fired from the Destroyer\'s high speed rotary autocannons.',
+        code: ['→', '↓', '←', '↑', '↑'],
     },
     {
         name: 'Orbital Airburst Strike',
@@ -191,7 +191,8 @@ const stratagems = [
         calltime: '4.45',
         traits: ['Explosive', 'Orbital', 'Medium Armor Penetrating'],
         img: '../../../public/images/offense/Orbital_Airburst_Strike_Stratagem_Icon.webp',
-        description: 'A projectile which explodes while airborne, creating a deadly rain of shrapnel. Not effective against heavy armor.'
+        description: 'A projectile which explodes while airborne, creating a deadly rain of shrapnel. Not effective against heavy armor.',
+        code: ['→', '→', '→'],
     },
     {
         name: 'Orbital 120mm HE Barrage',
@@ -203,7 +204,8 @@ const stratagems = [
         calltime: '7.45',
         traits: ['Explosive', 'Orbital', 'Anti-Tank'],
         img: '../../../public/images/offense/Orbital_120mm_HE_Barrage_Stratagem_Icon.webp',
-        description: 'A precision artillery salvo over a small area, perfect for taking out concentrated enemy units.'
+        description: 'A precision artillery salvo over a small area, perfect for taking out concentrated enemy units.',
+        code: ['→', '→', '↓', '←', '→', '↓'],
     },
     {
         name: 'Orbital 380mm HE Barrage',
@@ -215,7 +217,8 @@ const stratagems = [
         calltime: '8.45',
         traits: ['Explosive', 'Orbital', 'Anti-Tank'],
         img: '../../../public/images/offense/Orbital_380mm_HE_Barrage_Stratagem_Icon.webp',
-        description: 'A prolonged barrage, wreaking extended destruction over a large area. Communication with teammates is advised.'
+        description: 'A prolonged barrage, wreaking extended destruction over a large area. Communication with teammates is advised.',
+        code: ['→', '↓', '↑', '↑', '←', '↓', '↓'],
     },
     {
         name: 'Orbital Walking Barrage',
@@ -227,7 +230,8 @@ const stratagems = [
         calltime: '5.45',
         traits: ['Explosive', 'Orbital', 'Anti-Tank'],
         img: '../../../public/images/offense/Orbital_Walking_Barrage_Stratagem_Icon.webp',
-        description: 'A linear artillery barrage which moves at intervals, driving the enemy out from cover while allowing an advance.'
+        description: 'A linear artillery barrage which moves at intervals, driving the enemy out from cover while allowing an advance.',
+        code: ['→', '↓', '→', '↓', '→', '↓'],
     },
     {
         name: 'Orbital Laser',
@@ -239,7 +243,8 @@ const stratagems = [
         calltime: '2.00',
         traits: ['Orbital', 'Anti-Tank', 'Beam'],
         img: '../../../public/images/offense/Orbital_Laser_Stratagem_Icon.webp',
-        description: 'The Destroyer\'s laser cannon will sweep over the designated area, vaporizing all targets within the effective radius.'
+        description: 'The Destroyer\'s laser cannon will sweep over the designated area, vaporizing all targets within the effective radius.',
+        code: ['→', '↓', '↑', '→', '↓'],
     },
     {
         name: 'Orbital Napalm Barrage',
@@ -251,7 +256,8 @@ const stratagems = [
         calltime: '7.45',
         traits: ['Explosive', 'Orbital', 'Incendiary'],
         img: '../../../public/images/offense/Orbital_Napalm_Barrage_Stratagem_Icon.webp',
-        description: 'Launches a prolonged barrage of napalm shells over a wide area, setting a swath of land ablaze in mere moments.'
+        description: 'Launches a prolonged barrage of napalm shells over a wide area, setting a swath of land ablaze in mere moments.',
+        code: ['→', '→', '↓', '←', '→', '↑'],
     },
     {
         name: 'Orbital Railcannon Strike',
@@ -263,7 +269,8 @@ const stratagems = [
         calltime: '1.00',
         traits: ['Orbital', 'Anti-Tank'],
         img: '../../../public/images/offense/Orbital_Railcannon_Strike_Stratagem_Icon.webp',
-        description: 'A high-velocity railcannon round fired at the largest target in close proximity to the beacon. Targeting is automatic.'
+        description: 'A high-velocity railcannon round fired at the largest target in close proximity to the beacon. Targeting is automatic.',
+        code: ['→', '↑', '↓', '↓', '→'],
     },
     {
         name: 'Eagle Strafing Run',
@@ -275,7 +282,8 @@ const stratagems = [
         calltime: '2.40',
         traits: ['Eagle', 'Heavy Armor Penetrating'],
         img: '../../../public/images/offense/Eagle_Strafing_Run_Stratagem_Icon.webp',
-        description: 'A strafing run of the battlefield to clear small targets, delivered almost instantly. When called, the strike will start from the beacon and go away from the direction you were facing when thrown.'
+        description: 'A strafing run of the battlefield to clear small targets, delivered almost instantly. When called, the strike will start from the beacon and go away from the direction you were facing when thrown.',
+        code: ['↑', '→', '→'],
     },
     {
         name: 'Eagle Airstrike',
@@ -287,7 +295,8 @@ const stratagems = [
         calltime: '4.10',
         traits: ['Explosive', 'Eagle', 'Anti-Tank'],
         img: '../../../public/images/offense/Eagle_Airstrike_Stratagem_Icon.webp',
-        description: 'A barrage of bombs creating a non-targeted carpet of explosions. When called, the strike will be perpendicular from the direction you were facing when thrown.'
+        description: 'A barrage of bombs creating a non-targeted carpet of explosions. When called, the strike will be perpendicular from the direction you were facing when thrown.',
+        code: ['↑', '→', '↓', '→'],
     },
     {
         name: 'Eagle Cluster Bomb',
@@ -299,7 +308,8 @@ const stratagems = [
         calltime: '4.10',
         traits: ['Explosive', 'Eagle', 'Medium Armor Penetrating'],
         img: '../../../public/images/offense/Eagle_Cluster_Bomb_Stratagem_Icon.webp',
-        description: 'A targeted air strike unable to destroy buildings, but efficient at clearing smaller targets. When called, the strike will be perpendicular from the direction you were facing when thrown. '
+        description: 'A targeted air strike unable to destroy buildings, but efficient at clearing smaller targets. When called, the strike will be perpendicular from the direction you were facing when thrown. ',
+        code: ['↑', '→', '↓', '↓', '→'],
     },
     {
         name: 'Eagle Napalm Airstrike',
@@ -311,7 +321,8 @@ const stratagems = [
         calltime: '4.10',
         traits: ['Explosive', 'Eagle', 'Incendiary'],
         img: '../../../public/images/offense/Eagle_Napalm_Airstrike_Stratagem_Icon.webp',
-        description: 'A barrage of napalm bombs, creating a wall of fire which will stop the enemy in their tracks. When called, the strike will be perpendicular from the direction you were facing when thrown.'
+        description: 'A barrage of napalm bombs, creating a wall of fire which will stop the enemy in their tracks. When called, the strike will be perpendicular from the direction you were facing when thrown.',
+        code: ['↑', '→', '↓', '↑'],
     },
     {
         name: 'LIFT-850 Jump Pack',
@@ -694,7 +705,7 @@ const stratagems = [
         cooldown: '180',
         calltime: '7.75',
         traits: ['Hellpod', 'Explosive', 'Sentry'],
-        img: '../../../public/images/defense/AM-23_EMS_Mortar_Stratagem_Icon.webp',
+        img: '../../../public/images/defense/AM-23_EMS_Mortar_Sentry_Stratagem_Icon.webp',
         description: 'A turret firing static field generators that slow the advance of enemies.'
     },
     {

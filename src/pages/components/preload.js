@@ -84,7 +84,10 @@ const imageUrls = [
     "../../../public/images/icons/StarFilled.png",
     "../../../public/images/icons/StarEmpty.png",
     "../../../public/images/icons/req.PNG",
-    "../../../public/images/icons/xp.PNG"
+    "../../../public/images/icons/Left_Arrow.webp",
+    "../../../public/images/icons/Up_Arrow.webp",
+    "../../../public/images/icons/Right_Arrow.webp",
+    "../../../public/images/icons/Down_Arrow.webp",
 ];
 
 function preloadImage(url) {
