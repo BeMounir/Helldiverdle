@@ -548,7 +548,7 @@ const stratagems = [
         level: '10',
         cooldown: '480',
         calltime: '9.75',
-        traits: ['Hellpod', 'Backpack'],
+        traits: ['Hellpod', 'Backpack', 'Light Armor Penetrating', 'Beam'],
         img: '../../../public/images/support/Guard_Dog_Rover_Stratagem_Icon.webp',
         description: 'An autonomous drone equipped with a laser rifle, providing 360° cover. Returns to backpack to cool down.'
     },
@@ -668,7 +668,7 @@ const stratagems = [
         level: '10',
         cooldown: '480',
         calltime: '9.75',
-        traits: ['Hellpod', 'Backpack'],
+        traits: ['Hellpod', 'Backpack', 'Medium Armor Penetrating'],
         img: '../../../public/images/support/Guard_Dog_Stratagem_Icon.webp',
         description: 'An autonomous drone equipped with a Liberator Penetrator assault rifle, providing 360° cover. Returns to backpack to rearm.'
     },
@@ -836,7 +836,7 @@ const stratagems = [
         level: '0',
         cooldown: '600',
         calltime: '7.75',
-        traits: ['Support Weapon', 'Hellpod', 'Stun'],
+        traits: ['Support Weapon', 'Hellpod', 'Explosive', 'Medium Armor Penetrating'],
         img: '../../../public/images/support/GL-52_De-Escalator_Stratagem_Icon.webp',
         description: 'A humane grenade launcher firing high-powered arc grenades.'
     },
@@ -848,7 +848,7 @@ const stratagems = [
         level: '0',
         cooldown: '600',
         calltime: '9.75',
-        traits: ['Hellpod', 'Backpack', 'Stun'],
+        traits: ['Hellpod', 'Backpack', 'Medium Armor Penetrating'],
         img: '../../../public/images/support/AX_ARC-3__Guard_Dog__K-9_Stratagem_Icon.webp',
         description: 'A humane, autonomous drone equipped with a modified Arc Thrower. Capable of projecting arcs of lightning through multiple targets. Does not need to recharge between shots.'
     },
