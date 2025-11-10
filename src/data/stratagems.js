@@ -334,7 +334,8 @@ const stratagems = [
         calltime: '9.75',
         traits: ['Hellpod', 'Backpack'],
         img: '../../../public/images/support/Jump_Pack_Stratagem_Icon.webp',
-        description: 'Enables the user to jump higher than \'gravity\' and \'safety\' would normally allow. Must be charged before use.'
+        description: 'Enables the user to jump higher than \'gravity\' and \'safety\' would normally allow. Must be charged before use.',
+        code: ["↓", "↑", "↑", "↓", "↑"]
     },
     {
         name: 'Eagle Smoke Strike',
@@ -346,7 +347,8 @@ const stratagems = [
         calltime: '4.40',
         traits: ['Explosive', 'Eagle'],
         img: '../../../public/images/offense/Eagle_Smoke_Strike_Stratagem_Icon.webp',
-        description: 'A barrage of smoke grenades, creating a thick smoke screen to block enemies\' line of sight. When called the strike will be Perpendicular from the direction you were facing when thrown.'
+        description: 'A barrage of smoke grenades, creating a thick smoke screen to block enemies\' line of sight. When called the strike will be Perpendicular from the direction you were facing when thrown.',
+        code: ["↑","→","↑","↓"]
     },
     {
         name: 'Eagle 110mm Rocket Pods',
@@ -358,7 +360,8 @@ const stratagems = [
         calltime: '3.40',
         traits: ['Explosive', 'Eagle', 'Anti-Tank'],
         img: '../../../public/images/offense/Eagle_110mm_Rocket_Pods_Stratagem_Icon.webp',
-        description: 'A barrage of rocket pods, which the Eagle pilot will release on the largest target near the stratagem beacon.'
+        description: 'A barrage of rocket pods, which the Eagle pilot will release on the largest target near the stratagem beacon.',
+        code: ["↑","→","↑","←"]
     },
     {
         name: 'Eagle 500kg Bomb',
@@ -370,7 +373,8 @@ const stratagems = [
         calltime: '3.45',
         traits: ['Explosive', 'Eagle', 'Anti-Tank'],
         img: '../../../public/images/offense/Eagle_500kg_Bomb_Stratagem_Icon.webp',
-        description: 'A large bomb obliterating almost any target close to impact. Make sure to clear the area.'
+        description: 'A large bomb obliterating almost any target close to impact. Make sure to clear the area.',
+        code: ["↑","→","↓","↓","↓"]
     },
     {
         name: 'M-102 Fast Reconnaissance Vehicle',
@@ -382,7 +386,8 @@ const stratagems = [
         calltime: '10.50',
         traits: ['Vehicle'],
         img: '../../../public/images/support/M-102_Fast_Recon_Vehicle_Stratagem_Icon.webp',
-        description: 'A lightly-armored reconnaissance vehicle mounted with a heavy machinegun.'
+        description: 'A lightly-armored reconnaissance vehicle mounted with a heavy machinegun.',
+        code: ["←","↓","→","↓","→","↓","↑"]
     },
     {
         name: 'Orbital Precision Strike',
@@ -394,7 +399,8 @@ const stratagems = [
         calltime: '4.45',
         traits: ['Explosive', 'Orbital', 'Anti-Tank'],
         img: '../../../public/images/offense/Orbital_Precision_Strike_Stratagem_Icon.webp',
-        description: 'A single precision shot from the Destroyer\'s \'ATLAS\' cannon. '
+        description: 'A single precision shot from the Destroyer\'s \'ATLAS\' cannon.',
+        code: ["→","→","↑"]
     },
     {
         name: 'Orbital Gas Strike',
@@ -406,7 +412,8 @@ const stratagems = [
         calltime: '4.45',
         traits: ['Explosive', 'Orbital', 'Caustic'],
         img: '../../../public/images/offense/Orbital_Gas_Strike_Stratagem_Icon.webp',
-        description: 'A projectile which releases a cloud of corrosive gas, harmful to both organic and robotic lifeforms.'
+        description: 'A projectile which releases a cloud of corrosive gas, harmful to both organic and robotic lifeforms.',
+        code: ["→","→","↓","→"]
     },
     {
         name: 'Orbital EMS Strike',
@@ -418,7 +425,8 @@ const stratagems = [
         calltime: '4.45',
         traits: ['Orbital'],
         img: '../../../public/images/offense/Orbital_EMS_Strike_Stratagem_Icon.webp',
-        description: 'A "compliance weapon" to modify enemy behavior. The projectile temporarily stuns all targets within the strike radius.'
+        description: 'A "compliance weapon" to modify enemy behavior. The projectile temporarily stuns all targets within the strike radius.',
+        code: ["→","→","←","↓"]
     },
     {
         name: 'Orbital Smoke Strike',
@@ -430,7 +438,8 @@ const stratagems = [
         calltime: '4.45',
         traits: ['Explosive', 'Orbital'],
         img: '../../../public/images/offense/Orbital_Smoke_Strike_Stratagem_Icon.webp',
-        description: 'Creates a large, thick smoke screen to block targets\' line of sight.'
+        description: 'Creates a large, thick smoke screen to block targets\' line of sight.',
+        code: ["→","→","↓","↑"]
     },
     {
         name: 'E/MG-101 HMG Emplacement',
@@ -442,7 +451,8 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Hellpod', 'Heavy Armor Penetrating'],
         img: '../../../public/images/defense/HMG_Emplacement_Stratagem_Icon.webp',
-        description: 'A manned fortification offering superior firepower against lightly armored targets. Slow to turn, so place it wisely'
+        description: 'A manned fortification offering superior firepower against lightly armored targets. Slow to turn, so place it wisely',
+        code: ["↓","↑","←","→","→","←"]
     },
     {
         name: 'FX-12 Shield Generator Relay',
@@ -454,7 +464,8 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Hellpod'],
         img: '../../../public/images/defense/Shield_Generator_Relay_Stratagem_Icon.webp',
-        description: 'A stationary energy shield which provides cover against projectiles. Has a limited lifetime once deployed.'
+        description: 'A stationary energy shield which provides cover against projectiles. Has a limited lifetime once deployed.',
+        code: ["↓","↓","←","→","←","→"]
     },
     {
         name: 'A/ARC-3 Tesla Tower',
@@ -466,7 +477,8 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Hellpod', 'Sentry'],
         img: '../../../public/images/defense/Tesla_Tower_Stratagem_Icon.webp',
-        description: 'A turret which fires electrical charges at targets in close range. To avoid friendly fire, remain prone.'
+        description: 'A turret which fires electrical charges at targets in close range. To avoid friendly fire, remain prone.',
+        code: ["↓","↑","→","↑","←","→"]
     },
     {
         name: 'E/GL-21 Grenadier Battlement',
@@ -478,7 +490,8 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Hellpod', 'Explosive', 'Medium Armor Penetrating'],
         img: '../../../public/images/defense/GL-21_Grenadier_Battlement_Stratagem_Icon.webp',
-        description: 'A stationary ballistic cover with a mounted grenade launcher. Can protect multiple Helldivers from small arms fire.'
+        description: 'A stationary ballistic cover with a mounted grenade launcher. Can protect multiple Helldivers from small arms fire.',
+        code: ["↓","→","↓","←","→"]
     },
     {
         name: 'MD-6 Anti-Personnel Minefield',
@@ -490,7 +503,8 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Hellpod', 'Explosive', 'Medium Armor Penetrating'],
         img: '../../../public/images/defense/Anti-Personnel_Minefield_Stratagem_Icon.webp',
-        description: 'Deploys a defensive anti-personnel minefield, to halt enemy advance.'
+        description: 'Deploys a defensive anti-personnel minefield, to halt enemy advance.',
+        code: ["↓","←","↑","→"]
     },
     {
         name: 'B-1 Supply Pack',
@@ -502,7 +516,8 @@ const stratagems = [
         calltime: '9.75',
         traits: ['Hellpod', 'Backpack'],
         img: '../../../public/images/support/Supply_Pack_Stratagem_Icon.webp',
-        description: 'Supply boxes containing ammunition, with a backpack that allows the user to distribute boxes to fellow Helldivers.'
+        description: 'Supply boxes containing ammunition, with a backpack that allows the user to distribute boxes to fellow Helldivers.',
+        code: ["↓","←","↓","↑","↑","↓"]
     },
     {
         name: 'GL-21 Grenade Launcher',
@@ -514,7 +529,8 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Support Weapon', 'Hellpod', 'Explosive', 'Medium Armor Penetrating'],
         img: '../../../public/images/support/Grenade_Launcher_Stratagem_Icon.webp',
-        description: 'A grenade launcher effective against armored infantry. Not intended for use against vehicle armor or fortified buildings.'
+        description: 'A grenade launcher effective against armored infantry. Not intended for use against vehicle armor or fortified buildings.',
+        code: ["↓","←","↑","←","↓"]
     },
     {
         name: 'LAS-98 Laser Cannon',
@@ -526,7 +542,8 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Support Weapon', 'Hellpod', 'Heavy Armor Penetrating', 'Heat', 'Beam'],
         img: '../../../public/images/support/Laser_Cannon_Stratagem_Icon.webp',
-        description: 'A laser weapon firing a continuous beam. Doesn\'t require ammunition, but will need heat sink replaced if it overheats.'
+        description: 'A laser weapon firing a continuous beam. Doesn\'t require ammunition, but will need heat sink replaced if it overheats.',
+        code: ["↓","←","↓","↑","←"]
     },
     {
         name: 'MD-I4 Incendiary Mines',
@@ -538,7 +555,8 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Hellpod', 'Explosive', 'Incendiary'],
         img: '../../../public/images/defense/Incendiary_Mines_Stratagem_Icon.webp',
-        description: 'Deploys a defensive incendiary minefield, which will set both terrain and targets alight when triggered.'
+        description: 'Deploys a defensive incendiary minefield, which will set both terrain and targets alight when triggered.',
+        code: ["↓","←","←","↓"]
     },
     {
         name: 'AX/LAS-5 “Guard Dog” Rover',
@@ -550,7 +568,8 @@ const stratagems = [
         calltime: '9.75',
         traits: ['Hellpod', 'Backpack', 'Light Armor Penetrating', 'Beam'],
         img: '../../../public/images/support/Guard_Dog_Rover_Stratagem_Icon.webp',
-        description: 'An autonomous drone equipped with a laser rifle, providing 360° cover. Returns to backpack to cool down.'
+        description: 'An autonomous drone equipped with a laser rifle, providing 360° cover. Returns to backpack to cool down.',
+        code: ["↓","↑","←","↑","→","→"]
     },
     {
         name: 'SH-20 Ballistic Shield Backpack',
@@ -562,7 +581,8 @@ const stratagems = [
         calltime: '9.75',
         traits: ['Hellpod', 'Backpack'],
         img: '../../../public/images/support/Ballistic_Shield_Backpack_Stratagem_Icon.webp',
-        description: 'A backpack which can be wielded as a one-handed ballistic shield, protecting against small arms fire.'
+        description: 'A backpack which can be wielded as a one-handed ballistic shield, protecting against small arms fire.',
+        code: ["↓","←","↓","↓","↑","←"]
     },
     {
         name: 'ARC-3 Arc Thrower',
@@ -574,7 +594,8 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Support Weapon', 'Hellpod', 'Chargeup'],
         img: '../../../public/images/support/Arc_Thrower_Stratagem_Icon.webp',
-        description: 'Projects an arc of lightning at close range. Charges up to project bolts, and may discharge through multiple targets.'
+        description: 'Projects an arc of lightning at close range. Charges up to project bolts, and may discharge through multiple targets.',
+        code: ["↓","→","↓","↑","←","←"]
     },
     {
         name: 'MD-17 Anti-Tank Mines',
@@ -586,7 +607,8 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Hellpod', 'Explosive', 'Anti-Tank'],
         img: '../../../public/images/defense/MD-17_Anti-Tank_Mines_Stratagem_Icon.webp',
-        description: 'Scatters powerful anti-tank mines that deal heavy, armor-penetrating damage. Minefield is less densely packed relative to smaller mines.'
+        description: 'Scatters powerful anti-tank mines that deal heavy, armor-penetrating damage. Minefield is less densely packed relative to smaller mines.',
+        code: ["↓","←","↑","↑"]
     },
     {
         name: 'LAS-99 Quasar Cannon',
@@ -598,7 +620,8 @@ const stratagems = [
         calltime: '7.75',
         traits: ['Support Weapon', 'Hellpod', 'Anti-Tank', 'Chargeup'],
         img: '../../../public/images/support/Quasar_Cannon_Stratagem_Icon.webp',
-        description: 'Charges up to fire a powerful, explosive energy burst. Has a long cooldown period after firing.'
+        description: 'Charges up to fire a powerful, explosive energy burst. Has a long cooldown period after firing.',
+        code: ["↓","↓","↑","←","→"]
     },
     {
         name: 'SH-32 Shield Generator Pack',
